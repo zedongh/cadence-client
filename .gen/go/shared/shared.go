@@ -50,14 +50,14 @@ type AccessDeniedError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *AccessDeniedError) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -83,16 +83,16 @@ func (v *AccessDeniedError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a AccessDeniedError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v AccessDeniedError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v AccessDeniedError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *AccessDeniedError) FromWire(w wire.Value) error {
 	var err error
 
@@ -194,14 +194,14 @@ type ActivityLocalDispatchInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ActivityLocalDispatchInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -261,16 +261,16 @@ func (v *ActivityLocalDispatchInfo) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ActivityLocalDispatchInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ActivityLocalDispatchInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ActivityLocalDispatchInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ActivityLocalDispatchInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -523,14 +523,14 @@ type ActivityTaskCancelRequestedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ActivityTaskCancelRequestedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -566,16 +566,16 @@ func (v *ActivityTaskCancelRequestedEventAttributes) ToWire() (wire.Value, error
 // An error is returned if we were unable to build a ActivityTaskCancelRequestedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ActivityTaskCancelRequestedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ActivityTaskCancelRequestedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ActivityTaskCancelRequestedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -708,14 +708,14 @@ type ActivityTaskCanceledEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ActivityTaskCanceledEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -775,16 +775,16 @@ func (v *ActivityTaskCanceledEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ActivityTaskCanceledEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ActivityTaskCanceledEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ActivityTaskCanceledEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ActivityTaskCanceledEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -1019,14 +1019,14 @@ type ActivityTaskCompletedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ActivityTaskCompletedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -1078,16 +1078,16 @@ func (v *ActivityTaskCompletedEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ActivityTaskCompletedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ActivityTaskCompletedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ActivityTaskCompletedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ActivityTaskCompletedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -1288,14 +1288,14 @@ type ActivityTaskFailedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ActivityTaskFailedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -1355,16 +1355,16 @@ func (v *ActivityTaskFailedEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ActivityTaskFailedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ActivityTaskFailedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ActivityTaskFailedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ActivityTaskFailedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -1607,14 +1607,14 @@ type ActivityTaskScheduledEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ActivityTaskScheduledEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [12]wire.Field
@@ -1754,16 +1754,16 @@ func _Header_Read(w wire.Value) (*Header, error) {
 // An error is returned if we were unable to build a ActivityTaskScheduledEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ActivityTaskScheduledEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ActivityTaskScheduledEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ActivityTaskScheduledEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -2247,14 +2247,14 @@ type ActivityTaskStartedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ActivityTaskStartedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -2322,16 +2322,16 @@ func (v *ActivityTaskStartedEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ActivityTaskStartedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ActivityTaskStartedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ActivityTaskStartedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ActivityTaskStartedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -2603,14 +2603,14 @@ type ActivityTaskTimedOutEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ActivityTaskTimedOutEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -2684,16 +2684,16 @@ func _TimeoutType_Read(w wire.Value) (TimeoutType, error) {
 // An error is returned if we were unable to build a ActivityTaskTimedOutEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ActivityTaskTimedOutEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ActivityTaskTimedOutEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ActivityTaskTimedOutEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -2968,14 +2968,14 @@ type ActivityType struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ActivityType) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -3003,16 +3003,16 @@ func (v *ActivityType) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ActivityType struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ActivityType
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ActivityType
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ActivityType) FromWire(w wire.Value) error {
 	var err error
 
@@ -3113,8 +3113,8 @@ func ArchivalStatus_Values() []ArchivalStatus {
 // UnmarshalText tries to decode ArchivalStatus from a byte slice
 // containing its name.
 //
-//   var v ArchivalStatus
-//   err := v.UnmarshalText([]byte("DISABLED"))
+//	var v ArchivalStatus
+//	err := v.UnmarshalText([]byte("DISABLED"))
 func (v *ArchivalStatus) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "DISABLED":
@@ -3181,16 +3181,16 @@ func (v ArchivalStatus) ToWire() (wire.Value, error) {
 // FromWire deserializes ArchivalStatus from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return ArchivalStatus(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return ArchivalStatus(0), err
+//	}
 //
-//   var v ArchivalStatus
-//   if err := v.FromWire(x); err != nil {
-//     return ArchivalStatus(0), err
-//   }
-//   return v, nil
+//	var v ArchivalStatus
+//	if err := v.FromWire(x); err != nil {
+//	  return ArchivalStatus(0), err
+//	}
+//	return v, nil
 func (v *ArchivalStatus) FromWire(w wire.Value) error {
 	*v = (ArchivalStatus)(w.GetI32())
 	return nil
@@ -3315,14 +3315,14 @@ func (_Map_String_BadBinaryInfo_MapItemList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *BadBinaries) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -3384,16 +3384,16 @@ func _Map_String_BadBinaryInfo_Read(m wire.MapItemList) (map[string]*BadBinaryIn
 // An error is returned if we were unable to build a BadBinaries struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v BadBinaries
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v BadBinaries
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *BadBinaries) FromWire(w wire.Value) error {
 	var err error
 
@@ -3515,14 +3515,14 @@ type BadBinaryInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *BadBinaryInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -3566,16 +3566,16 @@ func (v *BadBinaryInfo) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a BadBinaryInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v BadBinaryInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v BadBinaryInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *BadBinaryInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -3739,14 +3739,14 @@ type BadRequestError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *BadRequestError) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -3772,16 +3772,16 @@ func (v *BadRequestError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a BadRequestError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v BadRequestError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v BadRequestError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *BadRequestError) FromWire(w wire.Value) error {
 	var err error
 
@@ -3884,8 +3884,8 @@ func CancelExternalWorkflowExecutionFailedCause_Values() []CancelExternalWorkflo
 // UnmarshalText tries to decode CancelExternalWorkflowExecutionFailedCause from a byte slice
 // containing its name.
 //
-//   var v CancelExternalWorkflowExecutionFailedCause
-//   err := v.UnmarshalText([]byte("UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION"))
+//	var v CancelExternalWorkflowExecutionFailedCause
+//	err := v.UnmarshalText([]byte("UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION"))
 func (v *CancelExternalWorkflowExecutionFailedCause) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION":
@@ -3945,16 +3945,16 @@ func (v CancelExternalWorkflowExecutionFailedCause) ToWire() (wire.Value, error)
 // FromWire deserializes CancelExternalWorkflowExecutionFailedCause from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return CancelExternalWorkflowExecutionFailedCause(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return CancelExternalWorkflowExecutionFailedCause(0), err
+//	}
 //
-//   var v CancelExternalWorkflowExecutionFailedCause
-//   if err := v.FromWire(x); err != nil {
-//     return CancelExternalWorkflowExecutionFailedCause(0), err
-//   }
-//   return v, nil
+//	var v CancelExternalWorkflowExecutionFailedCause
+//	if err := v.FromWire(x); err != nil {
+//	  return CancelExternalWorkflowExecutionFailedCause(0), err
+//	}
+//	return v, nil
 func (v *CancelExternalWorkflowExecutionFailedCause) FromWire(w wire.Value) error {
 	*v = (CancelExternalWorkflowExecutionFailedCause)(w.GetI32())
 	return nil
@@ -4037,14 +4037,14 @@ type CancelTimerDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *CancelTimerDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -4072,16 +4072,16 @@ func (v *CancelTimerDecisionAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a CancelTimerDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v CancelTimerDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v CancelTimerDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *CancelTimerDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -4178,14 +4178,14 @@ type CancelTimerFailedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *CancelTimerFailedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -4237,16 +4237,16 @@ func (v *CancelTimerFailedEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a CancelTimerFailedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v CancelTimerFailedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v CancelTimerFailedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *CancelTimerFailedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -4445,14 +4445,14 @@ type CancelWorkflowExecutionDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *CancelWorkflowExecutionDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -4480,16 +4480,16 @@ func (v *CancelWorkflowExecutionDecisionAttributes) ToWire() (wire.Value, error)
 // An error is returned if we were unable to build a CancelWorkflowExecutionDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v CancelWorkflowExecutionDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v CancelWorkflowExecutionDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *CancelWorkflowExecutionDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -4581,14 +4581,14 @@ type CancellationAlreadyRequestedError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *CancellationAlreadyRequestedError) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -4614,16 +4614,16 @@ func (v *CancellationAlreadyRequestedError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a CancellationAlreadyRequestedError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v CancellationAlreadyRequestedError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v CancellationAlreadyRequestedError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *CancellationAlreadyRequestedError) FromWire(w wire.Value) error {
 	var err error
 
@@ -4726,14 +4726,14 @@ type ChildWorkflowExecutionCanceledEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ChildWorkflowExecutionCanceledEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -4813,16 +4813,16 @@ func _WorkflowType_Read(w wire.Value) (*WorkflowType, error) {
 // An error is returned if we were unable to build a ChildWorkflowExecutionCanceledEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ChildWorkflowExecutionCanceledEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ChildWorkflowExecutionCanceledEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ChildWorkflowExecutionCanceledEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -5090,14 +5090,14 @@ type ChildWorkflowExecutionCompletedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ChildWorkflowExecutionCompletedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -5165,16 +5165,16 @@ func (v *ChildWorkflowExecutionCompletedEventAttributes) ToWire() (wire.Value, e
 // An error is returned if we were unable to build a ChildWorkflowExecutionCompletedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ChildWorkflowExecutionCompletedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ChildWorkflowExecutionCompletedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ChildWorkflowExecutionCompletedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -5442,8 +5442,8 @@ func ChildWorkflowExecutionFailedCause_Values() []ChildWorkflowExecutionFailedCa
 // UnmarshalText tries to decode ChildWorkflowExecutionFailedCause from a byte slice
 // containing its name.
 //
-//   var v ChildWorkflowExecutionFailedCause
-//   err := v.UnmarshalText([]byte("WORKFLOW_ALREADY_RUNNING"))
+//	var v ChildWorkflowExecutionFailedCause
+//	err := v.UnmarshalText([]byte("WORKFLOW_ALREADY_RUNNING"))
 func (v *ChildWorkflowExecutionFailedCause) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "WORKFLOW_ALREADY_RUNNING":
@@ -5503,16 +5503,16 @@ func (v ChildWorkflowExecutionFailedCause) ToWire() (wire.Value, error) {
 // FromWire deserializes ChildWorkflowExecutionFailedCause from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return ChildWorkflowExecutionFailedCause(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return ChildWorkflowExecutionFailedCause(0), err
+//	}
 //
-//   var v ChildWorkflowExecutionFailedCause
-//   if err := v.FromWire(x); err != nil {
-//     return ChildWorkflowExecutionFailedCause(0), err
-//   }
-//   return v, nil
+//	var v ChildWorkflowExecutionFailedCause
+//	if err := v.FromWire(x); err != nil {
+//	  return ChildWorkflowExecutionFailedCause(0), err
+//	}
+//	return v, nil
 func (v *ChildWorkflowExecutionFailedCause) FromWire(w wire.Value) error {
 	*v = (ChildWorkflowExecutionFailedCause)(w.GetI32())
 	return nil
@@ -5601,14 +5601,14 @@ type ChildWorkflowExecutionFailedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ChildWorkflowExecutionFailedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [7]wire.Field
@@ -5684,16 +5684,16 @@ func (v *ChildWorkflowExecutionFailedEventAttributes) ToWire() (wire.Value, erro
 // An error is returned if we were unable to build a ChildWorkflowExecutionFailedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ChildWorkflowExecutionFailedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ChildWorkflowExecutionFailedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ChildWorkflowExecutionFailedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -5995,14 +5995,14 @@ type ChildWorkflowExecutionStartedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ChildWorkflowExecutionStartedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -6062,16 +6062,16 @@ func (v *ChildWorkflowExecutionStartedEventAttributes) ToWire() (wire.Value, err
 // An error is returned if we were unable to build a ChildWorkflowExecutionStartedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ChildWorkflowExecutionStartedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ChildWorkflowExecutionStartedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ChildWorkflowExecutionStartedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -6303,14 +6303,14 @@ type ChildWorkflowExecutionTerminatedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ChildWorkflowExecutionTerminatedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -6370,16 +6370,16 @@ func (v *ChildWorkflowExecutionTerminatedEventAttributes) ToWire() (wire.Value, 
 // An error is returned if we were unable to build a ChildWorkflowExecutionTerminatedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ChildWorkflowExecutionTerminatedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ChildWorkflowExecutionTerminatedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ChildWorkflowExecutionTerminatedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -6614,14 +6614,14 @@ type ChildWorkflowExecutionTimedOutEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ChildWorkflowExecutionTimedOutEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -6689,16 +6689,16 @@ func (v *ChildWorkflowExecutionTimedOutEventAttributes) ToWire() (wire.Value, er
 // An error is returned if we were unable to build a ChildWorkflowExecutionTimedOutEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ChildWorkflowExecutionTimedOutEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ChildWorkflowExecutionTimedOutEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ChildWorkflowExecutionTimedOutEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -6965,14 +6965,14 @@ type ClientVersionNotSupportedError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ClientVersionNotSupportedError) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -7012,16 +7012,16 @@ func (v *ClientVersionNotSupportedError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ClientVersionNotSupportedError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ClientVersionNotSupportedError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ClientVersionNotSupportedError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ClientVersionNotSupportedError) FromWire(w wire.Value) error {
 	var err error
 
@@ -7175,14 +7175,14 @@ type CloseShardRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *CloseShardRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -7210,16 +7210,16 @@ func (v *CloseShardRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a CloseShardRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v CloseShardRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v CloseShardRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *CloseShardRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -7313,14 +7313,14 @@ type ClusterInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ClusterInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -7354,16 +7354,16 @@ func _SupportedClientVersions_Read(w wire.Value) (*SupportedClientVersions, erro
 // An error is returned if we were unable to build a ClusterInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ClusterInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ClusterInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ClusterInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -7455,14 +7455,14 @@ type ClusterReplicationConfiguration struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ClusterReplicationConfiguration) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -7490,16 +7490,16 @@ func (v *ClusterReplicationConfiguration) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ClusterReplicationConfiguration struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ClusterReplicationConfiguration
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ClusterReplicationConfiguration
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ClusterReplicationConfiguration) FromWire(w wire.Value) error {
 	var err error
 
@@ -7593,14 +7593,14 @@ type CompleteWorkflowExecutionDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *CompleteWorkflowExecutionDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -7628,16 +7628,16 @@ func (v *CompleteWorkflowExecutionDecisionAttributes) ToWire() (wire.Value, erro
 // An error is returned if we were unable to build a CompleteWorkflowExecutionDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v CompleteWorkflowExecutionDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v CompleteWorkflowExecutionDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *CompleteWorkflowExecutionDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -7738,8 +7738,8 @@ func ContinueAsNewInitiator_Values() []ContinueAsNewInitiator {
 // UnmarshalText tries to decode ContinueAsNewInitiator from a byte slice
 // containing its name.
 //
-//   var v ContinueAsNewInitiator
-//   err := v.UnmarshalText([]byte("Decider"))
+//	var v ContinueAsNewInitiator
+//	err := v.UnmarshalText([]byte("Decider"))
 func (v *ContinueAsNewInitiator) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "Decider":
@@ -7813,16 +7813,16 @@ func (v ContinueAsNewInitiator) ToWire() (wire.Value, error) {
 // FromWire deserializes ContinueAsNewInitiator from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return ContinueAsNewInitiator(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return ContinueAsNewInitiator(0), err
+//	}
 //
-//   var v ContinueAsNewInitiator
-//   if err := v.FromWire(x); err != nil {
-//     return ContinueAsNewInitiator(0), err
-//   }
-//   return v, nil
+//	var v ContinueAsNewInitiator
+//	if err := v.FromWire(x); err != nil {
+//	  return ContinueAsNewInitiator(0), err
+//	}
+//	return v, nil
 func (v *ContinueAsNewInitiator) FromWire(w wire.Value) error {
 	*v = (ContinueAsNewInitiator)(w.GetI32())
 	return nil
@@ -7927,14 +7927,14 @@ type ContinueAsNewWorkflowExecutionDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ContinueAsNewWorkflowExecutionDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [15]wire.Field
@@ -8092,16 +8092,16 @@ func _SearchAttributes_Read(w wire.Value) (*SearchAttributes, error) {
 // An error is returned if we were unable to build a ContinueAsNewWorkflowExecutionDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ContinueAsNewWorkflowExecutionDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ContinueAsNewWorkflowExecutionDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ContinueAsNewWorkflowExecutionDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -8678,14 +8678,14 @@ type CountWorkflowExecutionsRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *CountWorkflowExecutionsRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -8721,16 +8721,16 @@ func (v *CountWorkflowExecutionsRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a CountWorkflowExecutionsRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v CountWorkflowExecutionsRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v CountWorkflowExecutionsRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *CountWorkflowExecutionsRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -8859,14 +8859,14 @@ type CountWorkflowExecutionsResponse struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *CountWorkflowExecutionsResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -8894,16 +8894,16 @@ func (v *CountWorkflowExecutionsResponse) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a CountWorkflowExecutionsResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v CountWorkflowExecutionsResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v CountWorkflowExecutionsResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *CountWorkflowExecutionsResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -8986,6 +8986,3507 @@ func (v *CountWorkflowExecutionsResponse) IsSetCount() bool {
 	return v != nil && v.Count != nil
 }
 
+type CrossClusterCancelExecutionRequestAttributes struct {
+	TargetDomainID    *string `json:"targetDomainID,omitempty"`
+	TargetWorkflowID  *string `json:"targetWorkflowID,omitempty"`
+	TargetRunID       *string `json:"targetRunID,omitempty"`
+	RequestID         *string `json:"requestID,omitempty"`
+	InitiatedEventID  *int64  `json:"initiatedEventID,omitempty"`
+	ChildWorkflowOnly *bool   `json:"childWorkflowOnly,omitempty"`
+}
+
+// ToWire translates a CrossClusterCancelExecutionRequestAttributes struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *CrossClusterCancelExecutionRequestAttributes) ToWire() (wire.Value, error) {
+	var (
+		fields [6]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.TargetDomainID != nil {
+		w, err = wire.NewValueString(*(v.TargetDomainID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+	if v.TargetWorkflowID != nil {
+		w, err = wire.NewValueString(*(v.TargetWorkflowID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 20, Value: w}
+		i++
+	}
+	if v.TargetRunID != nil {
+		w, err = wire.NewValueString(*(v.TargetRunID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 30, Value: w}
+		i++
+	}
+	if v.RequestID != nil {
+		w, err = wire.NewValueString(*(v.RequestID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 40, Value: w}
+		i++
+	}
+	if v.InitiatedEventID != nil {
+		w, err = wire.NewValueI64(*(v.InitiatedEventID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 50, Value: w}
+		i++
+	}
+	if v.ChildWorkflowOnly != nil {
+		w, err = wire.NewValueBool(*(v.ChildWorkflowOnly)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 60, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+// FromWire deserializes a CrossClusterCancelExecutionRequestAttributes struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a CrossClusterCancelExecutionRequestAttributes struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v CrossClusterCancelExecutionRequestAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *CrossClusterCancelExecutionRequestAttributes) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetDomainID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 20:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetWorkflowID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 30:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetRunID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 40:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.RequestID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 50:
+			if field.Value.Type() == wire.TI64 {
+				var x int64
+				x, err = field.Value.GetI64(), error(nil)
+				v.InitiatedEventID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 60:
+			if field.Value.Type() == wire.TBool {
+				var x bool
+				x, err = field.Value.GetBool(), error(nil)
+				v.ChildWorkflowOnly = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a CrossClusterCancelExecutionRequestAttributes
+// struct.
+func (v *CrossClusterCancelExecutionRequestAttributes) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [6]string
+	i := 0
+	if v.TargetDomainID != nil {
+		fields[i] = fmt.Sprintf("TargetDomainID: %v", *(v.TargetDomainID))
+		i++
+	}
+	if v.TargetWorkflowID != nil {
+		fields[i] = fmt.Sprintf("TargetWorkflowID: %v", *(v.TargetWorkflowID))
+		i++
+	}
+	if v.TargetRunID != nil {
+		fields[i] = fmt.Sprintf("TargetRunID: %v", *(v.TargetRunID))
+		i++
+	}
+	if v.RequestID != nil {
+		fields[i] = fmt.Sprintf("RequestID: %v", *(v.RequestID))
+		i++
+	}
+	if v.InitiatedEventID != nil {
+		fields[i] = fmt.Sprintf("InitiatedEventID: %v", *(v.InitiatedEventID))
+		i++
+	}
+	if v.ChildWorkflowOnly != nil {
+		fields[i] = fmt.Sprintf("ChildWorkflowOnly: %v", *(v.ChildWorkflowOnly))
+		i++
+	}
+
+	return fmt.Sprintf("CrossClusterCancelExecutionRequestAttributes{%v}", strings.Join(fields[:i], ", "))
+}
+
+func _Bool_EqualsPtr(lhs, rhs *bool) bool {
+	if lhs != nil && rhs != nil {
+
+		x := *lhs
+		y := *rhs
+		return (x == y)
+	}
+	return lhs == nil && rhs == nil
+}
+
+// Equals returns true if all the fields of this CrossClusterCancelExecutionRequestAttributes match the
+// provided CrossClusterCancelExecutionRequestAttributes.
+//
+// This function performs a deep comparison.
+func (v *CrossClusterCancelExecutionRequestAttributes) Equals(rhs *CrossClusterCancelExecutionRequestAttributes) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetDomainID, rhs.TargetDomainID) {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetWorkflowID, rhs.TargetWorkflowID) {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetRunID, rhs.TargetRunID) {
+		return false
+	}
+	if !_String_EqualsPtr(v.RequestID, rhs.RequestID) {
+		return false
+	}
+	if !_I64_EqualsPtr(v.InitiatedEventID, rhs.InitiatedEventID) {
+		return false
+	}
+	if !_Bool_EqualsPtr(v.ChildWorkflowOnly, rhs.ChildWorkflowOnly) {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterCancelExecutionRequestAttributes.
+func (v *CrossClusterCancelExecutionRequestAttributes) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.TargetDomainID != nil {
+		enc.AddString("targetDomainID", *v.TargetDomainID)
+	}
+	if v.TargetWorkflowID != nil {
+		enc.AddString("targetWorkflowID", *v.TargetWorkflowID)
+	}
+	if v.TargetRunID != nil {
+		enc.AddString("targetRunID", *v.TargetRunID)
+	}
+	if v.RequestID != nil {
+		enc.AddString("requestID", *v.RequestID)
+	}
+	if v.InitiatedEventID != nil {
+		enc.AddInt64("initiatedEventID", *v.InitiatedEventID)
+	}
+	if v.ChildWorkflowOnly != nil {
+		enc.AddBool("childWorkflowOnly", *v.ChildWorkflowOnly)
+	}
+	return err
+}
+
+// GetTargetDomainID returns the value of TargetDomainID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterCancelExecutionRequestAttributes) GetTargetDomainID() (o string) {
+	if v != nil && v.TargetDomainID != nil {
+		return *v.TargetDomainID
+	}
+
+	return
+}
+
+// IsSetTargetDomainID returns true if TargetDomainID is not nil.
+func (v *CrossClusterCancelExecutionRequestAttributes) IsSetTargetDomainID() bool {
+	return v != nil && v.TargetDomainID != nil
+}
+
+// GetTargetWorkflowID returns the value of TargetWorkflowID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterCancelExecutionRequestAttributes) GetTargetWorkflowID() (o string) {
+	if v != nil && v.TargetWorkflowID != nil {
+		return *v.TargetWorkflowID
+	}
+
+	return
+}
+
+// IsSetTargetWorkflowID returns true if TargetWorkflowID is not nil.
+func (v *CrossClusterCancelExecutionRequestAttributes) IsSetTargetWorkflowID() bool {
+	return v != nil && v.TargetWorkflowID != nil
+}
+
+// GetTargetRunID returns the value of TargetRunID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterCancelExecutionRequestAttributes) GetTargetRunID() (o string) {
+	if v != nil && v.TargetRunID != nil {
+		return *v.TargetRunID
+	}
+
+	return
+}
+
+// IsSetTargetRunID returns true if TargetRunID is not nil.
+func (v *CrossClusterCancelExecutionRequestAttributes) IsSetTargetRunID() bool {
+	return v != nil && v.TargetRunID != nil
+}
+
+// GetRequestID returns the value of RequestID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterCancelExecutionRequestAttributes) GetRequestID() (o string) {
+	if v != nil && v.RequestID != nil {
+		return *v.RequestID
+	}
+
+	return
+}
+
+// IsSetRequestID returns true if RequestID is not nil.
+func (v *CrossClusterCancelExecutionRequestAttributes) IsSetRequestID() bool {
+	return v != nil && v.RequestID != nil
+}
+
+// GetInitiatedEventID returns the value of InitiatedEventID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterCancelExecutionRequestAttributes) GetInitiatedEventID() (o int64) {
+	if v != nil && v.InitiatedEventID != nil {
+		return *v.InitiatedEventID
+	}
+
+	return
+}
+
+// IsSetInitiatedEventID returns true if InitiatedEventID is not nil.
+func (v *CrossClusterCancelExecutionRequestAttributes) IsSetInitiatedEventID() bool {
+	return v != nil && v.InitiatedEventID != nil
+}
+
+// GetChildWorkflowOnly returns the value of ChildWorkflowOnly if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterCancelExecutionRequestAttributes) GetChildWorkflowOnly() (o bool) {
+	if v != nil && v.ChildWorkflowOnly != nil {
+		return *v.ChildWorkflowOnly
+	}
+
+	return
+}
+
+// IsSetChildWorkflowOnly returns true if ChildWorkflowOnly is not nil.
+func (v *CrossClusterCancelExecutionRequestAttributes) IsSetChildWorkflowOnly() bool {
+	return v != nil && v.ChildWorkflowOnly != nil
+}
+
+type CrossClusterCancelExecutionResponseAttributes struct {
+}
+
+// ToWire translates a CrossClusterCancelExecutionResponseAttributes struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *CrossClusterCancelExecutionResponseAttributes) ToWire() (wire.Value, error) {
+	var (
+		fields [0]wire.Field
+		i      int = 0
+	)
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+// FromWire deserializes a CrossClusterCancelExecutionResponseAttributes struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a CrossClusterCancelExecutionResponseAttributes struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v CrossClusterCancelExecutionResponseAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *CrossClusterCancelExecutionResponseAttributes) FromWire(w wire.Value) error {
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a CrossClusterCancelExecutionResponseAttributes
+// struct.
+func (v *CrossClusterCancelExecutionResponseAttributes) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [0]string
+	i := 0
+
+	return fmt.Sprintf("CrossClusterCancelExecutionResponseAttributes{%v}", strings.Join(fields[:i], ", "))
+}
+
+// Equals returns true if all the fields of this CrossClusterCancelExecutionResponseAttributes match the
+// provided CrossClusterCancelExecutionResponseAttributes.
+//
+// This function performs a deep comparison.
+func (v *CrossClusterCancelExecutionResponseAttributes) Equals(rhs *CrossClusterCancelExecutionResponseAttributes) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterCancelExecutionResponseAttributes.
+func (v *CrossClusterCancelExecutionResponseAttributes) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	return err
+}
+
+type CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes struct {
+	TargetDomainID   *string       `json:"targetDomainID,omitempty"`
+	TargetWorkflowID *string       `json:"targetWorkflowID,omitempty"`
+	TargetRunID      *string       `json:"targetRunID,omitempty"`
+	InitiatedEventID *int64        `json:"initiatedEventID,omitempty"`
+	CompletionEvent  *HistoryEvent `json:"completionEvent,omitempty"`
+}
+
+// ToWire translates a CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) ToWire() (wire.Value, error) {
+	var (
+		fields [5]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.TargetDomainID != nil {
+		w, err = wire.NewValueString(*(v.TargetDomainID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+	if v.TargetWorkflowID != nil {
+		w, err = wire.NewValueString(*(v.TargetWorkflowID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 20, Value: w}
+		i++
+	}
+	if v.TargetRunID != nil {
+		w, err = wire.NewValueString(*(v.TargetRunID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 30, Value: w}
+		i++
+	}
+	if v.InitiatedEventID != nil {
+		w, err = wire.NewValueI64(*(v.InitiatedEventID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 40, Value: w}
+		i++
+	}
+	if v.CompletionEvent != nil {
+		w, err = v.CompletionEvent.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 50, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+func _HistoryEvent_Read(w wire.Value) (*HistoryEvent, error) {
+	var v HistoryEvent
+	err := v.FromWire(w)
+	return &v, err
+}
+
+// FromWire deserializes a CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetDomainID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 20:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetWorkflowID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 30:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetRunID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 40:
+			if field.Value.Type() == wire.TI64 {
+				var x int64
+				x, err = field.Value.GetI64(), error(nil)
+				v.InitiatedEventID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 50:
+			if field.Value.Type() == wire.TStruct {
+				v.CompletionEvent, err = _HistoryEvent_Read(field.Value)
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes
+// struct.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [5]string
+	i := 0
+	if v.TargetDomainID != nil {
+		fields[i] = fmt.Sprintf("TargetDomainID: %v", *(v.TargetDomainID))
+		i++
+	}
+	if v.TargetWorkflowID != nil {
+		fields[i] = fmt.Sprintf("TargetWorkflowID: %v", *(v.TargetWorkflowID))
+		i++
+	}
+	if v.TargetRunID != nil {
+		fields[i] = fmt.Sprintf("TargetRunID: %v", *(v.TargetRunID))
+		i++
+	}
+	if v.InitiatedEventID != nil {
+		fields[i] = fmt.Sprintf("InitiatedEventID: %v", *(v.InitiatedEventID))
+		i++
+	}
+	if v.CompletionEvent != nil {
+		fields[i] = fmt.Sprintf("CompletionEvent: %v", v.CompletionEvent)
+		i++
+	}
+
+	return fmt.Sprintf("CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes{%v}", strings.Join(fields[:i], ", "))
+}
+
+// Equals returns true if all the fields of this CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes match the
+// provided CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes.
+//
+// This function performs a deep comparison.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) Equals(rhs *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetDomainID, rhs.TargetDomainID) {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetWorkflowID, rhs.TargetWorkflowID) {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetRunID, rhs.TargetRunID) {
+		return false
+	}
+	if !_I64_EqualsPtr(v.InitiatedEventID, rhs.InitiatedEventID) {
+		return false
+	}
+	if !((v.CompletionEvent == nil && rhs.CompletionEvent == nil) || (v.CompletionEvent != nil && rhs.CompletionEvent != nil && v.CompletionEvent.Equals(rhs.CompletionEvent))) {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.TargetDomainID != nil {
+		enc.AddString("targetDomainID", *v.TargetDomainID)
+	}
+	if v.TargetWorkflowID != nil {
+		enc.AddString("targetWorkflowID", *v.TargetWorkflowID)
+	}
+	if v.TargetRunID != nil {
+		enc.AddString("targetRunID", *v.TargetRunID)
+	}
+	if v.InitiatedEventID != nil {
+		enc.AddInt64("initiatedEventID", *v.InitiatedEventID)
+	}
+	if v.CompletionEvent != nil {
+		err = multierr.Append(err, enc.AddObject("completionEvent", v.CompletionEvent))
+	}
+	return err
+}
+
+// GetTargetDomainID returns the value of TargetDomainID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) GetTargetDomainID() (o string) {
+	if v != nil && v.TargetDomainID != nil {
+		return *v.TargetDomainID
+	}
+
+	return
+}
+
+// IsSetTargetDomainID returns true if TargetDomainID is not nil.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) IsSetTargetDomainID() bool {
+	return v != nil && v.TargetDomainID != nil
+}
+
+// GetTargetWorkflowID returns the value of TargetWorkflowID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) GetTargetWorkflowID() (o string) {
+	if v != nil && v.TargetWorkflowID != nil {
+		return *v.TargetWorkflowID
+	}
+
+	return
+}
+
+// IsSetTargetWorkflowID returns true if TargetWorkflowID is not nil.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) IsSetTargetWorkflowID() bool {
+	return v != nil && v.TargetWorkflowID != nil
+}
+
+// GetTargetRunID returns the value of TargetRunID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) GetTargetRunID() (o string) {
+	if v != nil && v.TargetRunID != nil {
+		return *v.TargetRunID
+	}
+
+	return
+}
+
+// IsSetTargetRunID returns true if TargetRunID is not nil.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) IsSetTargetRunID() bool {
+	return v != nil && v.TargetRunID != nil
+}
+
+// GetInitiatedEventID returns the value of InitiatedEventID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) GetInitiatedEventID() (o int64) {
+	if v != nil && v.InitiatedEventID != nil {
+		return *v.InitiatedEventID
+	}
+
+	return
+}
+
+// IsSetInitiatedEventID returns true if InitiatedEventID is not nil.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) IsSetInitiatedEventID() bool {
+	return v != nil && v.InitiatedEventID != nil
+}
+
+// GetCompletionEvent returns the value of CompletionEvent if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) GetCompletionEvent() (o *HistoryEvent) {
+	if v != nil && v.CompletionEvent != nil {
+		return v.CompletionEvent
+	}
+
+	return
+}
+
+// IsSetCompletionEvent returns true if CompletionEvent is not nil.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) IsSetCompletionEvent() bool {
+	return v != nil && v.CompletionEvent != nil
+}
+
+type CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes struct {
+}
+
+// ToWire translates a CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes) ToWire() (wire.Value, error) {
+	var (
+		fields [0]wire.Field
+		i      int = 0
+	)
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+// FromWire deserializes a CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes) FromWire(w wire.Value) error {
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes
+// struct.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [0]string
+	i := 0
+
+	return fmt.Sprintf("CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes{%v}", strings.Join(fields[:i], ", "))
+}
+
+// Equals returns true if all the fields of this CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes match the
+// provided CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes.
+//
+// This function performs a deep comparison.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes) Equals(rhs *CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes.
+func (v *CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	return err
+}
+
+type CrossClusterSignalExecutionRequestAttributes struct {
+	TargetDomainID    *string `json:"targetDomainID,omitempty"`
+	TargetWorkflowID  *string `json:"targetWorkflowID,omitempty"`
+	TargetRunID       *string `json:"targetRunID,omitempty"`
+	RequestID         *string `json:"requestID,omitempty"`
+	InitiatedEventID  *int64  `json:"initiatedEventID,omitempty"`
+	ChildWorkflowOnly *bool   `json:"childWorkflowOnly,omitempty"`
+	SignalName        *string `json:"signalName,omitempty"`
+	SignalInput       []byte  `json:"signalInput,omitempty"`
+	Control           []byte  `json:"control,omitempty"`
+}
+
+// ToWire translates a CrossClusterSignalExecutionRequestAttributes struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *CrossClusterSignalExecutionRequestAttributes) ToWire() (wire.Value, error) {
+	var (
+		fields [9]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.TargetDomainID != nil {
+		w, err = wire.NewValueString(*(v.TargetDomainID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+	if v.TargetWorkflowID != nil {
+		w, err = wire.NewValueString(*(v.TargetWorkflowID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 20, Value: w}
+		i++
+	}
+	if v.TargetRunID != nil {
+		w, err = wire.NewValueString(*(v.TargetRunID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 30, Value: w}
+		i++
+	}
+	if v.RequestID != nil {
+		w, err = wire.NewValueString(*(v.RequestID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 40, Value: w}
+		i++
+	}
+	if v.InitiatedEventID != nil {
+		w, err = wire.NewValueI64(*(v.InitiatedEventID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 50, Value: w}
+		i++
+	}
+	if v.ChildWorkflowOnly != nil {
+		w, err = wire.NewValueBool(*(v.ChildWorkflowOnly)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 60, Value: w}
+		i++
+	}
+	if v.SignalName != nil {
+		w, err = wire.NewValueString(*(v.SignalName)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 70, Value: w}
+		i++
+	}
+	if v.SignalInput != nil {
+		w, err = wire.NewValueBinary(v.SignalInput), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 80, Value: w}
+		i++
+	}
+	if v.Control != nil {
+		w, err = wire.NewValueBinary(v.Control), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 90, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+// FromWire deserializes a CrossClusterSignalExecutionRequestAttributes struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a CrossClusterSignalExecutionRequestAttributes struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v CrossClusterSignalExecutionRequestAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *CrossClusterSignalExecutionRequestAttributes) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetDomainID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 20:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetWorkflowID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 30:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetRunID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 40:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.RequestID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 50:
+			if field.Value.Type() == wire.TI64 {
+				var x int64
+				x, err = field.Value.GetI64(), error(nil)
+				v.InitiatedEventID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 60:
+			if field.Value.Type() == wire.TBool {
+				var x bool
+				x, err = field.Value.GetBool(), error(nil)
+				v.ChildWorkflowOnly = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 70:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.SignalName = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 80:
+			if field.Value.Type() == wire.TBinary {
+				v.SignalInput, err = field.Value.GetBinary(), error(nil)
+				if err != nil {
+					return err
+				}
+
+			}
+		case 90:
+			if field.Value.Type() == wire.TBinary {
+				v.Control, err = field.Value.GetBinary(), error(nil)
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a CrossClusterSignalExecutionRequestAttributes
+// struct.
+func (v *CrossClusterSignalExecutionRequestAttributes) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [9]string
+	i := 0
+	if v.TargetDomainID != nil {
+		fields[i] = fmt.Sprintf("TargetDomainID: %v", *(v.TargetDomainID))
+		i++
+	}
+	if v.TargetWorkflowID != nil {
+		fields[i] = fmt.Sprintf("TargetWorkflowID: %v", *(v.TargetWorkflowID))
+		i++
+	}
+	if v.TargetRunID != nil {
+		fields[i] = fmt.Sprintf("TargetRunID: %v", *(v.TargetRunID))
+		i++
+	}
+	if v.RequestID != nil {
+		fields[i] = fmt.Sprintf("RequestID: %v", *(v.RequestID))
+		i++
+	}
+	if v.InitiatedEventID != nil {
+		fields[i] = fmt.Sprintf("InitiatedEventID: %v", *(v.InitiatedEventID))
+		i++
+	}
+	if v.ChildWorkflowOnly != nil {
+		fields[i] = fmt.Sprintf("ChildWorkflowOnly: %v", *(v.ChildWorkflowOnly))
+		i++
+	}
+	if v.SignalName != nil {
+		fields[i] = fmt.Sprintf("SignalName: %v", *(v.SignalName))
+		i++
+	}
+	if v.SignalInput != nil {
+		fields[i] = fmt.Sprintf("SignalInput: %v", v.SignalInput)
+		i++
+	}
+	if v.Control != nil {
+		fields[i] = fmt.Sprintf("Control: %v", v.Control)
+		i++
+	}
+
+	return fmt.Sprintf("CrossClusterSignalExecutionRequestAttributes{%v}", strings.Join(fields[:i], ", "))
+}
+
+// Equals returns true if all the fields of this CrossClusterSignalExecutionRequestAttributes match the
+// provided CrossClusterSignalExecutionRequestAttributes.
+//
+// This function performs a deep comparison.
+func (v *CrossClusterSignalExecutionRequestAttributes) Equals(rhs *CrossClusterSignalExecutionRequestAttributes) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetDomainID, rhs.TargetDomainID) {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetWorkflowID, rhs.TargetWorkflowID) {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetRunID, rhs.TargetRunID) {
+		return false
+	}
+	if !_String_EqualsPtr(v.RequestID, rhs.RequestID) {
+		return false
+	}
+	if !_I64_EqualsPtr(v.InitiatedEventID, rhs.InitiatedEventID) {
+		return false
+	}
+	if !_Bool_EqualsPtr(v.ChildWorkflowOnly, rhs.ChildWorkflowOnly) {
+		return false
+	}
+	if !_String_EqualsPtr(v.SignalName, rhs.SignalName) {
+		return false
+	}
+	if !((v.SignalInput == nil && rhs.SignalInput == nil) || (v.SignalInput != nil && rhs.SignalInput != nil && bytes.Equal(v.SignalInput, rhs.SignalInput))) {
+		return false
+	}
+	if !((v.Control == nil && rhs.Control == nil) || (v.Control != nil && rhs.Control != nil && bytes.Equal(v.Control, rhs.Control))) {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterSignalExecutionRequestAttributes.
+func (v *CrossClusterSignalExecutionRequestAttributes) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.TargetDomainID != nil {
+		enc.AddString("targetDomainID", *v.TargetDomainID)
+	}
+	if v.TargetWorkflowID != nil {
+		enc.AddString("targetWorkflowID", *v.TargetWorkflowID)
+	}
+	if v.TargetRunID != nil {
+		enc.AddString("targetRunID", *v.TargetRunID)
+	}
+	if v.RequestID != nil {
+		enc.AddString("requestID", *v.RequestID)
+	}
+	if v.InitiatedEventID != nil {
+		enc.AddInt64("initiatedEventID", *v.InitiatedEventID)
+	}
+	if v.ChildWorkflowOnly != nil {
+		enc.AddBool("childWorkflowOnly", *v.ChildWorkflowOnly)
+	}
+	if v.SignalName != nil {
+		enc.AddString("signalName", *v.SignalName)
+	}
+	if v.SignalInput != nil {
+		enc.AddString("signalInput", base64.StdEncoding.EncodeToString(v.SignalInput))
+	}
+	if v.Control != nil {
+		enc.AddString("control", base64.StdEncoding.EncodeToString(v.Control))
+	}
+	return err
+}
+
+// GetTargetDomainID returns the value of TargetDomainID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterSignalExecutionRequestAttributes) GetTargetDomainID() (o string) {
+	if v != nil && v.TargetDomainID != nil {
+		return *v.TargetDomainID
+	}
+
+	return
+}
+
+// IsSetTargetDomainID returns true if TargetDomainID is not nil.
+func (v *CrossClusterSignalExecutionRequestAttributes) IsSetTargetDomainID() bool {
+	return v != nil && v.TargetDomainID != nil
+}
+
+// GetTargetWorkflowID returns the value of TargetWorkflowID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterSignalExecutionRequestAttributes) GetTargetWorkflowID() (o string) {
+	if v != nil && v.TargetWorkflowID != nil {
+		return *v.TargetWorkflowID
+	}
+
+	return
+}
+
+// IsSetTargetWorkflowID returns true if TargetWorkflowID is not nil.
+func (v *CrossClusterSignalExecutionRequestAttributes) IsSetTargetWorkflowID() bool {
+	return v != nil && v.TargetWorkflowID != nil
+}
+
+// GetTargetRunID returns the value of TargetRunID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterSignalExecutionRequestAttributes) GetTargetRunID() (o string) {
+	if v != nil && v.TargetRunID != nil {
+		return *v.TargetRunID
+	}
+
+	return
+}
+
+// IsSetTargetRunID returns true if TargetRunID is not nil.
+func (v *CrossClusterSignalExecutionRequestAttributes) IsSetTargetRunID() bool {
+	return v != nil && v.TargetRunID != nil
+}
+
+// GetRequestID returns the value of RequestID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterSignalExecutionRequestAttributes) GetRequestID() (o string) {
+	if v != nil && v.RequestID != nil {
+		return *v.RequestID
+	}
+
+	return
+}
+
+// IsSetRequestID returns true if RequestID is not nil.
+func (v *CrossClusterSignalExecutionRequestAttributes) IsSetRequestID() bool {
+	return v != nil && v.RequestID != nil
+}
+
+// GetInitiatedEventID returns the value of InitiatedEventID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterSignalExecutionRequestAttributes) GetInitiatedEventID() (o int64) {
+	if v != nil && v.InitiatedEventID != nil {
+		return *v.InitiatedEventID
+	}
+
+	return
+}
+
+// IsSetInitiatedEventID returns true if InitiatedEventID is not nil.
+func (v *CrossClusterSignalExecutionRequestAttributes) IsSetInitiatedEventID() bool {
+	return v != nil && v.InitiatedEventID != nil
+}
+
+// GetChildWorkflowOnly returns the value of ChildWorkflowOnly if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterSignalExecutionRequestAttributes) GetChildWorkflowOnly() (o bool) {
+	if v != nil && v.ChildWorkflowOnly != nil {
+		return *v.ChildWorkflowOnly
+	}
+
+	return
+}
+
+// IsSetChildWorkflowOnly returns true if ChildWorkflowOnly is not nil.
+func (v *CrossClusterSignalExecutionRequestAttributes) IsSetChildWorkflowOnly() bool {
+	return v != nil && v.ChildWorkflowOnly != nil
+}
+
+// GetSignalName returns the value of SignalName if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterSignalExecutionRequestAttributes) GetSignalName() (o string) {
+	if v != nil && v.SignalName != nil {
+		return *v.SignalName
+	}
+
+	return
+}
+
+// IsSetSignalName returns true if SignalName is not nil.
+func (v *CrossClusterSignalExecutionRequestAttributes) IsSetSignalName() bool {
+	return v != nil && v.SignalName != nil
+}
+
+// GetSignalInput returns the value of SignalInput if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterSignalExecutionRequestAttributes) GetSignalInput() (o []byte) {
+	if v != nil && v.SignalInput != nil {
+		return v.SignalInput
+	}
+
+	return
+}
+
+// IsSetSignalInput returns true if SignalInput is not nil.
+func (v *CrossClusterSignalExecutionRequestAttributes) IsSetSignalInput() bool {
+	return v != nil && v.SignalInput != nil
+}
+
+// GetControl returns the value of Control if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterSignalExecutionRequestAttributes) GetControl() (o []byte) {
+	if v != nil && v.Control != nil {
+		return v.Control
+	}
+
+	return
+}
+
+// IsSetControl returns true if Control is not nil.
+func (v *CrossClusterSignalExecutionRequestAttributes) IsSetControl() bool {
+	return v != nil && v.Control != nil
+}
+
+type CrossClusterSignalExecutionResponseAttributes struct {
+}
+
+// ToWire translates a CrossClusterSignalExecutionResponseAttributes struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *CrossClusterSignalExecutionResponseAttributes) ToWire() (wire.Value, error) {
+	var (
+		fields [0]wire.Field
+		i      int = 0
+	)
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+// FromWire deserializes a CrossClusterSignalExecutionResponseAttributes struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a CrossClusterSignalExecutionResponseAttributes struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v CrossClusterSignalExecutionResponseAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *CrossClusterSignalExecutionResponseAttributes) FromWire(w wire.Value) error {
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a CrossClusterSignalExecutionResponseAttributes
+// struct.
+func (v *CrossClusterSignalExecutionResponseAttributes) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [0]string
+	i := 0
+
+	return fmt.Sprintf("CrossClusterSignalExecutionResponseAttributes{%v}", strings.Join(fields[:i], ", "))
+}
+
+// Equals returns true if all the fields of this CrossClusterSignalExecutionResponseAttributes match the
+// provided CrossClusterSignalExecutionResponseAttributes.
+//
+// This function performs a deep comparison.
+func (v *CrossClusterSignalExecutionResponseAttributes) Equals(rhs *CrossClusterSignalExecutionResponseAttributes) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterSignalExecutionResponseAttributes.
+func (v *CrossClusterSignalExecutionResponseAttributes) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	return err
+}
+
+type CrossClusterStartChildExecutionRequestAttributes struct {
+	TargetDomainID           *string                                              `json:"targetDomainID,omitempty"`
+	RequestID                *string                                              `json:"requestID,omitempty"`
+	InitiatedEventID         *int64                                               `json:"initiatedEventID,omitempty"`
+	InitiatedEventAttributes *StartChildWorkflowExecutionInitiatedEventAttributes `json:"initiatedEventAttributes,omitempty"`
+	TargetRunID              *string                                              `json:"targetRunID,omitempty"`
+}
+
+// ToWire translates a CrossClusterStartChildExecutionRequestAttributes struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *CrossClusterStartChildExecutionRequestAttributes) ToWire() (wire.Value, error) {
+	var (
+		fields [5]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.TargetDomainID != nil {
+		w, err = wire.NewValueString(*(v.TargetDomainID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+	if v.RequestID != nil {
+		w, err = wire.NewValueString(*(v.RequestID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 20, Value: w}
+		i++
+	}
+	if v.InitiatedEventID != nil {
+		w, err = wire.NewValueI64(*(v.InitiatedEventID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 30, Value: w}
+		i++
+	}
+	if v.InitiatedEventAttributes != nil {
+		w, err = v.InitiatedEventAttributes.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 40, Value: w}
+		i++
+	}
+	if v.TargetRunID != nil {
+		w, err = wire.NewValueString(*(v.TargetRunID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 50, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+func _StartChildWorkflowExecutionInitiatedEventAttributes_Read(w wire.Value) (*StartChildWorkflowExecutionInitiatedEventAttributes, error) {
+	var v StartChildWorkflowExecutionInitiatedEventAttributes
+	err := v.FromWire(w)
+	return &v, err
+}
+
+// FromWire deserializes a CrossClusterStartChildExecutionRequestAttributes struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a CrossClusterStartChildExecutionRequestAttributes struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v CrossClusterStartChildExecutionRequestAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *CrossClusterStartChildExecutionRequestAttributes) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetDomainID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 20:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.RequestID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 30:
+			if field.Value.Type() == wire.TI64 {
+				var x int64
+				x, err = field.Value.GetI64(), error(nil)
+				v.InitiatedEventID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 40:
+			if field.Value.Type() == wire.TStruct {
+				v.InitiatedEventAttributes, err = _StartChildWorkflowExecutionInitiatedEventAttributes_Read(field.Value)
+				if err != nil {
+					return err
+				}
+
+			}
+		case 50:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetRunID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a CrossClusterStartChildExecutionRequestAttributes
+// struct.
+func (v *CrossClusterStartChildExecutionRequestAttributes) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [5]string
+	i := 0
+	if v.TargetDomainID != nil {
+		fields[i] = fmt.Sprintf("TargetDomainID: %v", *(v.TargetDomainID))
+		i++
+	}
+	if v.RequestID != nil {
+		fields[i] = fmt.Sprintf("RequestID: %v", *(v.RequestID))
+		i++
+	}
+	if v.InitiatedEventID != nil {
+		fields[i] = fmt.Sprintf("InitiatedEventID: %v", *(v.InitiatedEventID))
+		i++
+	}
+	if v.InitiatedEventAttributes != nil {
+		fields[i] = fmt.Sprintf("InitiatedEventAttributes: %v", v.InitiatedEventAttributes)
+		i++
+	}
+	if v.TargetRunID != nil {
+		fields[i] = fmt.Sprintf("TargetRunID: %v", *(v.TargetRunID))
+		i++
+	}
+
+	return fmt.Sprintf("CrossClusterStartChildExecutionRequestAttributes{%v}", strings.Join(fields[:i], ", "))
+}
+
+// Equals returns true if all the fields of this CrossClusterStartChildExecutionRequestAttributes match the
+// provided CrossClusterStartChildExecutionRequestAttributes.
+//
+// This function performs a deep comparison.
+func (v *CrossClusterStartChildExecutionRequestAttributes) Equals(rhs *CrossClusterStartChildExecutionRequestAttributes) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetDomainID, rhs.TargetDomainID) {
+		return false
+	}
+	if !_String_EqualsPtr(v.RequestID, rhs.RequestID) {
+		return false
+	}
+	if !_I64_EqualsPtr(v.InitiatedEventID, rhs.InitiatedEventID) {
+		return false
+	}
+	if !((v.InitiatedEventAttributes == nil && rhs.InitiatedEventAttributes == nil) || (v.InitiatedEventAttributes != nil && rhs.InitiatedEventAttributes != nil && v.InitiatedEventAttributes.Equals(rhs.InitiatedEventAttributes))) {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetRunID, rhs.TargetRunID) {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterStartChildExecutionRequestAttributes.
+func (v *CrossClusterStartChildExecutionRequestAttributes) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.TargetDomainID != nil {
+		enc.AddString("targetDomainID", *v.TargetDomainID)
+	}
+	if v.RequestID != nil {
+		enc.AddString("requestID", *v.RequestID)
+	}
+	if v.InitiatedEventID != nil {
+		enc.AddInt64("initiatedEventID", *v.InitiatedEventID)
+	}
+	if v.InitiatedEventAttributes != nil {
+		err = multierr.Append(err, enc.AddObject("initiatedEventAttributes", v.InitiatedEventAttributes))
+	}
+	if v.TargetRunID != nil {
+		enc.AddString("targetRunID", *v.TargetRunID)
+	}
+	return err
+}
+
+// GetTargetDomainID returns the value of TargetDomainID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterStartChildExecutionRequestAttributes) GetTargetDomainID() (o string) {
+	if v != nil && v.TargetDomainID != nil {
+		return *v.TargetDomainID
+	}
+
+	return
+}
+
+// IsSetTargetDomainID returns true if TargetDomainID is not nil.
+func (v *CrossClusterStartChildExecutionRequestAttributes) IsSetTargetDomainID() bool {
+	return v != nil && v.TargetDomainID != nil
+}
+
+// GetRequestID returns the value of RequestID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterStartChildExecutionRequestAttributes) GetRequestID() (o string) {
+	if v != nil && v.RequestID != nil {
+		return *v.RequestID
+	}
+
+	return
+}
+
+// IsSetRequestID returns true if RequestID is not nil.
+func (v *CrossClusterStartChildExecutionRequestAttributes) IsSetRequestID() bool {
+	return v != nil && v.RequestID != nil
+}
+
+// GetInitiatedEventID returns the value of InitiatedEventID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterStartChildExecutionRequestAttributes) GetInitiatedEventID() (o int64) {
+	if v != nil && v.InitiatedEventID != nil {
+		return *v.InitiatedEventID
+	}
+
+	return
+}
+
+// IsSetInitiatedEventID returns true if InitiatedEventID is not nil.
+func (v *CrossClusterStartChildExecutionRequestAttributes) IsSetInitiatedEventID() bool {
+	return v != nil && v.InitiatedEventID != nil
+}
+
+// GetInitiatedEventAttributes returns the value of InitiatedEventAttributes if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterStartChildExecutionRequestAttributes) GetInitiatedEventAttributes() (o *StartChildWorkflowExecutionInitiatedEventAttributes) {
+	if v != nil && v.InitiatedEventAttributes != nil {
+		return v.InitiatedEventAttributes
+	}
+
+	return
+}
+
+// IsSetInitiatedEventAttributes returns true if InitiatedEventAttributes is not nil.
+func (v *CrossClusterStartChildExecutionRequestAttributes) IsSetInitiatedEventAttributes() bool {
+	return v != nil && v.InitiatedEventAttributes != nil
+}
+
+// GetTargetRunID returns the value of TargetRunID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterStartChildExecutionRequestAttributes) GetTargetRunID() (o string) {
+	if v != nil && v.TargetRunID != nil {
+		return *v.TargetRunID
+	}
+
+	return
+}
+
+// IsSetTargetRunID returns true if TargetRunID is not nil.
+func (v *CrossClusterStartChildExecutionRequestAttributes) IsSetTargetRunID() bool {
+	return v != nil && v.TargetRunID != nil
+}
+
+type CrossClusterStartChildExecutionResponseAttributes struct {
+	RunID *string `json:"runID,omitempty"`
+}
+
+// ToWire translates a CrossClusterStartChildExecutionResponseAttributes struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *CrossClusterStartChildExecutionResponseAttributes) ToWire() (wire.Value, error) {
+	var (
+		fields [1]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.RunID != nil {
+		w, err = wire.NewValueString(*(v.RunID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+// FromWire deserializes a CrossClusterStartChildExecutionResponseAttributes struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a CrossClusterStartChildExecutionResponseAttributes struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v CrossClusterStartChildExecutionResponseAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *CrossClusterStartChildExecutionResponseAttributes) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.RunID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a CrossClusterStartChildExecutionResponseAttributes
+// struct.
+func (v *CrossClusterStartChildExecutionResponseAttributes) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [1]string
+	i := 0
+	if v.RunID != nil {
+		fields[i] = fmt.Sprintf("RunID: %v", *(v.RunID))
+		i++
+	}
+
+	return fmt.Sprintf("CrossClusterStartChildExecutionResponseAttributes{%v}", strings.Join(fields[:i], ", "))
+}
+
+// Equals returns true if all the fields of this CrossClusterStartChildExecutionResponseAttributes match the
+// provided CrossClusterStartChildExecutionResponseAttributes.
+//
+// This function performs a deep comparison.
+func (v *CrossClusterStartChildExecutionResponseAttributes) Equals(rhs *CrossClusterStartChildExecutionResponseAttributes) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !_String_EqualsPtr(v.RunID, rhs.RunID) {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterStartChildExecutionResponseAttributes.
+func (v *CrossClusterStartChildExecutionResponseAttributes) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.RunID != nil {
+		enc.AddString("runID", *v.RunID)
+	}
+	return err
+}
+
+// GetRunID returns the value of RunID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterStartChildExecutionResponseAttributes) GetRunID() (o string) {
+	if v != nil && v.RunID != nil {
+		return *v.RunID
+	}
+
+	return
+}
+
+// IsSetRunID returns true if RunID is not nil.
+func (v *CrossClusterStartChildExecutionResponseAttributes) IsSetRunID() bool {
+	return v != nil && v.RunID != nil
+}
+
+type CrossClusterTaskFailedCause int32
+
+const (
+	CrossClusterTaskFailedCauseDomainNotActive          CrossClusterTaskFailedCause = 0
+	CrossClusterTaskFailedCauseDomainNotExists          CrossClusterTaskFailedCause = 1
+	CrossClusterTaskFailedCauseWorkflowAlreadyRunning   CrossClusterTaskFailedCause = 2
+	CrossClusterTaskFailedCauseWorkflowNotExists        CrossClusterTaskFailedCause = 3
+	CrossClusterTaskFailedCauseWorkflowAlreadyCompleted CrossClusterTaskFailedCause = 4
+	CrossClusterTaskFailedCauseUncategorized            CrossClusterTaskFailedCause = 5
+)
+
+// CrossClusterTaskFailedCause_Values returns all recognized values of CrossClusterTaskFailedCause.
+func CrossClusterTaskFailedCause_Values() []CrossClusterTaskFailedCause {
+	return []CrossClusterTaskFailedCause{
+		CrossClusterTaskFailedCauseDomainNotActive,
+		CrossClusterTaskFailedCauseDomainNotExists,
+		CrossClusterTaskFailedCauseWorkflowAlreadyRunning,
+		CrossClusterTaskFailedCauseWorkflowNotExists,
+		CrossClusterTaskFailedCauseWorkflowAlreadyCompleted,
+		CrossClusterTaskFailedCauseUncategorized,
+	}
+}
+
+// UnmarshalText tries to decode CrossClusterTaskFailedCause from a byte slice
+// containing its name.
+//
+//	var v CrossClusterTaskFailedCause
+//	err := v.UnmarshalText([]byte("DOMAIN_NOT_ACTIVE"))
+func (v *CrossClusterTaskFailedCause) UnmarshalText(value []byte) error {
+	switch s := string(value); s {
+	case "DOMAIN_NOT_ACTIVE":
+		*v = CrossClusterTaskFailedCauseDomainNotActive
+		return nil
+	case "DOMAIN_NOT_EXISTS":
+		*v = CrossClusterTaskFailedCauseDomainNotExists
+		return nil
+	case "WORKFLOW_ALREADY_RUNNING":
+		*v = CrossClusterTaskFailedCauseWorkflowAlreadyRunning
+		return nil
+	case "WORKFLOW_NOT_EXISTS":
+		*v = CrossClusterTaskFailedCauseWorkflowNotExists
+		return nil
+	case "WORKFLOW_ALREADY_COMPLETED":
+		*v = CrossClusterTaskFailedCauseWorkflowAlreadyCompleted
+		return nil
+	case "UNCATEGORIZED":
+		*v = CrossClusterTaskFailedCauseUncategorized
+		return nil
+	default:
+		val, err := strconv.ParseInt(s, 10, 32)
+		if err != nil {
+			return fmt.Errorf("unknown enum value %q for %q: %v", s, "CrossClusterTaskFailedCause", err)
+		}
+		*v = CrossClusterTaskFailedCause(val)
+		return nil
+	}
+}
+
+// MarshalText encodes CrossClusterTaskFailedCause to text.
+//
+// If the enum value is recognized, its name is returned. Otherwise,
+// its integer value is returned.
+//
+// This implements the TextMarshaler interface.
+func (v CrossClusterTaskFailedCause) MarshalText() ([]byte, error) {
+	switch int32(v) {
+	case 0:
+		return []byte("DOMAIN_NOT_ACTIVE"), nil
+	case 1:
+		return []byte("DOMAIN_NOT_EXISTS"), nil
+	case 2:
+		return []byte("WORKFLOW_ALREADY_RUNNING"), nil
+	case 3:
+		return []byte("WORKFLOW_NOT_EXISTS"), nil
+	case 4:
+		return []byte("WORKFLOW_ALREADY_COMPLETED"), nil
+	case 5:
+		return []byte("UNCATEGORIZED"), nil
+	}
+	return []byte(strconv.FormatInt(int64(v), 10)), nil
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterTaskFailedCause.
+// Enums are logged as objects, where the value is logged with key "value", and
+// if this value's name is known, the name is logged with key "name".
+func (v CrossClusterTaskFailedCause) MarshalLogObject(enc zapcore.ObjectEncoder) error {
+	enc.AddInt32("value", int32(v))
+	switch int32(v) {
+	case 0:
+		enc.AddString("name", "DOMAIN_NOT_ACTIVE")
+	case 1:
+		enc.AddString("name", "DOMAIN_NOT_EXISTS")
+	case 2:
+		enc.AddString("name", "WORKFLOW_ALREADY_RUNNING")
+	case 3:
+		enc.AddString("name", "WORKFLOW_NOT_EXISTS")
+	case 4:
+		enc.AddString("name", "WORKFLOW_ALREADY_COMPLETED")
+	case 5:
+		enc.AddString("name", "UNCATEGORIZED")
+	}
+	return nil
+}
+
+// Ptr returns a pointer to this enum value.
+func (v CrossClusterTaskFailedCause) Ptr() *CrossClusterTaskFailedCause {
+	return &v
+}
+
+// ToWire translates CrossClusterTaskFailedCause into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// Enums are represented as 32-bit integers over the wire.
+func (v CrossClusterTaskFailedCause) ToWire() (wire.Value, error) {
+	return wire.NewValueI32(int32(v)), nil
+}
+
+// FromWire deserializes CrossClusterTaskFailedCause from its Thrift-level
+// representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return CrossClusterTaskFailedCause(0), err
+//	}
+//
+//	var v CrossClusterTaskFailedCause
+//	if err := v.FromWire(x); err != nil {
+//	  return CrossClusterTaskFailedCause(0), err
+//	}
+//	return v, nil
+func (v *CrossClusterTaskFailedCause) FromWire(w wire.Value) error {
+	*v = (CrossClusterTaskFailedCause)(w.GetI32())
+	return nil
+}
+
+// String returns a readable string representation of CrossClusterTaskFailedCause.
+func (v CrossClusterTaskFailedCause) String() string {
+	w := int32(v)
+	switch w {
+	case 0:
+		return "DOMAIN_NOT_ACTIVE"
+	case 1:
+		return "DOMAIN_NOT_EXISTS"
+	case 2:
+		return "WORKFLOW_ALREADY_RUNNING"
+	case 3:
+		return "WORKFLOW_NOT_EXISTS"
+	case 4:
+		return "WORKFLOW_ALREADY_COMPLETED"
+	case 5:
+		return "UNCATEGORIZED"
+	}
+	return fmt.Sprintf("CrossClusterTaskFailedCause(%d)", w)
+}
+
+// Equals returns true if this CrossClusterTaskFailedCause value matches the provided
+// value.
+func (v CrossClusterTaskFailedCause) Equals(rhs CrossClusterTaskFailedCause) bool {
+	return v == rhs
+}
+
+// MarshalJSON serializes CrossClusterTaskFailedCause into JSON.
+//
+// If the enum value is recognized, its name is returned. Otherwise,
+// its integer value is returned.
+//
+// This implements json.Marshaler.
+func (v CrossClusterTaskFailedCause) MarshalJSON() ([]byte, error) {
+	switch int32(v) {
+	case 0:
+		return ([]byte)("\"DOMAIN_NOT_ACTIVE\""), nil
+	case 1:
+		return ([]byte)("\"DOMAIN_NOT_EXISTS\""), nil
+	case 2:
+		return ([]byte)("\"WORKFLOW_ALREADY_RUNNING\""), nil
+	case 3:
+		return ([]byte)("\"WORKFLOW_NOT_EXISTS\""), nil
+	case 4:
+		return ([]byte)("\"WORKFLOW_ALREADY_COMPLETED\""), nil
+	case 5:
+		return ([]byte)("\"UNCATEGORIZED\""), nil
+	}
+	return ([]byte)(strconv.FormatInt(int64(v), 10)), nil
+}
+
+// UnmarshalJSON attempts to decode CrossClusterTaskFailedCause from its JSON
+// representation.
+//
+// This implementation supports both, numeric and string inputs. If a
+// string is provided, it must be a known enum name.
+//
+// This implements json.Unmarshaler.
+func (v *CrossClusterTaskFailedCause) UnmarshalJSON(text []byte) error {
+	d := json.NewDecoder(bytes.NewReader(text))
+	d.UseNumber()
+	t, err := d.Token()
+	if err != nil {
+		return err
+	}
+
+	switch w := t.(type) {
+	case json.Number:
+		x, err := w.Int64()
+		if err != nil {
+			return err
+		}
+		if x > math.MaxInt32 {
+			return fmt.Errorf("enum overflow from JSON %q for %q", text, "CrossClusterTaskFailedCause")
+		}
+		if x < math.MinInt32 {
+			return fmt.Errorf("enum underflow from JSON %q for %q", text, "CrossClusterTaskFailedCause")
+		}
+		*v = (CrossClusterTaskFailedCause)(x)
+		return nil
+	case string:
+		return v.UnmarshalText([]byte(w))
+	default:
+		return fmt.Errorf("invalid JSON value %q (%T) to unmarshal into %q", t, t, "CrossClusterTaskFailedCause")
+	}
+}
+
+type CrossClusterTaskInfo struct {
+	DomainID            *string               `json:"domainID,omitempty"`
+	WorkflowID          *string               `json:"workflowID,omitempty"`
+	RunID               *string               `json:"runID,omitempty"`
+	TaskType            *CrossClusterTaskType `json:"taskType,omitempty"`
+	TaskState           *int16                `json:"taskState,omitempty"`
+	TaskID              *int64                `json:"taskID,omitempty"`
+	VisibilityTimestamp *int64                `json:"visibilityTimestamp,omitempty"`
+}
+
+// ToWire translates a CrossClusterTaskInfo struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *CrossClusterTaskInfo) ToWire() (wire.Value, error) {
+	var (
+		fields [7]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.DomainID != nil {
+		w, err = wire.NewValueString(*(v.DomainID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+	if v.WorkflowID != nil {
+		w, err = wire.NewValueString(*(v.WorkflowID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 20, Value: w}
+		i++
+	}
+	if v.RunID != nil {
+		w, err = wire.NewValueString(*(v.RunID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 30, Value: w}
+		i++
+	}
+	if v.TaskType != nil {
+		w, err = v.TaskType.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 40, Value: w}
+		i++
+	}
+	if v.TaskState != nil {
+		w, err = wire.NewValueI16(*(v.TaskState)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 50, Value: w}
+		i++
+	}
+	if v.TaskID != nil {
+		w, err = wire.NewValueI64(*(v.TaskID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 60, Value: w}
+		i++
+	}
+	if v.VisibilityTimestamp != nil {
+		w, err = wire.NewValueI64(*(v.VisibilityTimestamp)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 70, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+func _CrossClusterTaskType_Read(w wire.Value) (CrossClusterTaskType, error) {
+	var v CrossClusterTaskType
+	err := v.FromWire(w)
+	return v, err
+}
+
+// FromWire deserializes a CrossClusterTaskInfo struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a CrossClusterTaskInfo struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v CrossClusterTaskInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *CrossClusterTaskInfo) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.DomainID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 20:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.WorkflowID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 30:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.RunID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 40:
+			if field.Value.Type() == wire.TI32 {
+				var x CrossClusterTaskType
+				x, err = _CrossClusterTaskType_Read(field.Value)
+				v.TaskType = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 50:
+			if field.Value.Type() == wire.TI16 {
+				var x int16
+				x, err = field.Value.GetI16(), error(nil)
+				v.TaskState = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 60:
+			if field.Value.Type() == wire.TI64 {
+				var x int64
+				x, err = field.Value.GetI64(), error(nil)
+				v.TaskID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 70:
+			if field.Value.Type() == wire.TI64 {
+				var x int64
+				x, err = field.Value.GetI64(), error(nil)
+				v.VisibilityTimestamp = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a CrossClusterTaskInfo
+// struct.
+func (v *CrossClusterTaskInfo) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [7]string
+	i := 0
+	if v.DomainID != nil {
+		fields[i] = fmt.Sprintf("DomainID: %v", *(v.DomainID))
+		i++
+	}
+	if v.WorkflowID != nil {
+		fields[i] = fmt.Sprintf("WorkflowID: %v", *(v.WorkflowID))
+		i++
+	}
+	if v.RunID != nil {
+		fields[i] = fmt.Sprintf("RunID: %v", *(v.RunID))
+		i++
+	}
+	if v.TaskType != nil {
+		fields[i] = fmt.Sprintf("TaskType: %v", *(v.TaskType))
+		i++
+	}
+	if v.TaskState != nil {
+		fields[i] = fmt.Sprintf("TaskState: %v", *(v.TaskState))
+		i++
+	}
+	if v.TaskID != nil {
+		fields[i] = fmt.Sprintf("TaskID: %v", *(v.TaskID))
+		i++
+	}
+	if v.VisibilityTimestamp != nil {
+		fields[i] = fmt.Sprintf("VisibilityTimestamp: %v", *(v.VisibilityTimestamp))
+		i++
+	}
+
+	return fmt.Sprintf("CrossClusterTaskInfo{%v}", strings.Join(fields[:i], ", "))
+}
+
+func _CrossClusterTaskType_EqualsPtr(lhs, rhs *CrossClusterTaskType) bool {
+	if lhs != nil && rhs != nil {
+
+		x := *lhs
+		y := *rhs
+		return x.Equals(y)
+	}
+	return lhs == nil && rhs == nil
+}
+
+func _I16_EqualsPtr(lhs, rhs *int16) bool {
+	if lhs != nil && rhs != nil {
+
+		x := *lhs
+		y := *rhs
+		return (x == y)
+	}
+	return lhs == nil && rhs == nil
+}
+
+// Equals returns true if all the fields of this CrossClusterTaskInfo match the
+// provided CrossClusterTaskInfo.
+//
+// This function performs a deep comparison.
+func (v *CrossClusterTaskInfo) Equals(rhs *CrossClusterTaskInfo) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !_String_EqualsPtr(v.DomainID, rhs.DomainID) {
+		return false
+	}
+	if !_String_EqualsPtr(v.WorkflowID, rhs.WorkflowID) {
+		return false
+	}
+	if !_String_EqualsPtr(v.RunID, rhs.RunID) {
+		return false
+	}
+	if !_CrossClusterTaskType_EqualsPtr(v.TaskType, rhs.TaskType) {
+		return false
+	}
+	if !_I16_EqualsPtr(v.TaskState, rhs.TaskState) {
+		return false
+	}
+	if !_I64_EqualsPtr(v.TaskID, rhs.TaskID) {
+		return false
+	}
+	if !_I64_EqualsPtr(v.VisibilityTimestamp, rhs.VisibilityTimestamp) {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterTaskInfo.
+func (v *CrossClusterTaskInfo) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.DomainID != nil {
+		enc.AddString("domainID", *v.DomainID)
+	}
+	if v.WorkflowID != nil {
+		enc.AddString("workflowID", *v.WorkflowID)
+	}
+	if v.RunID != nil {
+		enc.AddString("runID", *v.RunID)
+	}
+	if v.TaskType != nil {
+		err = multierr.Append(err, enc.AddObject("taskType", *v.TaskType))
+	}
+	if v.TaskState != nil {
+		enc.AddInt16("taskState", *v.TaskState)
+	}
+	if v.TaskID != nil {
+		enc.AddInt64("taskID", *v.TaskID)
+	}
+	if v.VisibilityTimestamp != nil {
+		enc.AddInt64("visibilityTimestamp", *v.VisibilityTimestamp)
+	}
+	return err
+}
+
+// GetDomainID returns the value of DomainID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskInfo) GetDomainID() (o string) {
+	if v != nil && v.DomainID != nil {
+		return *v.DomainID
+	}
+
+	return
+}
+
+// IsSetDomainID returns true if DomainID is not nil.
+func (v *CrossClusterTaskInfo) IsSetDomainID() bool {
+	return v != nil && v.DomainID != nil
+}
+
+// GetWorkflowID returns the value of WorkflowID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskInfo) GetWorkflowID() (o string) {
+	if v != nil && v.WorkflowID != nil {
+		return *v.WorkflowID
+	}
+
+	return
+}
+
+// IsSetWorkflowID returns true if WorkflowID is not nil.
+func (v *CrossClusterTaskInfo) IsSetWorkflowID() bool {
+	return v != nil && v.WorkflowID != nil
+}
+
+// GetRunID returns the value of RunID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskInfo) GetRunID() (o string) {
+	if v != nil && v.RunID != nil {
+		return *v.RunID
+	}
+
+	return
+}
+
+// IsSetRunID returns true if RunID is not nil.
+func (v *CrossClusterTaskInfo) IsSetRunID() bool {
+	return v != nil && v.RunID != nil
+}
+
+// GetTaskType returns the value of TaskType if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskInfo) GetTaskType() (o CrossClusterTaskType) {
+	if v != nil && v.TaskType != nil {
+		return *v.TaskType
+	}
+
+	return
+}
+
+// IsSetTaskType returns true if TaskType is not nil.
+func (v *CrossClusterTaskInfo) IsSetTaskType() bool {
+	return v != nil && v.TaskType != nil
+}
+
+// GetTaskState returns the value of TaskState if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskInfo) GetTaskState() (o int16) {
+	if v != nil && v.TaskState != nil {
+		return *v.TaskState
+	}
+
+	return
+}
+
+// IsSetTaskState returns true if TaskState is not nil.
+func (v *CrossClusterTaskInfo) IsSetTaskState() bool {
+	return v != nil && v.TaskState != nil
+}
+
+// GetTaskID returns the value of TaskID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskInfo) GetTaskID() (o int64) {
+	if v != nil && v.TaskID != nil {
+		return *v.TaskID
+	}
+
+	return
+}
+
+// IsSetTaskID returns true if TaskID is not nil.
+func (v *CrossClusterTaskInfo) IsSetTaskID() bool {
+	return v != nil && v.TaskID != nil
+}
+
+// GetVisibilityTimestamp returns the value of VisibilityTimestamp if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskInfo) GetVisibilityTimestamp() (o int64) {
+	if v != nil && v.VisibilityTimestamp != nil {
+		return *v.VisibilityTimestamp
+	}
+
+	return
+}
+
+// IsSetVisibilityTimestamp returns true if VisibilityTimestamp is not nil.
+func (v *CrossClusterTaskInfo) IsSetVisibilityTimestamp() bool {
+	return v != nil && v.VisibilityTimestamp != nil
+}
+
+type CrossClusterTaskRequest struct {
+	TaskInfo                                       *CrossClusterTaskInfo                                              `json:"taskInfo,omitempty"`
+	StartChildExecutionAttributes                  *CrossClusterStartChildExecutionRequestAttributes                  `json:"startChildExecutionAttributes,omitempty"`
+	CancelExecutionAttributes                      *CrossClusterCancelExecutionRequestAttributes                      `json:"cancelExecutionAttributes,omitempty"`
+	SignalExecutionAttributes                      *CrossClusterSignalExecutionRequestAttributes                      `json:"signalExecutionAttributes,omitempty"`
+	RecordChildWorkflowExecutionCompleteAttributes *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes `json:"recordChildWorkflowExecutionCompleteAttributes,omitempty"`
+}
+
+// ToWire translates a CrossClusterTaskRequest struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *CrossClusterTaskRequest) ToWire() (wire.Value, error) {
+	var (
+		fields [5]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.TaskInfo != nil {
+		w, err = v.TaskInfo.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+	if v.StartChildExecutionAttributes != nil {
+		w, err = v.StartChildExecutionAttributes.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 20, Value: w}
+		i++
+	}
+	if v.CancelExecutionAttributes != nil {
+		w, err = v.CancelExecutionAttributes.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 30, Value: w}
+		i++
+	}
+	if v.SignalExecutionAttributes != nil {
+		w, err = v.SignalExecutionAttributes.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 40, Value: w}
+		i++
+	}
+	if v.RecordChildWorkflowExecutionCompleteAttributes != nil {
+		w, err = v.RecordChildWorkflowExecutionCompleteAttributes.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 50, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+func _CrossClusterTaskInfo_Read(w wire.Value) (*CrossClusterTaskInfo, error) {
+	var v CrossClusterTaskInfo
+	err := v.FromWire(w)
+	return &v, err
+}
+
+func _CrossClusterStartChildExecutionRequestAttributes_Read(w wire.Value) (*CrossClusterStartChildExecutionRequestAttributes, error) {
+	var v CrossClusterStartChildExecutionRequestAttributes
+	err := v.FromWire(w)
+	return &v, err
+}
+
+func _CrossClusterCancelExecutionRequestAttributes_Read(w wire.Value) (*CrossClusterCancelExecutionRequestAttributes, error) {
+	var v CrossClusterCancelExecutionRequestAttributes
+	err := v.FromWire(w)
+	return &v, err
+}
+
+func _CrossClusterSignalExecutionRequestAttributes_Read(w wire.Value) (*CrossClusterSignalExecutionRequestAttributes, error) {
+	var v CrossClusterSignalExecutionRequestAttributes
+	err := v.FromWire(w)
+	return &v, err
+}
+
+func _CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes_Read(w wire.Value) (*CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes, error) {
+	var v CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes
+	err := v.FromWire(w)
+	return &v, err
+}
+
+// FromWire deserializes a CrossClusterTaskRequest struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a CrossClusterTaskRequest struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v CrossClusterTaskRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *CrossClusterTaskRequest) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TStruct {
+				v.TaskInfo, err = _CrossClusterTaskInfo_Read(field.Value)
+				if err != nil {
+					return err
+				}
+
+			}
+		case 20:
+			if field.Value.Type() == wire.TStruct {
+				v.StartChildExecutionAttributes, err = _CrossClusterStartChildExecutionRequestAttributes_Read(field.Value)
+				if err != nil {
+					return err
+				}
+
+			}
+		case 30:
+			if field.Value.Type() == wire.TStruct {
+				v.CancelExecutionAttributes, err = _CrossClusterCancelExecutionRequestAttributes_Read(field.Value)
+				if err != nil {
+					return err
+				}
+
+			}
+		case 40:
+			if field.Value.Type() == wire.TStruct {
+				v.SignalExecutionAttributes, err = _CrossClusterSignalExecutionRequestAttributes_Read(field.Value)
+				if err != nil {
+					return err
+				}
+
+			}
+		case 50:
+			if field.Value.Type() == wire.TStruct {
+				v.RecordChildWorkflowExecutionCompleteAttributes, err = _CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes_Read(field.Value)
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a CrossClusterTaskRequest
+// struct.
+func (v *CrossClusterTaskRequest) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [5]string
+	i := 0
+	if v.TaskInfo != nil {
+		fields[i] = fmt.Sprintf("TaskInfo: %v", v.TaskInfo)
+		i++
+	}
+	if v.StartChildExecutionAttributes != nil {
+		fields[i] = fmt.Sprintf("StartChildExecutionAttributes: %v", v.StartChildExecutionAttributes)
+		i++
+	}
+	if v.CancelExecutionAttributes != nil {
+		fields[i] = fmt.Sprintf("CancelExecutionAttributes: %v", v.CancelExecutionAttributes)
+		i++
+	}
+	if v.SignalExecutionAttributes != nil {
+		fields[i] = fmt.Sprintf("SignalExecutionAttributes: %v", v.SignalExecutionAttributes)
+		i++
+	}
+	if v.RecordChildWorkflowExecutionCompleteAttributes != nil {
+		fields[i] = fmt.Sprintf("RecordChildWorkflowExecutionCompleteAttributes: %v", v.RecordChildWorkflowExecutionCompleteAttributes)
+		i++
+	}
+
+	return fmt.Sprintf("CrossClusterTaskRequest{%v}", strings.Join(fields[:i], ", "))
+}
+
+// Equals returns true if all the fields of this CrossClusterTaskRequest match the
+// provided CrossClusterTaskRequest.
+//
+// This function performs a deep comparison.
+func (v *CrossClusterTaskRequest) Equals(rhs *CrossClusterTaskRequest) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !((v.TaskInfo == nil && rhs.TaskInfo == nil) || (v.TaskInfo != nil && rhs.TaskInfo != nil && v.TaskInfo.Equals(rhs.TaskInfo))) {
+		return false
+	}
+	if !((v.StartChildExecutionAttributes == nil && rhs.StartChildExecutionAttributes == nil) || (v.StartChildExecutionAttributes != nil && rhs.StartChildExecutionAttributes != nil && v.StartChildExecutionAttributes.Equals(rhs.StartChildExecutionAttributes))) {
+		return false
+	}
+	if !((v.CancelExecutionAttributes == nil && rhs.CancelExecutionAttributes == nil) || (v.CancelExecutionAttributes != nil && rhs.CancelExecutionAttributes != nil && v.CancelExecutionAttributes.Equals(rhs.CancelExecutionAttributes))) {
+		return false
+	}
+	if !((v.SignalExecutionAttributes == nil && rhs.SignalExecutionAttributes == nil) || (v.SignalExecutionAttributes != nil && rhs.SignalExecutionAttributes != nil && v.SignalExecutionAttributes.Equals(rhs.SignalExecutionAttributes))) {
+		return false
+	}
+	if !((v.RecordChildWorkflowExecutionCompleteAttributes == nil && rhs.RecordChildWorkflowExecutionCompleteAttributes == nil) || (v.RecordChildWorkflowExecutionCompleteAttributes != nil && rhs.RecordChildWorkflowExecutionCompleteAttributes != nil && v.RecordChildWorkflowExecutionCompleteAttributes.Equals(rhs.RecordChildWorkflowExecutionCompleteAttributes))) {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterTaskRequest.
+func (v *CrossClusterTaskRequest) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.TaskInfo != nil {
+		err = multierr.Append(err, enc.AddObject("taskInfo", v.TaskInfo))
+	}
+	if v.StartChildExecutionAttributes != nil {
+		err = multierr.Append(err, enc.AddObject("startChildExecutionAttributes", v.StartChildExecutionAttributes))
+	}
+	if v.CancelExecutionAttributes != nil {
+		err = multierr.Append(err, enc.AddObject("cancelExecutionAttributes", v.CancelExecutionAttributes))
+	}
+	if v.SignalExecutionAttributes != nil {
+		err = multierr.Append(err, enc.AddObject("signalExecutionAttributes", v.SignalExecutionAttributes))
+	}
+	if v.RecordChildWorkflowExecutionCompleteAttributes != nil {
+		err = multierr.Append(err, enc.AddObject("recordChildWorkflowExecutionCompleteAttributes", v.RecordChildWorkflowExecutionCompleteAttributes))
+	}
+	return err
+}
+
+// GetTaskInfo returns the value of TaskInfo if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskRequest) GetTaskInfo() (o *CrossClusterTaskInfo) {
+	if v != nil && v.TaskInfo != nil {
+		return v.TaskInfo
+	}
+
+	return
+}
+
+// IsSetTaskInfo returns true if TaskInfo is not nil.
+func (v *CrossClusterTaskRequest) IsSetTaskInfo() bool {
+	return v != nil && v.TaskInfo != nil
+}
+
+// GetStartChildExecutionAttributes returns the value of StartChildExecutionAttributes if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskRequest) GetStartChildExecutionAttributes() (o *CrossClusterStartChildExecutionRequestAttributes) {
+	if v != nil && v.StartChildExecutionAttributes != nil {
+		return v.StartChildExecutionAttributes
+	}
+
+	return
+}
+
+// IsSetStartChildExecutionAttributes returns true if StartChildExecutionAttributes is not nil.
+func (v *CrossClusterTaskRequest) IsSetStartChildExecutionAttributes() bool {
+	return v != nil && v.StartChildExecutionAttributes != nil
+}
+
+// GetCancelExecutionAttributes returns the value of CancelExecutionAttributes if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskRequest) GetCancelExecutionAttributes() (o *CrossClusterCancelExecutionRequestAttributes) {
+	if v != nil && v.CancelExecutionAttributes != nil {
+		return v.CancelExecutionAttributes
+	}
+
+	return
+}
+
+// IsSetCancelExecutionAttributes returns true if CancelExecutionAttributes is not nil.
+func (v *CrossClusterTaskRequest) IsSetCancelExecutionAttributes() bool {
+	return v != nil && v.CancelExecutionAttributes != nil
+}
+
+// GetSignalExecutionAttributes returns the value of SignalExecutionAttributes if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskRequest) GetSignalExecutionAttributes() (o *CrossClusterSignalExecutionRequestAttributes) {
+	if v != nil && v.SignalExecutionAttributes != nil {
+		return v.SignalExecutionAttributes
+	}
+
+	return
+}
+
+// IsSetSignalExecutionAttributes returns true if SignalExecutionAttributes is not nil.
+func (v *CrossClusterTaskRequest) IsSetSignalExecutionAttributes() bool {
+	return v != nil && v.SignalExecutionAttributes != nil
+}
+
+// GetRecordChildWorkflowExecutionCompleteAttributes returns the value of RecordChildWorkflowExecutionCompleteAttributes if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskRequest) GetRecordChildWorkflowExecutionCompleteAttributes() (o *CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes) {
+	if v != nil && v.RecordChildWorkflowExecutionCompleteAttributes != nil {
+		return v.RecordChildWorkflowExecutionCompleteAttributes
+	}
+
+	return
+}
+
+// IsSetRecordChildWorkflowExecutionCompleteAttributes returns true if RecordChildWorkflowExecutionCompleteAttributes is not nil.
+func (v *CrossClusterTaskRequest) IsSetRecordChildWorkflowExecutionCompleteAttributes() bool {
+	return v != nil && v.RecordChildWorkflowExecutionCompleteAttributes != nil
+}
+
+type CrossClusterTaskResponse struct {
+	TaskID                                         *int64                                                              `json:"taskID,omitempty"`
+	TaskType                                       *CrossClusterTaskType                                               `json:"taskType,omitempty"`
+	FailedCause                                    *CrossClusterTaskFailedCause                                        `json:"failedCause,omitempty"`
+	StartChildExecutionAttributes                  *CrossClusterStartChildExecutionResponseAttributes                  `json:"startChildExecutionAttributes,omitempty"`
+	CancelExecutionAttributes                      *CrossClusterCancelExecutionResponseAttributes                      `json:"cancelExecutionAttributes,omitempty"`
+	SignalExecutionAttributes                      *CrossClusterSignalExecutionResponseAttributes                      `json:"signalExecutionAttributes,omitempty"`
+	RecordChildWorkflowExecutionCompleteAttributes *CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes `json:"recordChildWorkflowExecutionCompleteAttributes,omitempty"`
+}
+
+// ToWire translates a CrossClusterTaskResponse struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *CrossClusterTaskResponse) ToWire() (wire.Value, error) {
+	var (
+		fields [7]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.TaskID != nil {
+		w, err = wire.NewValueI64(*(v.TaskID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+	if v.TaskType != nil {
+		w, err = v.TaskType.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 20, Value: w}
+		i++
+	}
+	if v.FailedCause != nil {
+		w, err = v.FailedCause.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 30, Value: w}
+		i++
+	}
+	if v.StartChildExecutionAttributes != nil {
+		w, err = v.StartChildExecutionAttributes.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 40, Value: w}
+		i++
+	}
+	if v.CancelExecutionAttributes != nil {
+		w, err = v.CancelExecutionAttributes.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 50, Value: w}
+		i++
+	}
+	if v.SignalExecutionAttributes != nil {
+		w, err = v.SignalExecutionAttributes.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 60, Value: w}
+		i++
+	}
+	if v.RecordChildWorkflowExecutionCompleteAttributes != nil {
+		w, err = v.RecordChildWorkflowExecutionCompleteAttributes.ToWire()
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 70, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+func _CrossClusterTaskFailedCause_Read(w wire.Value) (CrossClusterTaskFailedCause, error) {
+	var v CrossClusterTaskFailedCause
+	err := v.FromWire(w)
+	return v, err
+}
+
+func _CrossClusterStartChildExecutionResponseAttributes_Read(w wire.Value) (*CrossClusterStartChildExecutionResponseAttributes, error) {
+	var v CrossClusterStartChildExecutionResponseAttributes
+	err := v.FromWire(w)
+	return &v, err
+}
+
+func _CrossClusterCancelExecutionResponseAttributes_Read(w wire.Value) (*CrossClusterCancelExecutionResponseAttributes, error) {
+	var v CrossClusterCancelExecutionResponseAttributes
+	err := v.FromWire(w)
+	return &v, err
+}
+
+func _CrossClusterSignalExecutionResponseAttributes_Read(w wire.Value) (*CrossClusterSignalExecutionResponseAttributes, error) {
+	var v CrossClusterSignalExecutionResponseAttributes
+	err := v.FromWire(w)
+	return &v, err
+}
+
+func _CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes_Read(w wire.Value) (*CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes, error) {
+	var v CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes
+	err := v.FromWire(w)
+	return &v, err
+}
+
+// FromWire deserializes a CrossClusterTaskResponse struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a CrossClusterTaskResponse struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v CrossClusterTaskResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *CrossClusterTaskResponse) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TI64 {
+				var x int64
+				x, err = field.Value.GetI64(), error(nil)
+				v.TaskID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 20:
+			if field.Value.Type() == wire.TI32 {
+				var x CrossClusterTaskType
+				x, err = _CrossClusterTaskType_Read(field.Value)
+				v.TaskType = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 30:
+			if field.Value.Type() == wire.TI32 {
+				var x CrossClusterTaskFailedCause
+				x, err = _CrossClusterTaskFailedCause_Read(field.Value)
+				v.FailedCause = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 40:
+			if field.Value.Type() == wire.TStruct {
+				v.StartChildExecutionAttributes, err = _CrossClusterStartChildExecutionResponseAttributes_Read(field.Value)
+				if err != nil {
+					return err
+				}
+
+			}
+		case 50:
+			if field.Value.Type() == wire.TStruct {
+				v.CancelExecutionAttributes, err = _CrossClusterCancelExecutionResponseAttributes_Read(field.Value)
+				if err != nil {
+					return err
+				}
+
+			}
+		case 60:
+			if field.Value.Type() == wire.TStruct {
+				v.SignalExecutionAttributes, err = _CrossClusterSignalExecutionResponseAttributes_Read(field.Value)
+				if err != nil {
+					return err
+				}
+
+			}
+		case 70:
+			if field.Value.Type() == wire.TStruct {
+				v.RecordChildWorkflowExecutionCompleteAttributes, err = _CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes_Read(field.Value)
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a CrossClusterTaskResponse
+// struct.
+func (v *CrossClusterTaskResponse) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [7]string
+	i := 0
+	if v.TaskID != nil {
+		fields[i] = fmt.Sprintf("TaskID: %v", *(v.TaskID))
+		i++
+	}
+	if v.TaskType != nil {
+		fields[i] = fmt.Sprintf("TaskType: %v", *(v.TaskType))
+		i++
+	}
+	if v.FailedCause != nil {
+		fields[i] = fmt.Sprintf("FailedCause: %v", *(v.FailedCause))
+		i++
+	}
+	if v.StartChildExecutionAttributes != nil {
+		fields[i] = fmt.Sprintf("StartChildExecutionAttributes: %v", v.StartChildExecutionAttributes)
+		i++
+	}
+	if v.CancelExecutionAttributes != nil {
+		fields[i] = fmt.Sprintf("CancelExecutionAttributes: %v", v.CancelExecutionAttributes)
+		i++
+	}
+	if v.SignalExecutionAttributes != nil {
+		fields[i] = fmt.Sprintf("SignalExecutionAttributes: %v", v.SignalExecutionAttributes)
+		i++
+	}
+	if v.RecordChildWorkflowExecutionCompleteAttributes != nil {
+		fields[i] = fmt.Sprintf("RecordChildWorkflowExecutionCompleteAttributes: %v", v.RecordChildWorkflowExecutionCompleteAttributes)
+		i++
+	}
+
+	return fmt.Sprintf("CrossClusterTaskResponse{%v}", strings.Join(fields[:i], ", "))
+}
+
+func _CrossClusterTaskFailedCause_EqualsPtr(lhs, rhs *CrossClusterTaskFailedCause) bool {
+	if lhs != nil && rhs != nil {
+
+		x := *lhs
+		y := *rhs
+		return x.Equals(y)
+	}
+	return lhs == nil && rhs == nil
+}
+
+// Equals returns true if all the fields of this CrossClusterTaskResponse match the
+// provided CrossClusterTaskResponse.
+//
+// This function performs a deep comparison.
+func (v *CrossClusterTaskResponse) Equals(rhs *CrossClusterTaskResponse) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !_I64_EqualsPtr(v.TaskID, rhs.TaskID) {
+		return false
+	}
+	if !_CrossClusterTaskType_EqualsPtr(v.TaskType, rhs.TaskType) {
+		return false
+	}
+	if !_CrossClusterTaskFailedCause_EqualsPtr(v.FailedCause, rhs.FailedCause) {
+		return false
+	}
+	if !((v.StartChildExecutionAttributes == nil && rhs.StartChildExecutionAttributes == nil) || (v.StartChildExecutionAttributes != nil && rhs.StartChildExecutionAttributes != nil && v.StartChildExecutionAttributes.Equals(rhs.StartChildExecutionAttributes))) {
+		return false
+	}
+	if !((v.CancelExecutionAttributes == nil && rhs.CancelExecutionAttributes == nil) || (v.CancelExecutionAttributes != nil && rhs.CancelExecutionAttributes != nil && v.CancelExecutionAttributes.Equals(rhs.CancelExecutionAttributes))) {
+		return false
+	}
+	if !((v.SignalExecutionAttributes == nil && rhs.SignalExecutionAttributes == nil) || (v.SignalExecutionAttributes != nil && rhs.SignalExecutionAttributes != nil && v.SignalExecutionAttributes.Equals(rhs.SignalExecutionAttributes))) {
+		return false
+	}
+	if !((v.RecordChildWorkflowExecutionCompleteAttributes == nil && rhs.RecordChildWorkflowExecutionCompleteAttributes == nil) || (v.RecordChildWorkflowExecutionCompleteAttributes != nil && rhs.RecordChildWorkflowExecutionCompleteAttributes != nil && v.RecordChildWorkflowExecutionCompleteAttributes.Equals(rhs.RecordChildWorkflowExecutionCompleteAttributes))) {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterTaskResponse.
+func (v *CrossClusterTaskResponse) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.TaskID != nil {
+		enc.AddInt64("taskID", *v.TaskID)
+	}
+	if v.TaskType != nil {
+		err = multierr.Append(err, enc.AddObject("taskType", *v.TaskType))
+	}
+	if v.FailedCause != nil {
+		err = multierr.Append(err, enc.AddObject("failedCause", *v.FailedCause))
+	}
+	if v.StartChildExecutionAttributes != nil {
+		err = multierr.Append(err, enc.AddObject("startChildExecutionAttributes", v.StartChildExecutionAttributes))
+	}
+	if v.CancelExecutionAttributes != nil {
+		err = multierr.Append(err, enc.AddObject("cancelExecutionAttributes", v.CancelExecutionAttributes))
+	}
+	if v.SignalExecutionAttributes != nil {
+		err = multierr.Append(err, enc.AddObject("signalExecutionAttributes", v.SignalExecutionAttributes))
+	}
+	if v.RecordChildWorkflowExecutionCompleteAttributes != nil {
+		err = multierr.Append(err, enc.AddObject("recordChildWorkflowExecutionCompleteAttributes", v.RecordChildWorkflowExecutionCompleteAttributes))
+	}
+	return err
+}
+
+// GetTaskID returns the value of TaskID if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskResponse) GetTaskID() (o int64) {
+	if v != nil && v.TaskID != nil {
+		return *v.TaskID
+	}
+
+	return
+}
+
+// IsSetTaskID returns true if TaskID is not nil.
+func (v *CrossClusterTaskResponse) IsSetTaskID() bool {
+	return v != nil && v.TaskID != nil
+}
+
+// GetTaskType returns the value of TaskType if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskResponse) GetTaskType() (o CrossClusterTaskType) {
+	if v != nil && v.TaskType != nil {
+		return *v.TaskType
+	}
+
+	return
+}
+
+// IsSetTaskType returns true if TaskType is not nil.
+func (v *CrossClusterTaskResponse) IsSetTaskType() bool {
+	return v != nil && v.TaskType != nil
+}
+
+// GetFailedCause returns the value of FailedCause if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskResponse) GetFailedCause() (o CrossClusterTaskFailedCause) {
+	if v != nil && v.FailedCause != nil {
+		return *v.FailedCause
+	}
+
+	return
+}
+
+// IsSetFailedCause returns true if FailedCause is not nil.
+func (v *CrossClusterTaskResponse) IsSetFailedCause() bool {
+	return v != nil && v.FailedCause != nil
+}
+
+// GetStartChildExecutionAttributes returns the value of StartChildExecutionAttributes if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskResponse) GetStartChildExecutionAttributes() (o *CrossClusterStartChildExecutionResponseAttributes) {
+	if v != nil && v.StartChildExecutionAttributes != nil {
+		return v.StartChildExecutionAttributes
+	}
+
+	return
+}
+
+// IsSetStartChildExecutionAttributes returns true if StartChildExecutionAttributes is not nil.
+func (v *CrossClusterTaskResponse) IsSetStartChildExecutionAttributes() bool {
+	return v != nil && v.StartChildExecutionAttributes != nil
+}
+
+// GetCancelExecutionAttributes returns the value of CancelExecutionAttributes if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskResponse) GetCancelExecutionAttributes() (o *CrossClusterCancelExecutionResponseAttributes) {
+	if v != nil && v.CancelExecutionAttributes != nil {
+		return v.CancelExecutionAttributes
+	}
+
+	return
+}
+
+// IsSetCancelExecutionAttributes returns true if CancelExecutionAttributes is not nil.
+func (v *CrossClusterTaskResponse) IsSetCancelExecutionAttributes() bool {
+	return v != nil && v.CancelExecutionAttributes != nil
+}
+
+// GetSignalExecutionAttributes returns the value of SignalExecutionAttributes if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskResponse) GetSignalExecutionAttributes() (o *CrossClusterSignalExecutionResponseAttributes) {
+	if v != nil && v.SignalExecutionAttributes != nil {
+		return v.SignalExecutionAttributes
+	}
+
+	return
+}
+
+// IsSetSignalExecutionAttributes returns true if SignalExecutionAttributes is not nil.
+func (v *CrossClusterTaskResponse) IsSetSignalExecutionAttributes() bool {
+	return v != nil && v.SignalExecutionAttributes != nil
+}
+
+// GetRecordChildWorkflowExecutionCompleteAttributes returns the value of RecordChildWorkflowExecutionCompleteAttributes if it is set or its
+// zero value if it is unset.
+func (v *CrossClusterTaskResponse) GetRecordChildWorkflowExecutionCompleteAttributes() (o *CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes) {
+	if v != nil && v.RecordChildWorkflowExecutionCompleteAttributes != nil {
+		return v.RecordChildWorkflowExecutionCompleteAttributes
+	}
+
+	return
+}
+
+// IsSetRecordChildWorkflowExecutionCompleteAttributes returns true if RecordChildWorkflowExecutionCompleteAttributes is not nil.
+func (v *CrossClusterTaskResponse) IsSetRecordChildWorkflowExecutionCompleteAttributes() bool {
+	return v != nil && v.RecordChildWorkflowExecutionCompleteAttributes != nil
+}
+
+type CrossClusterTaskType int32
+
+const (
+	CrossClusterTaskTypeStartChildExecution CrossClusterTaskType = 0
+	CrossClusterTaskTypeCancelExecution     CrossClusterTaskType = 1
+	CrossClusterTaskTypeSignalExecution     CrossClusterTaskType = 2
+)
+
+// CrossClusterTaskType_Values returns all recognized values of CrossClusterTaskType.
+func CrossClusterTaskType_Values() []CrossClusterTaskType {
+	return []CrossClusterTaskType{
+		CrossClusterTaskTypeStartChildExecution,
+		CrossClusterTaskTypeCancelExecution,
+		CrossClusterTaskTypeSignalExecution,
+	}
+}
+
+// UnmarshalText tries to decode CrossClusterTaskType from a byte slice
+// containing its name.
+//
+//	var v CrossClusterTaskType
+//	err := v.UnmarshalText([]byte("StartChildExecution"))
+func (v *CrossClusterTaskType) UnmarshalText(value []byte) error {
+	switch s := string(value); s {
+	case "StartChildExecution":
+		*v = CrossClusterTaskTypeStartChildExecution
+		return nil
+	case "CancelExecution":
+		*v = CrossClusterTaskTypeCancelExecution
+		return nil
+	case "SignalExecution":
+		*v = CrossClusterTaskTypeSignalExecution
+		return nil
+	default:
+		val, err := strconv.ParseInt(s, 10, 32)
+		if err != nil {
+			return fmt.Errorf("unknown enum value %q for %q: %v", s, "CrossClusterTaskType", err)
+		}
+		*v = CrossClusterTaskType(val)
+		return nil
+	}
+}
+
+// MarshalText encodes CrossClusterTaskType to text.
+//
+// If the enum value is recognized, its name is returned. Otherwise,
+// its integer value is returned.
+//
+// This implements the TextMarshaler interface.
+func (v CrossClusterTaskType) MarshalText() ([]byte, error) {
+	switch int32(v) {
+	case 0:
+		return []byte("StartChildExecution"), nil
+	case 1:
+		return []byte("CancelExecution"), nil
+	case 2:
+		return []byte("SignalExecution"), nil
+	}
+	return []byte(strconv.FormatInt(int64(v), 10)), nil
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of CrossClusterTaskType.
+// Enums are logged as objects, where the value is logged with key "value", and
+// if this value's name is known, the name is logged with key "name".
+func (v CrossClusterTaskType) MarshalLogObject(enc zapcore.ObjectEncoder) error {
+	enc.AddInt32("value", int32(v))
+	switch int32(v) {
+	case 0:
+		enc.AddString("name", "StartChildExecution")
+	case 1:
+		enc.AddString("name", "CancelExecution")
+	case 2:
+		enc.AddString("name", "SignalExecution")
+	}
+	return nil
+}
+
+// Ptr returns a pointer to this enum value.
+func (v CrossClusterTaskType) Ptr() *CrossClusterTaskType {
+	return &v
+}
+
+// ToWire translates CrossClusterTaskType into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// Enums are represented as 32-bit integers over the wire.
+func (v CrossClusterTaskType) ToWire() (wire.Value, error) {
+	return wire.NewValueI32(int32(v)), nil
+}
+
+// FromWire deserializes CrossClusterTaskType from its Thrift-level
+// representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return CrossClusterTaskType(0), err
+//	}
+//
+//	var v CrossClusterTaskType
+//	if err := v.FromWire(x); err != nil {
+//	  return CrossClusterTaskType(0), err
+//	}
+//	return v, nil
+func (v *CrossClusterTaskType) FromWire(w wire.Value) error {
+	*v = (CrossClusterTaskType)(w.GetI32())
+	return nil
+}
+
+// String returns a readable string representation of CrossClusterTaskType.
+func (v CrossClusterTaskType) String() string {
+	w := int32(v)
+	switch w {
+	case 0:
+		return "StartChildExecution"
+	case 1:
+		return "CancelExecution"
+	case 2:
+		return "SignalExecution"
+	}
+	return fmt.Sprintf("CrossClusterTaskType(%d)", w)
+}
+
+// Equals returns true if this CrossClusterTaskType value matches the provided
+// value.
+func (v CrossClusterTaskType) Equals(rhs CrossClusterTaskType) bool {
+	return v == rhs
+}
+
+// MarshalJSON serializes CrossClusterTaskType into JSON.
+//
+// If the enum value is recognized, its name is returned. Otherwise,
+// its integer value is returned.
+//
+// This implements json.Marshaler.
+func (v CrossClusterTaskType) MarshalJSON() ([]byte, error) {
+	switch int32(v) {
+	case 0:
+		return ([]byte)("\"StartChildExecution\""), nil
+	case 1:
+		return ([]byte)("\"CancelExecution\""), nil
+	case 2:
+		return ([]byte)("\"SignalExecution\""), nil
+	}
+	return ([]byte)(strconv.FormatInt(int64(v), 10)), nil
+}
+
+// UnmarshalJSON attempts to decode CrossClusterTaskType from its JSON
+// representation.
+//
+// This implementation supports both, numeric and string inputs. If a
+// string is provided, it must be a known enum name.
+//
+// This implements json.Unmarshaler.
+func (v *CrossClusterTaskType) UnmarshalJSON(text []byte) error {
+	d := json.NewDecoder(bytes.NewReader(text))
+	d.UseNumber()
+	t, err := d.Token()
+	if err != nil {
+		return err
+	}
+
+	switch w := t.(type) {
+	case json.Number:
+		x, err := w.Int64()
+		if err != nil {
+			return err
+		}
+		if x > math.MaxInt32 {
+			return fmt.Errorf("enum overflow from JSON %q for %q", text, "CrossClusterTaskType")
+		}
+		if x < math.MinInt32 {
+			return fmt.Errorf("enum underflow from JSON %q for %q", text, "CrossClusterTaskType")
+		}
+		*v = (CrossClusterTaskType)(x)
+		return nil
+	case string:
+		return v.UnmarshalText([]byte(w))
+	default:
+		return fmt.Errorf("invalid JSON value %q (%T) to unmarshal into %q", t, t, "CrossClusterTaskType")
+	}
+}
+
 type CurrentBranchChangedError struct {
 	Message            string `json:"message,required"`
 	CurrentBranchToken []byte `json:"currentBranchToken,required"`
@@ -8998,14 +12499,14 @@ type CurrentBranchChangedError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *CurrentBranchChangedError) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -9040,16 +12541,16 @@ func (v *CurrentBranchChangedError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a CurrentBranchChangedError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v CurrentBranchChangedError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v CurrentBranchChangedError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *CurrentBranchChangedError) FromWire(w wire.Value) error {
 	var err error
 
@@ -9181,14 +12682,14 @@ type DataBlob struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DataBlob) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -9230,16 +12731,16 @@ func _EncodingType_Read(w wire.Value) (EncodingType, error) {
 // An error is returned if we were unable to build a DataBlob struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DataBlob
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DataBlob
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DataBlob) FromWire(w wire.Value) error {
 	var err error
 
@@ -9389,14 +12890,14 @@ type Decision struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *Decision) ToWire() (wire.Value, error) {
 	var (
 		fields [14]wire.Field
@@ -9612,16 +13113,16 @@ func _UpsertWorkflowSearchAttributesDecisionAttributes_Read(w wire.Value) (*Upse
 // An error is returned if we were unable to build a Decision struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v Decision
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v Decision
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *Decision) FromWire(w wire.Value) error {
 	var err error
 
@@ -10158,14 +13659,14 @@ type DecisionTaskCompletedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DecisionTaskCompletedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -10225,16 +13726,16 @@ func (v *DecisionTaskCompletedEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a DecisionTaskCompletedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DecisionTaskCompletedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DecisionTaskCompletedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DecisionTaskCompletedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -10515,8 +14016,8 @@ func DecisionTaskFailedCause_Values() []DecisionTaskFailedCause {
 // UnmarshalText tries to decode DecisionTaskFailedCause from a byte slice
 // containing its name.
 //
-//   var v DecisionTaskFailedCause
-//   err := v.UnmarshalText([]byte("UNHANDLED_DECISION"))
+//	var v DecisionTaskFailedCause
+//	err := v.UnmarshalText([]byte("UNHANDLED_DECISION"))
 func (v *DecisionTaskFailedCause) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "UNHANDLED_DECISION":
@@ -10730,16 +14231,16 @@ func (v DecisionTaskFailedCause) ToWire() (wire.Value, error) {
 // FromWire deserializes DecisionTaskFailedCause from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return DecisionTaskFailedCause(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return DecisionTaskFailedCause(0), err
+//	}
 //
-//   var v DecisionTaskFailedCause
-//   if err := v.FromWire(x); err != nil {
-//     return DecisionTaskFailedCause(0), err
-//   }
-//   return v, nil
+//	var v DecisionTaskFailedCause
+//	if err := v.FromWire(x); err != nil {
+//	  return DecisionTaskFailedCause(0), err
+//	}
+//	return v, nil
 func (v *DecisionTaskFailedCause) FromWire(w wire.Value) error {
 	*v = (DecisionTaskFailedCause)(w.GetI32())
 	return nil
@@ -10919,14 +14420,14 @@ type DecisionTaskFailedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DecisionTaskFailedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [10]wire.Field
@@ -11032,16 +14533,16 @@ func _DecisionTaskFailedCause_Read(w wire.Value) (DecisionTaskFailedCause, error
 // An error is returned if we were unable to build a DecisionTaskFailedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DecisionTaskFailedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DecisionTaskFailedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DecisionTaskFailedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -11460,14 +14961,14 @@ type DecisionTaskScheduledEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DecisionTaskScheduledEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -11511,16 +15012,16 @@ func (v *DecisionTaskScheduledEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a DecisionTaskScheduledEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DecisionTaskScheduledEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DecisionTaskScheduledEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DecisionTaskScheduledEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -11684,14 +15185,14 @@ type DecisionTaskStartedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DecisionTaskStartedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -11735,16 +15236,16 @@ func (v *DecisionTaskStartedEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a DecisionTaskStartedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DecisionTaskStartedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DecisionTaskStartedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DecisionTaskStartedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -11915,8 +15416,8 @@ func DecisionTaskTimedOutCause_Values() []DecisionTaskTimedOutCause {
 // UnmarshalText tries to decode DecisionTaskTimedOutCause from a byte slice
 // containing its name.
 //
-//   var v DecisionTaskTimedOutCause
-//   err := v.UnmarshalText([]byte("TIMEOUT"))
+//	var v DecisionTaskTimedOutCause
+//	err := v.UnmarshalText([]byte("TIMEOUT"))
 func (v *DecisionTaskTimedOutCause) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "TIMEOUT":
@@ -11983,16 +15484,16 @@ func (v DecisionTaskTimedOutCause) ToWire() (wire.Value, error) {
 // FromWire deserializes DecisionTaskTimedOutCause from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return DecisionTaskTimedOutCause(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return DecisionTaskTimedOutCause(0), err
+//	}
 //
-//   var v DecisionTaskTimedOutCause
-//   if err := v.FromWire(x); err != nil {
-//     return DecisionTaskTimedOutCause(0), err
-//   }
-//   return v, nil
+//	var v DecisionTaskTimedOutCause
+//	if err := v.FromWire(x); err != nil {
+//	  return DecisionTaskTimedOutCause(0), err
+//	}
+//	return v, nil
 func (v *DecisionTaskTimedOutCause) FromWire(w wire.Value) error {
 	*v = (DecisionTaskTimedOutCause)(w.GetI32())
 	return nil
@@ -12086,14 +15587,14 @@ type DecisionTaskTimedOutEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DecisionTaskTimedOutEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [8]wire.Field
@@ -12183,16 +15684,16 @@ func _DecisionTaskTimedOutCause_Read(w wire.Value) (DecisionTaskTimedOutCause, e
 // An error is returned if we were unable to build a DecisionTaskTimedOutEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DecisionTaskTimedOutEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DecisionTaskTimedOutEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DecisionTaskTimedOutEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -12570,8 +16071,8 @@ func DecisionType_Values() []DecisionType {
 // UnmarshalText tries to decode DecisionType from a byte slice
 // containing its name.
 //
-//   var v DecisionType
-//   err := v.UnmarshalText([]byte("ScheduleActivityTask"))
+//	var v DecisionType
+//	err := v.UnmarshalText([]byte("ScheduleActivityTask"))
 func (v *DecisionType) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "ScheduleActivityTask":
@@ -12715,16 +16216,16 @@ func (v DecisionType) ToWire() (wire.Value, error) {
 // FromWire deserializes DecisionType from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return DecisionType(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return DecisionType(0), err
+//	}
 //
-//   var v DecisionType
-//   if err := v.FromWire(x); err != nil {
-//     return DecisionType(0), err
-//   }
-//   return v, nil
+//	var v DecisionType
+//	if err := v.FromWire(x); err != nil {
+//	  return DecisionType(0), err
+//	}
+//	return v, nil
 func (v *DecisionType) FromWire(w wire.Value) error {
 	*v = (DecisionType)(w.GetI32())
 	return nil
@@ -12856,14 +16357,14 @@ type DeprecateDomainRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DeprecateDomainRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -12899,16 +16400,16 @@ func (v *DeprecateDomainRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a DeprecateDomainRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DeprecateDomainRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DeprecateDomainRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DeprecateDomainRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -13038,14 +16539,14 @@ type DescribeDomainRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DescribeDomainRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -13081,16 +16582,16 @@ func (v *DescribeDomainRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a DescribeDomainRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DescribeDomainRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DescribeDomainRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DescribeDomainRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -13223,14 +16724,14 @@ type DescribeDomainResponse struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DescribeDomainResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -13308,16 +16809,16 @@ func _DomainReplicationConfiguration_Read(w wire.Value) (*DomainReplicationConfi
 // An error is returned if we were unable to build a DescribeDomainResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DescribeDomainResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DescribeDomainResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DescribeDomainResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -13404,16 +16905,6 @@ func (v *DescribeDomainResponse) String() string {
 	}
 
 	return fmt.Sprintf("DescribeDomainResponse{%v}", strings.Join(fields[:i], ", "))
-}
-
-func _Bool_EqualsPtr(lhs, rhs *bool) bool {
-	if lhs != nil && rhs != nil {
-
-		x := *lhs
-		y := *rhs
-		return (x == y)
-	}
-	return lhs == nil && rhs == nil
 }
 
 // Equals returns true if all the fields of this DescribeDomainResponse match the
@@ -13557,14 +17048,14 @@ type DescribeHistoryHostRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DescribeHistoryHostRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -13608,16 +17099,16 @@ func (v *DescribeHistoryHostRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a DescribeHistoryHostRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DescribeHistoryHostRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DescribeHistoryHostRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DescribeHistoryHostRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -13809,14 +17300,14 @@ func (_List_I32_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DescribeHistoryHostResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -13900,16 +17391,16 @@ func _DomainCacheInfo_Read(w wire.Value) (*DomainCacheInfo, error) {
 // An error is returned if we were unable to build a DescribeHistoryHostResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DescribeHistoryHostResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DescribeHistoryHostResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DescribeHistoryHostResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -14167,14 +17658,14 @@ type DescribeQueueRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DescribeQueueRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -14218,16 +17709,16 @@ func (v *DescribeQueueRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a DescribeQueueRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DescribeQueueRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DescribeQueueRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DescribeQueueRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -14417,14 +17908,14 @@ func (_List_String_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DescribeQueueResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -14470,16 +17961,16 @@ func _List_String_Read(l wire.ValueList) ([]string, error) {
 // An error is returned if we were unable to build a DescribeQueueResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DescribeQueueResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DescribeQueueResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DescribeQueueResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -14598,14 +18089,14 @@ type DescribeShardDistributionRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DescribeShardDistributionRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -14641,16 +18132,16 @@ func (v *DescribeShardDistributionRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a DescribeShardDistributionRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DescribeShardDistributionRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DescribeShardDistributionRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DescribeShardDistributionRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -14815,14 +18306,14 @@ func (_Map_I32_String_MapItemList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DescribeShardDistributionResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -14886,16 +18377,16 @@ func _Map_I32_String_Read(m wire.MapItemList) (map[int32]string, error) {
 // An error is returned if we were unable to build a DescribeShardDistributionResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DescribeShardDistributionResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DescribeShardDistributionResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DescribeShardDistributionResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -15066,14 +18557,14 @@ type DescribeTaskListRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DescribeTaskListRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -15131,16 +18622,16 @@ func _TaskListType_Read(w wire.Value) (TaskListType, error) {
 // An error is returned if we were unable to build a DescribeTaskListRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DescribeTaskListRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DescribeTaskListRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DescribeTaskListRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -15377,14 +18868,14 @@ func (_List_PollerInfo_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DescribeTaskListResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -15450,16 +18941,16 @@ func _TaskListStatus_Read(w wire.Value) (*TaskListStatus, error) {
 // An error is returned if we were unable to build a DescribeTaskListResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DescribeTaskListResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DescribeTaskListResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DescribeTaskListResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -15611,14 +19102,14 @@ type DescribeWorkflowExecutionRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DescribeWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -15654,16 +19145,16 @@ func (v *DescribeWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a DescribeWorkflowExecutionRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DescribeWorkflowExecutionRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DescribeWorkflowExecutionRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DescribeWorkflowExecutionRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -15852,14 +19343,14 @@ func (_List_PendingChildExecutionInfo_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DescribeWorkflowExecutionResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -15985,16 +19476,16 @@ func _PendingDecisionInfo_Read(w wire.Value) (*PendingDecisionInfo, error) {
 // An error is returned if we were unable to build a DescribeWorkflowExecutionResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DescribeWorkflowExecutionResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DescribeWorkflowExecutionResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DescribeWorkflowExecutionResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -16270,14 +19761,14 @@ type DomainAlreadyExistsError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DomainAlreadyExistsError) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -16303,16 +19794,16 @@ func (v *DomainAlreadyExistsError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a DomainAlreadyExistsError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DomainAlreadyExistsError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DomainAlreadyExistsError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DomainAlreadyExistsError) FromWire(w wire.Value) error {
 	var err error
 
@@ -16411,14 +19902,14 @@ type DomainCacheInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DomainCacheInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -16454,16 +19945,16 @@ func (v *DomainCacheInfo) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a DomainCacheInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DomainCacheInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DomainCacheInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DomainCacheInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -16598,14 +20089,14 @@ type DomainConfiguration struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DomainConfiguration) ToWire() (wire.Value, error) {
 	var (
 		fields [7]wire.Field
@@ -16693,16 +20184,16 @@ func _ArchivalStatus_Read(w wire.Value) (ArchivalStatus, error) {
 // An error is returned if we were unable to build a DomainConfiguration struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DomainConfiguration
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DomainConfiguration
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DomainConfiguration) FromWire(w wire.Value) error {
 	var err error
 
@@ -17054,14 +20545,14 @@ func (_Map_String_String_MapItemList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DomainInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -17163,16 +20654,16 @@ func _Map_String_String_Read(m wire.MapItemList) (map[string]string, error) {
 // An error is returned if we were unable to build a DomainInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DomainInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DomainInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DomainInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -17480,14 +20971,14 @@ type DomainNotActiveError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DomainNotActiveError) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -17534,16 +21025,16 @@ func (v *DomainNotActiveError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a DomainNotActiveError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DomainNotActiveError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DomainNotActiveError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DomainNotActiveError) FromWire(w wire.Value) error {
 	var err error
 
@@ -17755,14 +21246,14 @@ func (_List_ClusterReplicationConfiguration_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *DomainReplicationConfiguration) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -17822,16 +21313,16 @@ func _List_ClusterReplicationConfiguration_Read(l wire.ValueList) ([]*ClusterRep
 // An error is returned if we were unable to build a DomainReplicationConfiguration struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v DomainReplicationConfiguration
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v DomainReplicationConfiguration
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *DomainReplicationConfiguration) FromWire(w wire.Value) error {
 	var err error
 
@@ -17993,8 +21484,8 @@ func DomainStatus_Values() []DomainStatus {
 // UnmarshalText tries to decode DomainStatus from a byte slice
 // containing its name.
 //
-//   var v DomainStatus
-//   err := v.UnmarshalText([]byte("REGISTERED"))
+//	var v DomainStatus
+//	err := v.UnmarshalText([]byte("REGISTERED"))
 func (v *DomainStatus) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "REGISTERED":
@@ -18068,16 +21559,16 @@ func (v DomainStatus) ToWire() (wire.Value, error) {
 // FromWire deserializes DomainStatus from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return DomainStatus(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return DomainStatus(0), err
+//	}
 //
-//   var v DomainStatus
-//   if err := v.FromWire(x); err != nil {
-//     return DomainStatus(0), err
-//   }
-//   return v, nil
+//	var v DomainStatus
+//	if err := v.FromWire(x); err != nil {
+//	  return DomainStatus(0), err
+//	}
+//	return v, nil
 func (v *DomainStatus) FromWire(w wire.Value) error {
 	*v = (DomainStatus)(w.GetI32())
 	return nil
@@ -18175,8 +21666,8 @@ func EncodingType_Values() []EncodingType {
 // UnmarshalText tries to decode EncodingType from a byte slice
 // containing its name.
 //
-//   var v EncodingType
-//   err := v.UnmarshalText([]byte("ThriftRW"))
+//	var v EncodingType
+//	err := v.UnmarshalText([]byte("ThriftRW"))
 func (v *EncodingType) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "ThriftRW":
@@ -18243,16 +21734,16 @@ func (v EncodingType) ToWire() (wire.Value, error) {
 // FromWire deserializes EncodingType from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return EncodingType(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return EncodingType(0), err
+//	}
 //
-//   var v EncodingType
-//   if err := v.FromWire(x); err != nil {
-//     return EncodingType(0), err
-//   }
-//   return v, nil
+//	var v EncodingType
+//	if err := v.FromWire(x); err != nil {
+//	  return EncodingType(0), err
+//	}
+//	return v, nil
 func (v *EncodingType) FromWire(w wire.Value) error {
 	*v = (EncodingType)(w.GetI32())
 	return nil
@@ -18341,14 +21832,14 @@ type EntityNotExistsError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *EntityNotExistsError) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -18390,16 +21881,16 @@ func (v *EntityNotExistsError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a EntityNotExistsError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v EntityNotExistsError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v EntityNotExistsError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *EntityNotExistsError) FromWire(w wire.Value) error {
 	var err error
 
@@ -18654,8 +22145,8 @@ func EventType_Values() []EventType {
 // UnmarshalText tries to decode EventType from a byte slice
 // containing its name.
 //
-//   var v EventType
-//   err := v.UnmarshalText([]byte("WorkflowExecutionStarted"))
+//	var v EventType
+//	err := v.UnmarshalText([]byte("WorkflowExecutionStarted"))
 func (v *EventType) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "WorkflowExecutionStarted":
@@ -19002,16 +22493,16 @@ func (v EventType) ToWire() (wire.Value, error) {
 // FromWire deserializes EventType from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return EventType(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return EventType(0), err
+//	}
 //
-//   var v EventType
-//   if err := v.FromWire(x); err != nil {
-//     return EventType(0), err
-//   }
-//   return v, nil
+//	var v EventType
+//	if err := v.FromWire(x); err != nil {
+//	  return EventType(0), err
+//	}
+//	return v, nil
 func (v *EventType) FromWire(w wire.Value) error {
 	*v = (EventType)(w.GetI32())
 	return nil
@@ -19260,14 +22751,14 @@ type ExternalWorkflowExecutionCancelRequestedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ExternalWorkflowExecutionCancelRequestedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -19311,16 +22802,16 @@ func (v *ExternalWorkflowExecutionCancelRequestedEventAttributes) ToWire() (wire
 // An error is returned if we were unable to build a ExternalWorkflowExecutionCancelRequestedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ExternalWorkflowExecutionCancelRequestedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ExternalWorkflowExecutionCancelRequestedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ExternalWorkflowExecutionCancelRequestedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -19485,14 +22976,14 @@ type ExternalWorkflowExecutionSignaledEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ExternalWorkflowExecutionSignaledEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -19544,16 +23035,16 @@ func (v *ExternalWorkflowExecutionSignaledEventAttributes) ToWire() (wire.Value,
 // An error is returned if we were unable to build a ExternalWorkflowExecutionSignaledEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ExternalWorkflowExecutionSignaledEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ExternalWorkflowExecutionSignaledEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ExternalWorkflowExecutionSignaledEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -19749,14 +23240,14 @@ type FailWorkflowExecutionDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *FailWorkflowExecutionDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -19792,16 +23283,16 @@ func (v *FailWorkflowExecutionDecisionAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a FailWorkflowExecutionDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v FailWorkflowExecutionDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v FailWorkflowExecutionDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *FailWorkflowExecutionDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -19928,14 +23419,14 @@ type FeatureFlags struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *FeatureFlags) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -19963,16 +23454,16 @@ func (v *FeatureFlags) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a FeatureFlags struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v FeatureFlags
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v FeatureFlags
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *FeatureFlags) FromWire(w wire.Value) error {
 	var err error
 
@@ -20066,14 +23557,14 @@ type FeatureNotEnabledError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *FeatureNotEnabledError) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -20099,16 +23590,16 @@ func (v *FeatureNotEnabledError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a FeatureNotEnabledError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v FeatureNotEnabledError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v FeatureNotEnabledError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *FeatureNotEnabledError) FromWire(w wire.Value) error {
 	var err error
 
@@ -20195,6 +23686,660 @@ func (v *FeatureNotEnabledError) Error() string {
 	return v.String()
 }
 
+type GetCrossClusterTasksRequest struct {
+	ShardIDs      []int32 `json:"shardIDs,omitempty"`
+	TargetCluster *string `json:"targetCluster,omitempty"`
+}
+
+// ToWire translates a GetCrossClusterTasksRequest struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *GetCrossClusterTasksRequest) ToWire() (wire.Value, error) {
+	var (
+		fields [2]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.ShardIDs != nil {
+		w, err = wire.NewValueList(_List_I32_ValueList(v.ShardIDs)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+	if v.TargetCluster != nil {
+		w, err = wire.NewValueString(*(v.TargetCluster)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 20, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+// FromWire deserializes a GetCrossClusterTasksRequest struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a GetCrossClusterTasksRequest struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v GetCrossClusterTasksRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *GetCrossClusterTasksRequest) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TList {
+				v.ShardIDs, err = _List_I32_Read(field.Value.GetList())
+				if err != nil {
+					return err
+				}
+
+			}
+		case 20:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetCluster = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a GetCrossClusterTasksRequest
+// struct.
+func (v *GetCrossClusterTasksRequest) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [2]string
+	i := 0
+	if v.ShardIDs != nil {
+		fields[i] = fmt.Sprintf("ShardIDs: %v", v.ShardIDs)
+		i++
+	}
+	if v.TargetCluster != nil {
+		fields[i] = fmt.Sprintf("TargetCluster: %v", *(v.TargetCluster))
+		i++
+	}
+
+	return fmt.Sprintf("GetCrossClusterTasksRequest{%v}", strings.Join(fields[:i], ", "))
+}
+
+// Equals returns true if all the fields of this GetCrossClusterTasksRequest match the
+// provided GetCrossClusterTasksRequest.
+//
+// This function performs a deep comparison.
+func (v *GetCrossClusterTasksRequest) Equals(rhs *GetCrossClusterTasksRequest) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !((v.ShardIDs == nil && rhs.ShardIDs == nil) || (v.ShardIDs != nil && rhs.ShardIDs != nil && _List_I32_Equals(v.ShardIDs, rhs.ShardIDs))) {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetCluster, rhs.TargetCluster) {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of GetCrossClusterTasksRequest.
+func (v *GetCrossClusterTasksRequest) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.ShardIDs != nil {
+		err = multierr.Append(err, enc.AddArray("shardIDs", (_List_I32_Zapper)(v.ShardIDs)))
+	}
+	if v.TargetCluster != nil {
+		enc.AddString("targetCluster", *v.TargetCluster)
+	}
+	return err
+}
+
+// GetShardIDs returns the value of ShardIDs if it is set or its
+// zero value if it is unset.
+func (v *GetCrossClusterTasksRequest) GetShardIDs() (o []int32) {
+	if v != nil && v.ShardIDs != nil {
+		return v.ShardIDs
+	}
+
+	return
+}
+
+// IsSetShardIDs returns true if ShardIDs is not nil.
+func (v *GetCrossClusterTasksRequest) IsSetShardIDs() bool {
+	return v != nil && v.ShardIDs != nil
+}
+
+// GetTargetCluster returns the value of TargetCluster if it is set or its
+// zero value if it is unset.
+func (v *GetCrossClusterTasksRequest) GetTargetCluster() (o string) {
+	if v != nil && v.TargetCluster != nil {
+		return *v.TargetCluster
+	}
+
+	return
+}
+
+// IsSetTargetCluster returns true if TargetCluster is not nil.
+func (v *GetCrossClusterTasksRequest) IsSetTargetCluster() bool {
+	return v != nil && v.TargetCluster != nil
+}
+
+type GetCrossClusterTasksResponse struct {
+	TasksByShard       map[int32][]*CrossClusterTaskRequest `json:"tasksByShard,omitempty"`
+	FailedCauseByShard map[int32]GetTaskFailedCause         `json:"failedCauseByShard,omitempty"`
+}
+
+type _List_CrossClusterTaskRequest_ValueList []*CrossClusterTaskRequest
+
+func (v _List_CrossClusterTaskRequest_ValueList) ForEach(f func(wire.Value) error) error {
+	for i, x := range v {
+		if x == nil {
+			return fmt.Errorf("invalid [%v]: value is nil", i)
+		}
+		w, err := x.ToWire()
+		if err != nil {
+			return err
+		}
+		err = f(w)
+		if err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func (v _List_CrossClusterTaskRequest_ValueList) Size() int {
+	return len(v)
+}
+
+func (_List_CrossClusterTaskRequest_ValueList) ValueType() wire.Type {
+	return wire.TStruct
+}
+
+func (_List_CrossClusterTaskRequest_ValueList) Close() {}
+
+type _Map_I32_List_CrossClusterTaskRequest_MapItemList map[int32][]*CrossClusterTaskRequest
+
+func (m _Map_I32_List_CrossClusterTaskRequest_MapItemList) ForEach(f func(wire.MapItem) error) error {
+	for k, v := range m {
+		if v == nil {
+			return fmt.Errorf("invalid [%v]: value is nil", k)
+		}
+		kw, err := wire.NewValueI32(k), error(nil)
+		if err != nil {
+			return err
+		}
+
+		vw, err := wire.NewValueList(_List_CrossClusterTaskRequest_ValueList(v)), error(nil)
+		if err != nil {
+			return err
+		}
+		err = f(wire.MapItem{Key: kw, Value: vw})
+		if err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func (m _Map_I32_List_CrossClusterTaskRequest_MapItemList) Size() int {
+	return len(m)
+}
+
+func (_Map_I32_List_CrossClusterTaskRequest_MapItemList) KeyType() wire.Type {
+	return wire.TI32
+}
+
+func (_Map_I32_List_CrossClusterTaskRequest_MapItemList) ValueType() wire.Type {
+	return wire.TList
+}
+
+func (_Map_I32_List_CrossClusterTaskRequest_MapItemList) Close() {}
+
+type _Map_I32_GetTaskFailedCause_MapItemList map[int32]GetTaskFailedCause
+
+func (m _Map_I32_GetTaskFailedCause_MapItemList) ForEach(f func(wire.MapItem) error) error {
+	for k, v := range m {
+		kw, err := wire.NewValueI32(k), error(nil)
+		if err != nil {
+			return err
+		}
+
+		vw, err := v.ToWire()
+		if err != nil {
+			return err
+		}
+		err = f(wire.MapItem{Key: kw, Value: vw})
+		if err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func (m _Map_I32_GetTaskFailedCause_MapItemList) Size() int {
+	return len(m)
+}
+
+func (_Map_I32_GetTaskFailedCause_MapItemList) KeyType() wire.Type {
+	return wire.TI32
+}
+
+func (_Map_I32_GetTaskFailedCause_MapItemList) ValueType() wire.Type {
+	return wire.TI32
+}
+
+func (_Map_I32_GetTaskFailedCause_MapItemList) Close() {}
+
+// ToWire translates a GetCrossClusterTasksResponse struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *GetCrossClusterTasksResponse) ToWire() (wire.Value, error) {
+	var (
+		fields [2]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.TasksByShard != nil {
+		w, err = wire.NewValueMap(_Map_I32_List_CrossClusterTaskRequest_MapItemList(v.TasksByShard)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+	if v.FailedCauseByShard != nil {
+		w, err = wire.NewValueMap(_Map_I32_GetTaskFailedCause_MapItemList(v.FailedCauseByShard)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 20, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+func _CrossClusterTaskRequest_Read(w wire.Value) (*CrossClusterTaskRequest, error) {
+	var v CrossClusterTaskRequest
+	err := v.FromWire(w)
+	return &v, err
+}
+
+func _List_CrossClusterTaskRequest_Read(l wire.ValueList) ([]*CrossClusterTaskRequest, error) {
+	if l.ValueType() != wire.TStruct {
+		return nil, nil
+	}
+
+	o := make([]*CrossClusterTaskRequest, 0, l.Size())
+	err := l.ForEach(func(x wire.Value) error {
+		i, err := _CrossClusterTaskRequest_Read(x)
+		if err != nil {
+			return err
+		}
+		o = append(o, i)
+		return nil
+	})
+	l.Close()
+	return o, err
+}
+
+func _Map_I32_List_CrossClusterTaskRequest_Read(m wire.MapItemList) (map[int32][]*CrossClusterTaskRequest, error) {
+	if m.KeyType() != wire.TI32 {
+		return nil, nil
+	}
+
+	if m.ValueType() != wire.TList {
+		return nil, nil
+	}
+
+	o := make(map[int32][]*CrossClusterTaskRequest, m.Size())
+	err := m.ForEach(func(x wire.MapItem) error {
+		k, err := x.Key.GetI32(), error(nil)
+		if err != nil {
+			return err
+		}
+
+		v, err := _List_CrossClusterTaskRequest_Read(x.Value.GetList())
+		if err != nil {
+			return err
+		}
+
+		o[k] = v
+		return nil
+	})
+	m.Close()
+	return o, err
+}
+
+func _GetTaskFailedCause_Read(w wire.Value) (GetTaskFailedCause, error) {
+	var v GetTaskFailedCause
+	err := v.FromWire(w)
+	return v, err
+}
+
+func _Map_I32_GetTaskFailedCause_Read(m wire.MapItemList) (map[int32]GetTaskFailedCause, error) {
+	if m.KeyType() != wire.TI32 {
+		return nil, nil
+	}
+
+	if m.ValueType() != wire.TI32 {
+		return nil, nil
+	}
+
+	o := make(map[int32]GetTaskFailedCause, m.Size())
+	err := m.ForEach(func(x wire.MapItem) error {
+		k, err := x.Key.GetI32(), error(nil)
+		if err != nil {
+			return err
+		}
+
+		v, err := _GetTaskFailedCause_Read(x.Value)
+		if err != nil {
+			return err
+		}
+
+		o[k] = v
+		return nil
+	})
+	m.Close()
+	return o, err
+}
+
+// FromWire deserializes a GetCrossClusterTasksResponse struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a GetCrossClusterTasksResponse struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v GetCrossClusterTasksResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *GetCrossClusterTasksResponse) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TMap {
+				v.TasksByShard, err = _Map_I32_List_CrossClusterTaskRequest_Read(field.Value.GetMap())
+				if err != nil {
+					return err
+				}
+
+			}
+		case 20:
+			if field.Value.Type() == wire.TMap {
+				v.FailedCauseByShard, err = _Map_I32_GetTaskFailedCause_Read(field.Value.GetMap())
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a GetCrossClusterTasksResponse
+// struct.
+func (v *GetCrossClusterTasksResponse) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [2]string
+	i := 0
+	if v.TasksByShard != nil {
+		fields[i] = fmt.Sprintf("TasksByShard: %v", v.TasksByShard)
+		i++
+	}
+	if v.FailedCauseByShard != nil {
+		fields[i] = fmt.Sprintf("FailedCauseByShard: %v", v.FailedCauseByShard)
+		i++
+	}
+
+	return fmt.Sprintf("GetCrossClusterTasksResponse{%v}", strings.Join(fields[:i], ", "))
+}
+
+func _List_CrossClusterTaskRequest_Equals(lhs, rhs []*CrossClusterTaskRequest) bool {
+	if len(lhs) != len(rhs) {
+		return false
+	}
+
+	for i, lv := range lhs {
+		rv := rhs[i]
+		if !lv.Equals(rv) {
+			return false
+		}
+	}
+
+	return true
+}
+
+func _Map_I32_List_CrossClusterTaskRequest_Equals(lhs, rhs map[int32][]*CrossClusterTaskRequest) bool {
+	if len(lhs) != len(rhs) {
+		return false
+	}
+
+	for lk, lv := range lhs {
+		rv, ok := rhs[lk]
+		if !ok {
+			return false
+		}
+		if !_List_CrossClusterTaskRequest_Equals(lv, rv) {
+			return false
+		}
+	}
+	return true
+}
+
+func _Map_I32_GetTaskFailedCause_Equals(lhs, rhs map[int32]GetTaskFailedCause) bool {
+	if len(lhs) != len(rhs) {
+		return false
+	}
+
+	for lk, lv := range lhs {
+		rv, ok := rhs[lk]
+		if !ok {
+			return false
+		}
+		if !lv.Equals(rv) {
+			return false
+		}
+	}
+	return true
+}
+
+// Equals returns true if all the fields of this GetCrossClusterTasksResponse match the
+// provided GetCrossClusterTasksResponse.
+//
+// This function performs a deep comparison.
+func (v *GetCrossClusterTasksResponse) Equals(rhs *GetCrossClusterTasksResponse) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !((v.TasksByShard == nil && rhs.TasksByShard == nil) || (v.TasksByShard != nil && rhs.TasksByShard != nil && _Map_I32_List_CrossClusterTaskRequest_Equals(v.TasksByShard, rhs.TasksByShard))) {
+		return false
+	}
+	if !((v.FailedCauseByShard == nil && rhs.FailedCauseByShard == nil) || (v.FailedCauseByShard != nil && rhs.FailedCauseByShard != nil && _Map_I32_GetTaskFailedCause_Equals(v.FailedCauseByShard, rhs.FailedCauseByShard))) {
+		return false
+	}
+
+	return true
+}
+
+type _List_CrossClusterTaskRequest_Zapper []*CrossClusterTaskRequest
+
+// MarshalLogArray implements zapcore.ArrayMarshaler, enabling
+// fast logging of _List_CrossClusterTaskRequest_Zapper.
+func (l _List_CrossClusterTaskRequest_Zapper) MarshalLogArray(enc zapcore.ArrayEncoder) (err error) {
+	for _, v := range l {
+		err = multierr.Append(err, enc.AppendObject(v))
+	}
+	return err
+}
+
+type _Map_I32_List_CrossClusterTaskRequest_Item_Zapper struct {
+	Key   int32
+	Value []*CrossClusterTaskRequest
+}
+
+// MarshalLogArray implements zapcore.ArrayMarshaler, enabling
+// fast logging of _Map_I32_List_CrossClusterTaskRequest_Item_Zapper.
+func (v _Map_I32_List_CrossClusterTaskRequest_Item_Zapper) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	enc.AddInt32("key", v.Key)
+	err = multierr.Append(err, enc.AddArray("value", (_List_CrossClusterTaskRequest_Zapper)(v.Value)))
+	return err
+}
+
+type _Map_I32_List_CrossClusterTaskRequest_Zapper map[int32][]*CrossClusterTaskRequest
+
+// MarshalLogArray implements zapcore.ArrayMarshaler, enabling
+// fast logging of _Map_I32_List_CrossClusterTaskRequest_Zapper.
+func (m _Map_I32_List_CrossClusterTaskRequest_Zapper) MarshalLogArray(enc zapcore.ArrayEncoder) (err error) {
+	for k, v := range m {
+		err = multierr.Append(err, enc.AppendObject(_Map_I32_List_CrossClusterTaskRequest_Item_Zapper{Key: k, Value: v}))
+	}
+	return err
+}
+
+type _Map_I32_GetTaskFailedCause_Item_Zapper struct {
+	Key   int32
+	Value GetTaskFailedCause
+}
+
+// MarshalLogArray implements zapcore.ArrayMarshaler, enabling
+// fast logging of _Map_I32_GetTaskFailedCause_Item_Zapper.
+func (v _Map_I32_GetTaskFailedCause_Item_Zapper) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	enc.AddInt32("key", v.Key)
+	err = multierr.Append(err, enc.AddObject("value", v.Value))
+	return err
+}
+
+type _Map_I32_GetTaskFailedCause_Zapper map[int32]GetTaskFailedCause
+
+// MarshalLogArray implements zapcore.ArrayMarshaler, enabling
+// fast logging of _Map_I32_GetTaskFailedCause_Zapper.
+func (m _Map_I32_GetTaskFailedCause_Zapper) MarshalLogArray(enc zapcore.ArrayEncoder) (err error) {
+	for k, v := range m {
+		err = multierr.Append(err, enc.AppendObject(_Map_I32_GetTaskFailedCause_Item_Zapper{Key: k, Value: v}))
+	}
+	return err
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of GetCrossClusterTasksResponse.
+func (v *GetCrossClusterTasksResponse) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.TasksByShard != nil {
+		err = multierr.Append(err, enc.AddArray("tasksByShard", (_Map_I32_List_CrossClusterTaskRequest_Zapper)(v.TasksByShard)))
+	}
+	if v.FailedCauseByShard != nil {
+		err = multierr.Append(err, enc.AddArray("failedCauseByShard", (_Map_I32_GetTaskFailedCause_Zapper)(v.FailedCauseByShard)))
+	}
+	return err
+}
+
+// GetTasksByShard returns the value of TasksByShard if it is set or its
+// zero value if it is unset.
+func (v *GetCrossClusterTasksResponse) GetTasksByShard() (o map[int32][]*CrossClusterTaskRequest) {
+	if v != nil && v.TasksByShard != nil {
+		return v.TasksByShard
+	}
+
+	return
+}
+
+// IsSetTasksByShard returns true if TasksByShard is not nil.
+func (v *GetCrossClusterTasksResponse) IsSetTasksByShard() bool {
+	return v != nil && v.TasksByShard != nil
+}
+
+// GetFailedCauseByShard returns the value of FailedCauseByShard if it is set or its
+// zero value if it is unset.
+func (v *GetCrossClusterTasksResponse) GetFailedCauseByShard() (o map[int32]GetTaskFailedCause) {
+	if v != nil && v.FailedCauseByShard != nil {
+		return v.FailedCauseByShard
+	}
+
+	return
+}
+
+// IsSetFailedCauseByShard returns true if FailedCauseByShard is not nil.
+func (v *GetCrossClusterTasksResponse) IsSetFailedCauseByShard() bool {
+	return v != nil && v.FailedCauseByShard != nil
+}
+
 type GetSearchAttributesResponse struct {
 	Keys map[string]IndexedValueType `json:"keys,omitempty"`
 }
@@ -20241,14 +24386,14 @@ func (_Map_String_IndexedValueType_MapItemList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *GetSearchAttributesResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -20310,16 +24455,16 @@ func _Map_String_IndexedValueType_Read(m wire.MapItemList) (map[string]IndexedVa
 // An error is returned if we were unable to build a GetSearchAttributesResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v GetSearchAttributesResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v GetSearchAttributesResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *GetSearchAttributesResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -20428,6 +24573,477 @@ func (v *GetSearchAttributesResponse) IsSetKeys() bool {
 	return v != nil && v.Keys != nil
 }
 
+type GetTaskFailedCause int32
+
+const (
+	GetTaskFailedCauseServiceBusy        GetTaskFailedCause = 0
+	GetTaskFailedCauseTimeout            GetTaskFailedCause = 1
+	GetTaskFailedCauseShardOwnershipLost GetTaskFailedCause = 2
+	GetTaskFailedCauseUncategorized      GetTaskFailedCause = 3
+)
+
+// GetTaskFailedCause_Values returns all recognized values of GetTaskFailedCause.
+func GetTaskFailedCause_Values() []GetTaskFailedCause {
+	return []GetTaskFailedCause{
+		GetTaskFailedCauseServiceBusy,
+		GetTaskFailedCauseTimeout,
+		GetTaskFailedCauseShardOwnershipLost,
+		GetTaskFailedCauseUncategorized,
+	}
+}
+
+// UnmarshalText tries to decode GetTaskFailedCause from a byte slice
+// containing its name.
+//
+//	var v GetTaskFailedCause
+//	err := v.UnmarshalText([]byte("SERVICE_BUSY"))
+func (v *GetTaskFailedCause) UnmarshalText(value []byte) error {
+	switch s := string(value); s {
+	case "SERVICE_BUSY":
+		*v = GetTaskFailedCauseServiceBusy
+		return nil
+	case "TIMEOUT":
+		*v = GetTaskFailedCauseTimeout
+		return nil
+	case "SHARD_OWNERSHIP_LOST":
+		*v = GetTaskFailedCauseShardOwnershipLost
+		return nil
+	case "UNCATEGORIZED":
+		*v = GetTaskFailedCauseUncategorized
+		return nil
+	default:
+		val, err := strconv.ParseInt(s, 10, 32)
+		if err != nil {
+			return fmt.Errorf("unknown enum value %q for %q: %v", s, "GetTaskFailedCause", err)
+		}
+		*v = GetTaskFailedCause(val)
+		return nil
+	}
+}
+
+// MarshalText encodes GetTaskFailedCause to text.
+//
+// If the enum value is recognized, its name is returned. Otherwise,
+// its integer value is returned.
+//
+// This implements the TextMarshaler interface.
+func (v GetTaskFailedCause) MarshalText() ([]byte, error) {
+	switch int32(v) {
+	case 0:
+		return []byte("SERVICE_BUSY"), nil
+	case 1:
+		return []byte("TIMEOUT"), nil
+	case 2:
+		return []byte("SHARD_OWNERSHIP_LOST"), nil
+	case 3:
+		return []byte("UNCATEGORIZED"), nil
+	}
+	return []byte(strconv.FormatInt(int64(v), 10)), nil
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of GetTaskFailedCause.
+// Enums are logged as objects, where the value is logged with key "value", and
+// if this value's name is known, the name is logged with key "name".
+func (v GetTaskFailedCause) MarshalLogObject(enc zapcore.ObjectEncoder) error {
+	enc.AddInt32("value", int32(v))
+	switch int32(v) {
+	case 0:
+		enc.AddString("name", "SERVICE_BUSY")
+	case 1:
+		enc.AddString("name", "TIMEOUT")
+	case 2:
+		enc.AddString("name", "SHARD_OWNERSHIP_LOST")
+	case 3:
+		enc.AddString("name", "UNCATEGORIZED")
+	}
+	return nil
+}
+
+// Ptr returns a pointer to this enum value.
+func (v GetTaskFailedCause) Ptr() *GetTaskFailedCause {
+	return &v
+}
+
+// ToWire translates GetTaskFailedCause into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// Enums are represented as 32-bit integers over the wire.
+func (v GetTaskFailedCause) ToWire() (wire.Value, error) {
+	return wire.NewValueI32(int32(v)), nil
+}
+
+// FromWire deserializes GetTaskFailedCause from its Thrift-level
+// representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return GetTaskFailedCause(0), err
+//	}
+//
+//	var v GetTaskFailedCause
+//	if err := v.FromWire(x); err != nil {
+//	  return GetTaskFailedCause(0), err
+//	}
+//	return v, nil
+func (v *GetTaskFailedCause) FromWire(w wire.Value) error {
+	*v = (GetTaskFailedCause)(w.GetI32())
+	return nil
+}
+
+// String returns a readable string representation of GetTaskFailedCause.
+func (v GetTaskFailedCause) String() string {
+	w := int32(v)
+	switch w {
+	case 0:
+		return "SERVICE_BUSY"
+	case 1:
+		return "TIMEOUT"
+	case 2:
+		return "SHARD_OWNERSHIP_LOST"
+	case 3:
+		return "UNCATEGORIZED"
+	}
+	return fmt.Sprintf("GetTaskFailedCause(%d)", w)
+}
+
+// Equals returns true if this GetTaskFailedCause value matches the provided
+// value.
+func (v GetTaskFailedCause) Equals(rhs GetTaskFailedCause) bool {
+	return v == rhs
+}
+
+// MarshalJSON serializes GetTaskFailedCause into JSON.
+//
+// If the enum value is recognized, its name is returned. Otherwise,
+// its integer value is returned.
+//
+// This implements json.Marshaler.
+func (v GetTaskFailedCause) MarshalJSON() ([]byte, error) {
+	switch int32(v) {
+	case 0:
+		return ([]byte)("\"SERVICE_BUSY\""), nil
+	case 1:
+		return ([]byte)("\"TIMEOUT\""), nil
+	case 2:
+		return ([]byte)("\"SHARD_OWNERSHIP_LOST\""), nil
+	case 3:
+		return ([]byte)("\"UNCATEGORIZED\""), nil
+	}
+	return ([]byte)(strconv.FormatInt(int64(v), 10)), nil
+}
+
+// UnmarshalJSON attempts to decode GetTaskFailedCause from its JSON
+// representation.
+//
+// This implementation supports both, numeric and string inputs. If a
+// string is provided, it must be a known enum name.
+//
+// This implements json.Unmarshaler.
+func (v *GetTaskFailedCause) UnmarshalJSON(text []byte) error {
+	d := json.NewDecoder(bytes.NewReader(text))
+	d.UseNumber()
+	t, err := d.Token()
+	if err != nil {
+		return err
+	}
+
+	switch w := t.(type) {
+	case json.Number:
+		x, err := w.Int64()
+		if err != nil {
+			return err
+		}
+		if x > math.MaxInt32 {
+			return fmt.Errorf("enum overflow from JSON %q for %q", text, "GetTaskFailedCause")
+		}
+		if x < math.MinInt32 {
+			return fmt.Errorf("enum underflow from JSON %q for %q", text, "GetTaskFailedCause")
+		}
+		*v = (GetTaskFailedCause)(x)
+		return nil
+	case string:
+		return v.UnmarshalText([]byte(w))
+	default:
+		return fmt.Errorf("invalid JSON value %q (%T) to unmarshal into %q", t, t, "GetTaskFailedCause")
+	}
+}
+
+type GetTaskListsByDomainRequest struct {
+	DomainName *string `json:"domainName,omitempty"`
+}
+
+// ToWire translates a GetTaskListsByDomainRequest struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *GetTaskListsByDomainRequest) ToWire() (wire.Value, error) {
+	var (
+		fields [1]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.DomainName != nil {
+		w, err = wire.NewValueString(*(v.DomainName)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+// FromWire deserializes a GetTaskListsByDomainRequest struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a GetTaskListsByDomainRequest struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v GetTaskListsByDomainRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *GetTaskListsByDomainRequest) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.DomainName = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a GetTaskListsByDomainRequest
+// struct.
+func (v *GetTaskListsByDomainRequest) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [1]string
+	i := 0
+	if v.DomainName != nil {
+		fields[i] = fmt.Sprintf("DomainName: %v", *(v.DomainName))
+		i++
+	}
+
+	return fmt.Sprintf("GetTaskListsByDomainRequest{%v}", strings.Join(fields[:i], ", "))
+}
+
+// Equals returns true if all the fields of this GetTaskListsByDomainRequest match the
+// provided GetTaskListsByDomainRequest.
+//
+// This function performs a deep comparison.
+func (v *GetTaskListsByDomainRequest) Equals(rhs *GetTaskListsByDomainRequest) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !_String_EqualsPtr(v.DomainName, rhs.DomainName) {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of GetTaskListsByDomainRequest.
+func (v *GetTaskListsByDomainRequest) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.DomainName != nil {
+		enc.AddString("domainName", *v.DomainName)
+	}
+	return err
+}
+
+// GetDomainName returns the value of DomainName if it is set or its
+// zero value if it is unset.
+func (v *GetTaskListsByDomainRequest) GetDomainName() (o string) {
+	if v != nil && v.DomainName != nil {
+		return *v.DomainName
+	}
+
+	return
+}
+
+// IsSetDomainName returns true if DomainName is not nil.
+func (v *GetTaskListsByDomainRequest) IsSetDomainName() bool {
+	return v != nil && v.DomainName != nil
+}
+
+type GetTaskListsByDomainResponse struct {
+	TaskListNames []string `json:"taskListNames,omitempty"`
+}
+
+// ToWire translates a GetTaskListsByDomainResponse struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *GetTaskListsByDomainResponse) ToWire() (wire.Value, error) {
+	var (
+		fields [1]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.TaskListNames != nil {
+		w, err = wire.NewValueList(_List_String_ValueList(v.TaskListNames)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+// FromWire deserializes a GetTaskListsByDomainResponse struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a GetTaskListsByDomainResponse struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v GetTaskListsByDomainResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *GetTaskListsByDomainResponse) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TList {
+				v.TaskListNames, err = _List_String_Read(field.Value.GetList())
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a GetTaskListsByDomainResponse
+// struct.
+func (v *GetTaskListsByDomainResponse) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [1]string
+	i := 0
+	if v.TaskListNames != nil {
+		fields[i] = fmt.Sprintf("TaskListNames: %v", v.TaskListNames)
+		i++
+	}
+
+	return fmt.Sprintf("GetTaskListsByDomainResponse{%v}", strings.Join(fields[:i], ", "))
+}
+
+// Equals returns true if all the fields of this GetTaskListsByDomainResponse match the
+// provided GetTaskListsByDomainResponse.
+//
+// This function performs a deep comparison.
+func (v *GetTaskListsByDomainResponse) Equals(rhs *GetTaskListsByDomainResponse) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !((v.TaskListNames == nil && rhs.TaskListNames == nil) || (v.TaskListNames != nil && rhs.TaskListNames != nil && _List_String_Equals(v.TaskListNames, rhs.TaskListNames))) {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of GetTaskListsByDomainResponse.
+func (v *GetTaskListsByDomainResponse) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.TaskListNames != nil {
+		err = multierr.Append(err, enc.AddArray("taskListNames", (_List_String_Zapper)(v.TaskListNames)))
+	}
+	return err
+}
+
+// GetTaskListNames returns the value of TaskListNames if it is set or its
+// zero value if it is unset.
+func (v *GetTaskListsByDomainResponse) GetTaskListNames() (o []string) {
+	if v != nil && v.TaskListNames != nil {
+		return v.TaskListNames
+	}
+
+	return
+}
+
+// IsSetTaskListNames returns true if TaskListNames is not nil.
+func (v *GetTaskListsByDomainResponse) IsSetTaskListNames() bool {
+	return v != nil && v.TaskListNames != nil
+}
+
 type GetWorkflowExecutionHistoryRequest struct {
 	Domain                 *string                 `json:"domain,omitempty"`
 	Execution              *WorkflowExecution      `json:"execution,omitempty"`
@@ -20445,14 +25061,14 @@ type GetWorkflowExecutionHistoryRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *GetWorkflowExecutionHistoryRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [7]wire.Field
@@ -20534,16 +25150,16 @@ func _HistoryEventFilterType_Read(w wire.Value) (HistoryEventFilterType, error) 
 // An error is returned if we were unable to build a GetWorkflowExecutionHistoryRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v GetWorkflowExecutionHistoryRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v GetWorkflowExecutionHistoryRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *GetWorkflowExecutionHistoryRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -20885,14 +25501,14 @@ func (_List_DataBlob_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *GetWorkflowExecutionHistoryResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -20974,16 +25590,16 @@ func _List_DataBlob_Read(l wire.ValueList) ([]*DataBlob, error) {
 // An error is returned if we were unable to build a GetWorkflowExecutionHistoryResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v GetWorkflowExecutionHistoryResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v GetWorkflowExecutionHistoryResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *GetWorkflowExecutionHistoryResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -21240,14 +25856,14 @@ func (_Map_String_Binary_MapItemList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *Header) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -21303,16 +25919,16 @@ func _Map_String_Binary_Read(m wire.MapItemList) (map[string][]byte, error) {
 // An error is returned if we were unable to build a Header struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v Header
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v Header
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *Header) FromWire(w wire.Value) error {
 	var err error
 
@@ -21461,14 +26077,14 @@ func (_List_HistoryEvent_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *History) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -21487,12 +26103,6 @@ func (v *History) ToWire() (wire.Value, error) {
 	}
 
 	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
-}
-
-func _HistoryEvent_Read(w wire.Value) (*HistoryEvent, error) {
-	var v HistoryEvent
-	err := v.FromWire(w)
-	return &v, err
 }
 
 func _List_HistoryEvent_Read(l wire.ValueList) ([]*HistoryEvent, error) {
@@ -21520,16 +26130,16 @@ func _List_HistoryEvent_Read(l wire.ValueList) ([]*HistoryEvent, error) {
 // An error is returned if we were unable to build a History struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v History
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v History
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *History) FromWire(w wire.Value) error {
 	var err error
 
@@ -21678,14 +26288,14 @@ func (_List_HistoryBranchRange_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *HistoryBranch) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -21753,16 +26363,16 @@ func _List_HistoryBranchRange_Read(l wire.ValueList) ([]*HistoryBranchRange, err
 // An error is returned if we were unable to build a HistoryBranch struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v HistoryBranch
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v HistoryBranch
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *HistoryBranch) FromWire(w wire.Value) error {
 	var err error
 
@@ -21952,14 +26562,14 @@ type HistoryBranchRange struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *HistoryBranchRange) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -22003,16 +26613,16 @@ func (v *HistoryBranchRange) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a HistoryBranchRange struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v HistoryBranchRange
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v HistoryBranchRange
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *HistoryBranchRange) FromWire(w wire.Value) error {
 	var err error
 
@@ -22222,14 +26832,14 @@ type HistoryEvent struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *HistoryEvent) ToWire() (wire.Value, error) {
 	var (
 		fields [47]wire.Field
@@ -22804,12 +27414,6 @@ func _WorkflowExecutionContinuedAsNewEventAttributes_Read(w wire.Value) (*Workfl
 	return &v, err
 }
 
-func _StartChildWorkflowExecutionInitiatedEventAttributes_Read(w wire.Value) (*StartChildWorkflowExecutionInitiatedEventAttributes, error) {
-	var v StartChildWorkflowExecutionInitiatedEventAttributes
-	err := v.FromWire(w)
-	return &v, err
-}
-
 func _StartChildWorkflowExecutionFailedEventAttributes_Read(w wire.Value) (*StartChildWorkflowExecutionFailedEventAttributes, error) {
 	var v StartChildWorkflowExecutionFailedEventAttributes
 	err := v.FromWire(w)
@@ -22883,16 +27487,16 @@ func _UpsertWorkflowSearchAttributesEventAttributes_Read(w wire.Value) (*UpsertW
 // An error is returned if we were unable to build a HistoryEvent struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v HistoryEvent
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v HistoryEvent
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *HistoryEvent) FromWire(w wire.Value) error {
 	var err error
 
@@ -24529,8 +29133,8 @@ func HistoryEventFilterType_Values() []HistoryEventFilterType {
 // UnmarshalText tries to decode HistoryEventFilterType from a byte slice
 // containing its name.
 //
-//   var v HistoryEventFilterType
-//   err := v.UnmarshalText([]byte("ALL_EVENT"))
+//	var v HistoryEventFilterType
+//	err := v.UnmarshalText([]byte("ALL_EVENT"))
 func (v *HistoryEventFilterType) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "ALL_EVENT":
@@ -24597,16 +29201,16 @@ func (v HistoryEventFilterType) ToWire() (wire.Value, error) {
 // FromWire deserializes HistoryEventFilterType from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return HistoryEventFilterType(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return HistoryEventFilterType(0), err
+//	}
 //
-//   var v HistoryEventFilterType
-//   if err := v.FromWire(x); err != nil {
-//     return HistoryEventFilterType(0), err
-//   }
-//   return v, nil
+//	var v HistoryEventFilterType
+//	if err := v.FromWire(x); err != nil {
+//	  return HistoryEventFilterType(0), err
+//	}
+//	return v, nil
 func (v *HistoryEventFilterType) FromWire(w wire.Value) error {
 	*v = (HistoryEventFilterType)(w.GetI32())
 	return nil
@@ -24708,8 +29312,8 @@ func IndexedValueType_Values() []IndexedValueType {
 // UnmarshalText tries to decode IndexedValueType from a byte slice
 // containing its name.
 //
-//   var v IndexedValueType
-//   err := v.UnmarshalText([]byte("STRING"))
+//	var v IndexedValueType
+//	err := v.UnmarshalText([]byte("STRING"))
 func (v *IndexedValueType) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "STRING":
@@ -24804,16 +29408,16 @@ func (v IndexedValueType) ToWire() (wire.Value, error) {
 // FromWire deserializes IndexedValueType from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return IndexedValueType(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return IndexedValueType(0), err
+//	}
 //
-//   var v IndexedValueType
-//   if err := v.FromWire(x); err != nil {
-//     return IndexedValueType(0), err
-//   }
-//   return v, nil
+//	var v IndexedValueType
+//	if err := v.FromWire(x); err != nil {
+//	  return IndexedValueType(0), err
+//	}
+//	return v, nil
 func (v *IndexedValueType) FromWire(w wire.Value) error {
 	*v = (IndexedValueType)(w.GetI32())
 	return nil
@@ -24916,14 +29520,14 @@ type InternalDataInconsistencyError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *InternalDataInconsistencyError) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -24949,16 +29553,16 @@ func (v *InternalDataInconsistencyError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a InternalDataInconsistencyError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v InternalDataInconsistencyError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v InternalDataInconsistencyError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *InternalDataInconsistencyError) FromWire(w wire.Value) error {
 	var err error
 
@@ -25056,14 +29660,14 @@ type InternalServiceError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *InternalServiceError) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -25089,16 +29693,16 @@ func (v *InternalServiceError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a InternalServiceError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v InternalServiceError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v InternalServiceError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *InternalServiceError) FromWire(w wire.Value) error {
 	var err error
 
@@ -25196,14 +29800,14 @@ type LimitExceededError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *LimitExceededError) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -25229,16 +29833,16 @@ func (v *LimitExceededError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a LimitExceededError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v LimitExceededError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v LimitExceededError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *LimitExceededError) FromWire(w wire.Value) error {
 	var err error
 
@@ -25339,14 +29943,14 @@ type ListArchivedWorkflowExecutionsRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ListArchivedWorkflowExecutionsRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -25398,16 +30002,16 @@ func (v *ListArchivedWorkflowExecutionsRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ListArchivedWorkflowExecutionsRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ListArchivedWorkflowExecutionsRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ListArchivedWorkflowExecutionsRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ListArchivedWorkflowExecutionsRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -25634,14 +30238,14 @@ func (_List_WorkflowExecutionInfo_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ListArchivedWorkflowExecutionsResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -25695,16 +30299,16 @@ func _List_WorkflowExecutionInfo_Read(l wire.ValueList) ([]*WorkflowExecutionInf
 // An error is returned if we were unable to build a ListArchivedWorkflowExecutionsResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ListArchivedWorkflowExecutionsResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ListArchivedWorkflowExecutionsResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ListArchivedWorkflowExecutionsResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -25861,14 +30465,14 @@ type ListClosedWorkflowExecutionsRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ListClosedWorkflowExecutionsRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [7]wire.Field
@@ -25968,16 +30572,16 @@ func _WorkflowExecutionCloseStatus_Read(w wire.Value) (WorkflowExecutionCloseSta
 // An error is returned if we were unable to build a ListClosedWorkflowExecutionsRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ListClosedWorkflowExecutionsRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ListClosedWorkflowExecutionsRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ListClosedWorkflowExecutionsRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -26284,14 +30888,14 @@ type ListClosedWorkflowExecutionsResponse struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ListClosedWorkflowExecutionsResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -26327,16 +30931,16 @@ func (v *ListClosedWorkflowExecutionsResponse) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ListClosedWorkflowExecutionsResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ListClosedWorkflowExecutionsResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ListClosedWorkflowExecutionsResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ListClosedWorkflowExecutionsResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -26462,14 +31066,14 @@ type ListDomainsRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ListDomainsRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -26505,16 +31109,16 @@ func (v *ListDomainsRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ListDomainsRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ListDomainsRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ListDomainsRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ListDomainsRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -26671,14 +31275,14 @@ func (_List_DescribeDomainResponse_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ListDomainsResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -26738,16 +31342,16 @@ func _List_DescribeDomainResponse_Read(l wire.ValueList) ([]*DescribeDomainRespo
 // An error is returned if we were unable to build a ListDomainsResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ListDomainsResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ListDomainsResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ListDomainsResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -26903,14 +31507,14 @@ type ListOpenWorkflowExecutionsRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ListOpenWorkflowExecutionsRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -26978,16 +31582,16 @@ func (v *ListOpenWorkflowExecutionsRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ListOpenWorkflowExecutionsRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ListOpenWorkflowExecutionsRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ListOpenWorkflowExecutionsRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ListOpenWorkflowExecutionsRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -27249,14 +31853,14 @@ type ListOpenWorkflowExecutionsResponse struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ListOpenWorkflowExecutionsResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -27292,16 +31896,16 @@ func (v *ListOpenWorkflowExecutionsResponse) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ListOpenWorkflowExecutionsResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ListOpenWorkflowExecutionsResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ListOpenWorkflowExecutionsResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ListOpenWorkflowExecutionsResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -27427,14 +32031,14 @@ type ListTaskListPartitionsRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ListTaskListPartitionsRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -27470,16 +32074,16 @@ func (v *ListTaskListPartitionsRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ListTaskListPartitionsRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ListTaskListPartitionsRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ListTaskListPartitionsRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ListTaskListPartitionsRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -27636,14 +32240,14 @@ func (_List_TaskListPartitionMetadata_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ListTaskListPartitionsResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -27703,16 +32307,16 @@ func _List_TaskListPartitionMetadata_Read(l wire.ValueList) ([]*TaskListPartitio
 // An error is returned if we were unable to build a ListTaskListPartitionsResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ListTaskListPartitionsResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ListTaskListPartitionsResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ListTaskListPartitionsResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -27866,14 +32470,14 @@ type ListWorkflowExecutionsRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ListWorkflowExecutionsRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -27925,16 +32529,16 @@ func (v *ListWorkflowExecutionsRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ListWorkflowExecutionsRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ListWorkflowExecutionsRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ListWorkflowExecutionsRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ListWorkflowExecutionsRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -28132,14 +32736,14 @@ type ListWorkflowExecutionsResponse struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ListWorkflowExecutionsResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -28175,16 +32779,16 @@ func (v *ListWorkflowExecutionsResponse) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ListWorkflowExecutionsResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ListWorkflowExecutionsResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ListWorkflowExecutionsResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ListWorkflowExecutionsResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -28312,14 +32916,14 @@ type MarkerRecordedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *MarkerRecordedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -28371,16 +32975,16 @@ func (v *MarkerRecordedEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a MarkerRecordedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v MarkerRecordedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v MarkerRecordedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *MarkerRecordedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -28575,14 +33179,14 @@ type Memo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *Memo) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -28610,16 +33214,16 @@ func (v *Memo) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a Memo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v Memo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v Memo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *Memo) FromWire(w wire.Value) error {
 	var err error
 
@@ -28720,8 +33324,8 @@ func ParentClosePolicy_Values() []ParentClosePolicy {
 // UnmarshalText tries to decode ParentClosePolicy from a byte slice
 // containing its name.
 //
-//   var v ParentClosePolicy
-//   err := v.UnmarshalText([]byte("ABANDON"))
+//	var v ParentClosePolicy
+//	err := v.UnmarshalText([]byte("ABANDON"))
 func (v *ParentClosePolicy) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "ABANDON":
@@ -28795,16 +33399,16 @@ func (v ParentClosePolicy) ToWire() (wire.Value, error) {
 // FromWire deserializes ParentClosePolicy from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return ParentClosePolicy(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return ParentClosePolicy(0), err
+//	}
 //
-//   var v ParentClosePolicy
-//   if err := v.FromWire(x); err != nil {
-//     return ParentClosePolicy(0), err
-//   }
-//   return v, nil
+//	var v ParentClosePolicy
+//	if err := v.FromWire(x); err != nil {
+//	  return ParentClosePolicy(0), err
+//	}
+//	return v, nil
 func (v *ParentClosePolicy) FromWire(w wire.Value) error {
 	*v = (ParentClosePolicy)(w.GetI32())
 	return nil
@@ -28907,14 +33511,14 @@ type PendingActivityInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *PendingActivityInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [13]wire.Field
@@ -29044,16 +33648,16 @@ func _PendingActivityState_Read(w wire.Value) (PendingActivityState, error) {
 // An error is returned if we were unable to build a PendingActivityInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v PendingActivityInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v PendingActivityInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *PendingActivityInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -29580,8 +34184,8 @@ func PendingActivityState_Values() []PendingActivityState {
 // UnmarshalText tries to decode PendingActivityState from a byte slice
 // containing its name.
 //
-//   var v PendingActivityState
-//   err := v.UnmarshalText([]byte("SCHEDULED"))
+//	var v PendingActivityState
+//	err := v.UnmarshalText([]byte("SCHEDULED"))
 func (v *PendingActivityState) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "SCHEDULED":
@@ -29655,16 +34259,16 @@ func (v PendingActivityState) ToWire() (wire.Value, error) {
 // FromWire deserializes PendingActivityState from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return PendingActivityState(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return PendingActivityState(0), err
+//	}
 //
-//   var v PendingActivityState
-//   if err := v.FromWire(x); err != nil {
-//     return PendingActivityState(0), err
-//   }
-//   return v, nil
+//	var v PendingActivityState
+//	if err := v.FromWire(x); err != nil {
+//	  return PendingActivityState(0), err
+//	}
+//	return v, nil
 func (v *PendingActivityState) FromWire(w wire.Value) error {
 	*v = (PendingActivityState)(w.GetI32())
 	return nil
@@ -29759,14 +34363,14 @@ type PendingChildExecutionInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *PendingChildExecutionInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -29832,16 +34436,16 @@ func _ParentClosePolicy_Read(w wire.Value) (ParentClosePolicy, error) {
 // An error is returned if we were unable to build a PendingChildExecutionInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v PendingChildExecutionInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v PendingChildExecutionInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *PendingChildExecutionInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -30089,14 +34693,14 @@ type PendingDecisionInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *PendingDecisionInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -30162,16 +34766,16 @@ func _PendingDecisionState_Read(w wire.Value) (PendingDecisionState, error) {
 // An error is returned if we were unable to build a PendingDecisionInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v PendingDecisionInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v PendingDecisionInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *PendingDecisionInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -30422,8 +35026,8 @@ func PendingDecisionState_Values() []PendingDecisionState {
 // UnmarshalText tries to decode PendingDecisionState from a byte slice
 // containing its name.
 //
-//   var v PendingDecisionState
-//   err := v.UnmarshalText([]byte("SCHEDULED"))
+//	var v PendingDecisionState
+//	err := v.UnmarshalText([]byte("SCHEDULED"))
 func (v *PendingDecisionState) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "SCHEDULED":
@@ -30490,16 +35094,16 @@ func (v PendingDecisionState) ToWire() (wire.Value, error) {
 // FromWire deserializes PendingDecisionState from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return PendingDecisionState(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return PendingDecisionState(0), err
+//	}
 //
-//   var v PendingDecisionState
-//   if err := v.FromWire(x); err != nil {
-//     return PendingDecisionState(0), err
-//   }
-//   return v, nil
+//	var v PendingDecisionState
+//	if err := v.FromWire(x); err != nil {
+//	  return PendingDecisionState(0), err
+//	}
+//	return v, nil
 func (v *PendingDecisionState) FromWire(w wire.Value) error {
 	*v = (PendingDecisionState)(w.GetI32())
 	return nil
@@ -30589,14 +35193,14 @@ type PollForActivityTaskRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *PollForActivityTaskRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -30654,16 +35258,16 @@ func _TaskListMetadata_Read(w wire.Value) (*TaskListMetadata, error) {
 // An error is returned if we were unable to build a PollForActivityTaskRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v PollForActivityTaskRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v PollForActivityTaskRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *PollForActivityTaskRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -30873,14 +35477,14 @@ type PollForActivityTaskResponse struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *PollForActivityTaskResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [16]wire.Field
@@ -31028,16 +35632,16 @@ func (v *PollForActivityTaskResponse) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a PollForActivityTaskResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v PollForActivityTaskResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v PollForActivityTaskResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *PollForActivityTaskResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -31645,14 +36249,14 @@ type PollForDecisionTaskRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *PollForDecisionTaskRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -31704,16 +36308,16 @@ func (v *PollForDecisionTaskRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a PollForDecisionTaskRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v PollForDecisionTaskRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v PollForDecisionTaskRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *PollForDecisionTaskRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -31962,14 +36566,14 @@ func (_Map_String_WorkflowQuery_MapItemList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *PollForDecisionTaskResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [15]wire.Field
@@ -32143,16 +36747,16 @@ func _Map_String_WorkflowQuery_Read(m wire.MapItemList) (map[string]*WorkflowQue
 // An error is returned if we were unable to build a PollForDecisionTaskResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v PollForDecisionTaskResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v PollForDecisionTaskResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *PollForDecisionTaskResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -32750,14 +37354,14 @@ type PollerInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *PollerInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -32801,16 +37405,16 @@ func (v *PollerInfo) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a PollerInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v PollerInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v PollerInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *PollerInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -32991,8 +37595,8 @@ func QueryConsistencyLevel_Values() []QueryConsistencyLevel {
 // UnmarshalText tries to decode QueryConsistencyLevel from a byte slice
 // containing its name.
 //
-//   var v QueryConsistencyLevel
-//   err := v.UnmarshalText([]byte("EVENTUAL"))
+//	var v QueryConsistencyLevel
+//	err := v.UnmarshalText([]byte("EVENTUAL"))
 func (v *QueryConsistencyLevel) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "EVENTUAL":
@@ -33059,16 +37663,16 @@ func (v QueryConsistencyLevel) ToWire() (wire.Value, error) {
 // FromWire deserializes QueryConsistencyLevel from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return QueryConsistencyLevel(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return QueryConsistencyLevel(0), err
+//	}
 //
-//   var v QueryConsistencyLevel
-//   if err := v.FromWire(x); err != nil {
-//     return QueryConsistencyLevel(0), err
-//   }
-//   return v, nil
+//	var v QueryConsistencyLevel
+//	if err := v.FromWire(x); err != nil {
+//	  return QueryConsistencyLevel(0), err
+//	}
+//	return v, nil
 func (v *QueryConsistencyLevel) FromWire(w wire.Value) error {
 	*v = (QueryConsistencyLevel)(w.GetI32())
 	return nil
@@ -33155,14 +37759,14 @@ type QueryFailedError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *QueryFailedError) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -33188,16 +37792,16 @@ func (v *QueryFailedError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a QueryFailedError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v QueryFailedError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v QueryFailedError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *QueryFailedError) FromWire(w wire.Value) error {
 	var err error
 
@@ -33302,8 +37906,8 @@ func QueryRejectCondition_Values() []QueryRejectCondition {
 // UnmarshalText tries to decode QueryRejectCondition from a byte slice
 // containing its name.
 //
-//   var v QueryRejectCondition
-//   err := v.UnmarshalText([]byte("NOT_OPEN"))
+//	var v QueryRejectCondition
+//	err := v.UnmarshalText([]byte("NOT_OPEN"))
 func (v *QueryRejectCondition) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "NOT_OPEN":
@@ -33370,16 +37974,16 @@ func (v QueryRejectCondition) ToWire() (wire.Value, error) {
 // FromWire deserializes QueryRejectCondition from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return QueryRejectCondition(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return QueryRejectCondition(0), err
+//	}
 //
-//   var v QueryRejectCondition
-//   if err := v.FromWire(x); err != nil {
-//     return QueryRejectCondition(0), err
-//   }
-//   return v, nil
+//	var v QueryRejectCondition
+//	if err := v.FromWire(x); err != nil {
+//	  return QueryRejectCondition(0), err
+//	}
+//	return v, nil
 func (v *QueryRejectCondition) FromWire(w wire.Value) error {
 	*v = (QueryRejectCondition)(w.GetI32())
 	return nil
@@ -33466,14 +38070,14 @@ type QueryRejected struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *QueryRejected) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -33501,16 +38105,16 @@ func (v *QueryRejected) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a QueryRejected struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v QueryRejected
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v QueryRejected
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *QueryRejected) FromWire(w wire.Value) error {
 	var err error
 
@@ -33611,8 +38215,8 @@ func QueryResultType_Values() []QueryResultType {
 // UnmarshalText tries to decode QueryResultType from a byte slice
 // containing its name.
 //
-//   var v QueryResultType
-//   err := v.UnmarshalText([]byte("ANSWERED"))
+//	var v QueryResultType
+//	err := v.UnmarshalText([]byte("ANSWERED"))
 func (v *QueryResultType) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "ANSWERED":
@@ -33679,16 +38283,16 @@ func (v QueryResultType) ToWire() (wire.Value, error) {
 // FromWire deserializes QueryResultType from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return QueryResultType(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return QueryResultType(0), err
+//	}
 //
-//   var v QueryResultType
-//   if err := v.FromWire(x); err != nil {
-//     return QueryResultType(0), err
-//   }
-//   return v, nil
+//	var v QueryResultType
+//	if err := v.FromWire(x); err != nil {
+//	  return QueryResultType(0), err
+//	}
+//	return v, nil
 func (v *QueryResultType) FromWire(w wire.Value) error {
 	*v = (QueryResultType)(w.GetI32())
 	return nil
@@ -33782,8 +38386,8 @@ func QueryTaskCompletedType_Values() []QueryTaskCompletedType {
 // UnmarshalText tries to decode QueryTaskCompletedType from a byte slice
 // containing its name.
 //
-//   var v QueryTaskCompletedType
-//   err := v.UnmarshalText([]byte("COMPLETED"))
+//	var v QueryTaskCompletedType
+//	err := v.UnmarshalText([]byte("COMPLETED"))
 func (v *QueryTaskCompletedType) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "COMPLETED":
@@ -33850,16 +38454,16 @@ func (v QueryTaskCompletedType) ToWire() (wire.Value, error) {
 // FromWire deserializes QueryTaskCompletedType from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return QueryTaskCompletedType(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return QueryTaskCompletedType(0), err
+//	}
 //
-//   var v QueryTaskCompletedType
-//   if err := v.FromWire(x); err != nil {
-//     return QueryTaskCompletedType(0), err
-//   }
-//   return v, nil
+//	var v QueryTaskCompletedType
+//	if err := v.FromWire(x); err != nil {
+//	  return QueryTaskCompletedType(0), err
+//	}
+//	return v, nil
 func (v *QueryTaskCompletedType) FromWire(w wire.Value) error {
 	*v = (QueryTaskCompletedType)(w.GetI32())
 	return nil
@@ -33950,14 +38554,14 @@ type QueryWorkflowRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *QueryWorkflowRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -34029,16 +38633,16 @@ func _QueryConsistencyLevel_Read(w wire.Value) (QueryConsistencyLevel, error) {
 // An error is returned if we were unable to build a QueryWorkflowRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v QueryWorkflowRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v QueryWorkflowRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *QueryWorkflowRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -34289,14 +38893,14 @@ type QueryWorkflowResponse struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *QueryWorkflowResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -34338,16 +38942,16 @@ func _QueryRejected_Read(w wire.Value) (*QueryRejected, error) {
 // An error is returned if we were unable to build a QueryWorkflowResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v QueryWorkflowResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v QueryWorkflowResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *QueryWorkflowResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -34474,14 +39078,14 @@ type ReapplyEventsRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ReapplyEventsRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -34525,16 +39129,16 @@ func (v *ReapplyEventsRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ReapplyEventsRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ReapplyEventsRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ReapplyEventsRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ReapplyEventsRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -34699,14 +39303,14 @@ type RecordActivityTaskHeartbeatByIDRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RecordActivityTaskHeartbeatByIDRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -34774,16 +39378,16 @@ func (v *RecordActivityTaskHeartbeatByIDRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RecordActivityTaskHeartbeatByIDRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RecordActivityTaskHeartbeatByIDRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RecordActivityTaskHeartbeatByIDRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RecordActivityTaskHeartbeatByIDRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -35052,14 +39656,14 @@ type RecordActivityTaskHeartbeatRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RecordActivityTaskHeartbeatRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -35103,16 +39707,16 @@ func (v *RecordActivityTaskHeartbeatRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RecordActivityTaskHeartbeatRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RecordActivityTaskHeartbeatRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RecordActivityTaskHeartbeatRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RecordActivityTaskHeartbeatRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -35272,14 +39876,14 @@ type RecordActivityTaskHeartbeatResponse struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RecordActivityTaskHeartbeatResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -35307,16 +39911,16 @@ func (v *RecordActivityTaskHeartbeatResponse) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RecordActivityTaskHeartbeatResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RecordActivityTaskHeartbeatResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RecordActivityTaskHeartbeatResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RecordActivityTaskHeartbeatResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -35412,14 +40016,14 @@ type RecordMarkerDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RecordMarkerDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -35463,16 +40067,16 @@ func (v *RecordMarkerDecisionAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RecordMarkerDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RecordMarkerDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RecordMarkerDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RecordMarkerDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -35633,14 +40237,14 @@ type RefreshWorkflowTasksRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RefreshWorkflowTasksRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -35676,16 +40280,16 @@ func (v *RefreshWorkflowTasksRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RefreshWorkflowTasksRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RefreshWorkflowTasksRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RefreshWorkflowTasksRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RefreshWorkflowTasksRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -35816,6 +40420,7 @@ type RegisterDomainRequest struct {
 	HistoryArchivalURI                     *string                            `json:"historyArchivalURI,omitempty"`
 	VisibilityArchivalStatus               *ArchivalStatus                    `json:"visibilityArchivalStatus,omitempty"`
 	VisibilityArchivalURI                  *string                            `json:"visibilityArchivalURI,omitempty"`
+	ID                                     *string                            `json:"id,omitempty"`
 }
 
 // Default_RegisterDomainRequest constructs a new RegisterDomainRequest struct,
@@ -35833,17 +40438,17 @@ func Default_RegisterDomainRequest() *RegisterDomainRequest {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RegisterDomainRequest) ToWire() (wire.Value, error) {
 	var (
-		fields [14]wire.Field
+		fields [15]wire.Field
 		i      int = 0
 		w      wire.Value
 		err    error
@@ -35965,6 +40570,14 @@ func (v *RegisterDomainRequest) ToWire() (wire.Value, error) {
 		fields[i] = wire.Field{ID: 160, Value: w}
 		i++
 	}
+	if v.ID != nil {
+		w, err = wire.NewValueString(*(v.ID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 500, Value: w}
+		i++
+	}
 
 	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
 }
@@ -35976,16 +40589,16 @@ func (v *RegisterDomainRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RegisterDomainRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RegisterDomainRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RegisterDomainRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RegisterDomainRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -36127,6 +40740,16 @@ func (v *RegisterDomainRequest) FromWire(w wire.Value) error {
 				}
 
 			}
+		case 500:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.ID = &x
+				if err != nil {
+					return err
+				}
+
+			}
 		}
 	}
 
@@ -36144,7 +40767,7 @@ func (v *RegisterDomainRequest) String() string {
 		return "<nil>"
 	}
 
-	var fields [14]string
+	var fields [15]string
 	i := 0
 	if v.Name != nil {
 		fields[i] = fmt.Sprintf("Name: %v", *(v.Name))
@@ -36200,6 +40823,10 @@ func (v *RegisterDomainRequest) String() string {
 	}
 	if v.VisibilityArchivalURI != nil {
 		fields[i] = fmt.Sprintf("VisibilityArchivalURI: %v", *(v.VisibilityArchivalURI))
+		i++
+	}
+	if v.ID != nil {
+		fields[i] = fmt.Sprintf("ID: %v", *(v.ID))
 		i++
 	}
 
@@ -36258,6 +40885,9 @@ func (v *RegisterDomainRequest) Equals(rhs *RegisterDomainRequest) bool {
 	if !_String_EqualsPtr(v.VisibilityArchivalURI, rhs.VisibilityArchivalURI) {
 		return false
 	}
+	if !_String_EqualsPtr(v.ID, rhs.ID) {
+		return false
+	}
 
 	return true
 }
@@ -36309,6 +40939,9 @@ func (v *RegisterDomainRequest) MarshalLogObject(enc zapcore.ObjectEncoder) (err
 	}
 	if v.VisibilityArchivalURI != nil {
 		enc.AddString("visibilityArchivalURI", *v.VisibilityArchivalURI)
+	}
+	if v.ID != nil {
+		enc.AddString("id", *v.ID)
 	}
 	return err
 }
@@ -36523,6 +41156,21 @@ func (v *RegisterDomainRequest) IsSetVisibilityArchivalURI() bool {
 	return v != nil && v.VisibilityArchivalURI != nil
 }
 
+// GetID returns the value of ID if it is set or its
+// zero value if it is unset.
+func (v *RegisterDomainRequest) GetID() (o string) {
+	if v != nil && v.ID != nil {
+		return *v.ID
+	}
+
+	return
+}
+
+// IsSetID returns true if ID is not nil.
+func (v *RegisterDomainRequest) IsSetID() bool {
+	return v != nil && v.ID != nil
+}
+
 type RemoteSyncMatchedError struct {
 	Message string `json:"message,required"`
 }
@@ -36534,14 +41182,14 @@ type RemoteSyncMatchedError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RemoteSyncMatchedError) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -36567,16 +41215,16 @@ func (v *RemoteSyncMatchedError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RemoteSyncMatchedError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RemoteSyncMatchedError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RemoteSyncMatchedError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RemoteSyncMatchedError) FromWire(w wire.Value) error {
 	var err error
 
@@ -36664,10 +41312,11 @@ func (v *RemoteSyncMatchedError) Error() string {
 }
 
 type RemoveTaskRequest struct {
-	ShardID             *int32 `json:"shardID,omitempty"`
-	Type                *int32 `json:"type,omitempty"`
-	TaskID              *int64 `json:"taskID,omitempty"`
-	VisibilityTimestamp *int64 `json:"visibilityTimestamp,omitempty"`
+	ShardID             *int32  `json:"shardID,omitempty"`
+	Type                *int32  `json:"type,omitempty"`
+	TaskID              *int64  `json:"taskID,omitempty"`
+	VisibilityTimestamp *int64  `json:"visibilityTimestamp,omitempty"`
+	ClusterName         *string `json:"clusterName,omitempty"`
 }
 
 // ToWire translates a RemoveTaskRequest struct into a Thrift-level intermediate
@@ -36677,17 +41326,17 @@ type RemoveTaskRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RemoveTaskRequest) ToWire() (wire.Value, error) {
 	var (
-		fields [4]wire.Field
+		fields [5]wire.Field
 		i      int = 0
 		w      wire.Value
 		err    error
@@ -36725,6 +41374,14 @@ func (v *RemoveTaskRequest) ToWire() (wire.Value, error) {
 		fields[i] = wire.Field{ID: 40, Value: w}
 		i++
 	}
+	if v.ClusterName != nil {
+		w, err = wire.NewValueString(*(v.ClusterName)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 50, Value: w}
+		i++
+	}
 
 	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
 }
@@ -36736,16 +41393,16 @@ func (v *RemoveTaskRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RemoveTaskRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RemoveTaskRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RemoveTaskRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RemoveTaskRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -36791,6 +41448,16 @@ func (v *RemoveTaskRequest) FromWire(w wire.Value) error {
 				}
 
 			}
+		case 50:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.ClusterName = &x
+				if err != nil {
+					return err
+				}
+
+			}
 		}
 	}
 
@@ -36804,7 +41471,7 @@ func (v *RemoveTaskRequest) String() string {
 		return "<nil>"
 	}
 
-	var fields [4]string
+	var fields [5]string
 	i := 0
 	if v.ShardID != nil {
 		fields[i] = fmt.Sprintf("ShardID: %v", *(v.ShardID))
@@ -36820,6 +41487,10 @@ func (v *RemoveTaskRequest) String() string {
 	}
 	if v.VisibilityTimestamp != nil {
 		fields[i] = fmt.Sprintf("VisibilityTimestamp: %v", *(v.VisibilityTimestamp))
+		i++
+	}
+	if v.ClusterName != nil {
+		fields[i] = fmt.Sprintf("ClusterName: %v", *(v.ClusterName))
 		i++
 	}
 
@@ -36848,6 +41519,9 @@ func (v *RemoveTaskRequest) Equals(rhs *RemoveTaskRequest) bool {
 	if !_I64_EqualsPtr(v.VisibilityTimestamp, rhs.VisibilityTimestamp) {
 		return false
 	}
+	if !_String_EqualsPtr(v.ClusterName, rhs.ClusterName) {
+		return false
+	}
 
 	return true
 }
@@ -36869,6 +41543,9 @@ func (v *RemoveTaskRequest) MarshalLogObject(enc zapcore.ObjectEncoder) (err err
 	}
 	if v.VisibilityTimestamp != nil {
 		enc.AddInt64("visibilityTimestamp", *v.VisibilityTimestamp)
+	}
+	if v.ClusterName != nil {
+		enc.AddString("clusterName", *v.ClusterName)
 	}
 	return err
 }
@@ -36933,6 +41610,21 @@ func (v *RemoveTaskRequest) IsSetVisibilityTimestamp() bool {
 	return v != nil && v.VisibilityTimestamp != nil
 }
 
+// GetClusterName returns the value of ClusterName if it is set or its
+// zero value if it is unset.
+func (v *RemoveTaskRequest) GetClusterName() (o string) {
+	if v != nil && v.ClusterName != nil {
+		return *v.ClusterName
+	}
+
+	return
+}
+
+// IsSetClusterName returns true if ClusterName is not nil.
+func (v *RemoveTaskRequest) IsSetClusterName() bool {
+	return v != nil && v.ClusterName != nil
+}
+
 type RequestCancelActivityTaskDecisionAttributes struct {
 	ActivityId *string `json:"activityId,omitempty"`
 }
@@ -36944,14 +41636,14 @@ type RequestCancelActivityTaskDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RequestCancelActivityTaskDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -36979,16 +41671,16 @@ func (v *RequestCancelActivityTaskDecisionAttributes) ToWire() (wire.Value, erro
 // An error is returned if we were unable to build a RequestCancelActivityTaskDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RequestCancelActivityTaskDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RequestCancelActivityTaskDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RequestCancelActivityTaskDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -37084,14 +41776,14 @@ type RequestCancelActivityTaskFailedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RequestCancelActivityTaskFailedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -37135,16 +41827,16 @@ func (v *RequestCancelActivityTaskFailedEventAttributes) ToWire() (wire.Value, e
 // An error is returned if we were unable to build a RequestCancelActivityTaskFailedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RequestCancelActivityTaskFailedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RequestCancelActivityTaskFailedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RequestCancelActivityTaskFailedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -37312,14 +42004,14 @@ type RequestCancelExternalWorkflowExecutionDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RequestCancelExternalWorkflowExecutionDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -37379,16 +42071,16 @@ func (v *RequestCancelExternalWorkflowExecutionDecisionAttributes) ToWire() (wir
 // An error is returned if we were unable to build a RequestCancelExternalWorkflowExecutionDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RequestCancelExternalWorkflowExecutionDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RequestCancelExternalWorkflowExecutionDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RequestCancelExternalWorkflowExecutionDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -37625,14 +42317,14 @@ type RequestCancelExternalWorkflowExecutionFailedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RequestCancelExternalWorkflowExecutionFailedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -37706,16 +42398,16 @@ func _CancelExternalWorkflowExecutionFailedCause_Read(w wire.Value) (CancelExter
 // An error is returned if we were unable to build a RequestCancelExternalWorkflowExecutionFailedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RequestCancelExternalWorkflowExecutionFailedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RequestCancelExternalWorkflowExecutionFailedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RequestCancelExternalWorkflowExecutionFailedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -37994,14 +42686,14 @@ type RequestCancelExternalWorkflowExecutionInitiatedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RequestCancelExternalWorkflowExecutionInitiatedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -38061,16 +42753,16 @@ func (v *RequestCancelExternalWorkflowExecutionInitiatedEventAttributes) ToWire(
 // An error is returned if we were unable to build a RequestCancelExternalWorkflowExecutionInitiatedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RequestCancelExternalWorkflowExecutionInitiatedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RequestCancelExternalWorkflowExecutionInitiatedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RequestCancelExternalWorkflowExecutionInitiatedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -38303,14 +42995,14 @@ type RequestCancelWorkflowExecutionRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RequestCancelWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -38362,16 +43054,16 @@ func (v *RequestCancelWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RequestCancelWorkflowExecutionRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RequestCancelWorkflowExecutionRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RequestCancelWorkflowExecutionRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RequestCancelWorkflowExecutionRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -38573,14 +43265,14 @@ type ResetPointInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ResetPointInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -38648,16 +43340,16 @@ func (v *ResetPointInfo) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ResetPointInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ResetPointInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ResetPointInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ResetPointInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -38955,14 +43647,14 @@ func (_List_ResetPointInfo_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ResetPoints) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -39014,16 +43706,16 @@ func _List_ResetPointInfo_Read(l wire.ValueList) ([]*ResetPointInfo, error) {
 // An error is returned if we were unable to build a ResetPoints struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ResetPoints
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ResetPoints
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ResetPoints) FromWire(w wire.Value) error {
 	var err error
 
@@ -39143,14 +43835,14 @@ type ResetQueueRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ResetQueueRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -39194,16 +43886,16 @@ func (v *ResetQueueRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ResetQueueRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ResetQueueRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ResetQueueRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ResetQueueRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -39368,14 +44060,14 @@ type ResetStickyTaskListRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ResetStickyTaskListRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -39411,16 +44103,16 @@ func (v *ResetStickyTaskListRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ResetStickyTaskListRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ResetStickyTaskListRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ResetStickyTaskListRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ResetStickyTaskListRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -39546,14 +44238,14 @@ type ResetStickyTaskListResponse struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ResetStickyTaskListResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [0]wire.Field
@@ -39570,16 +44262,16 @@ func (v *ResetStickyTaskListResponse) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ResetStickyTaskListResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ResetStickyTaskListResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ResetStickyTaskListResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ResetStickyTaskListResponse) FromWire(w wire.Value) error {
 
 	for _, field := range w.GetStruct().Fields {
@@ -39642,14 +44334,14 @@ type ResetWorkflowExecutionRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ResetWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -39717,16 +44409,16 @@ func (v *ResetWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ResetWorkflowExecutionRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ResetWorkflowExecutionRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ResetWorkflowExecutionRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ResetWorkflowExecutionRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -39993,14 +44685,14 @@ type ResetWorkflowExecutionResponse struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ResetWorkflowExecutionResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -40028,16 +44720,16 @@ func (v *ResetWorkflowExecutionResponse) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ResetWorkflowExecutionResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ResetWorkflowExecutionResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ResetWorkflowExecutionResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ResetWorkflowExecutionResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -40136,14 +44828,14 @@ type RespondActivityTaskCanceledByIDRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RespondActivityTaskCanceledByIDRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -40211,16 +44903,16 @@ func (v *RespondActivityTaskCanceledByIDRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RespondActivityTaskCanceledByIDRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RespondActivityTaskCanceledByIDRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RespondActivityTaskCanceledByIDRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RespondActivityTaskCanceledByIDRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -40489,14 +45181,14 @@ type RespondActivityTaskCanceledRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RespondActivityTaskCanceledRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -40540,16 +45232,16 @@ func (v *RespondActivityTaskCanceledRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RespondActivityTaskCanceledRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RespondActivityTaskCanceledRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RespondActivityTaskCanceledRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RespondActivityTaskCanceledRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -40714,14 +45406,14 @@ type RespondActivityTaskCompletedByIDRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RespondActivityTaskCompletedByIDRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -40789,16 +45481,16 @@ func (v *RespondActivityTaskCompletedByIDRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RespondActivityTaskCompletedByIDRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RespondActivityTaskCompletedByIDRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RespondActivityTaskCompletedByIDRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RespondActivityTaskCompletedByIDRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -41067,14 +45759,14 @@ type RespondActivityTaskCompletedRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RespondActivityTaskCompletedRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -41118,16 +45810,16 @@ func (v *RespondActivityTaskCompletedRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RespondActivityTaskCompletedRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RespondActivityTaskCompletedRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RespondActivityTaskCompletedRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RespondActivityTaskCompletedRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -41293,14 +45985,14 @@ type RespondActivityTaskFailedByIDRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RespondActivityTaskFailedByIDRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [7]wire.Field
@@ -41376,16 +46068,16 @@ func (v *RespondActivityTaskFailedByIDRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RespondActivityTaskFailedByIDRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RespondActivityTaskFailedByIDRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RespondActivityTaskFailedByIDRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RespondActivityTaskFailedByIDRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -41690,14 +46382,14 @@ type RespondActivityTaskFailedRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RespondActivityTaskFailedRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -41749,16 +46441,16 @@ func (v *RespondActivityTaskFailedRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RespondActivityTaskFailedRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RespondActivityTaskFailedRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RespondActivityTaskFailedRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RespondActivityTaskFailedRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -41942,6 +46634,489 @@ func (v *RespondActivityTaskFailedRequest) IsSetIdentity() bool {
 	return v != nil && v.Identity != nil
 }
 
+type RespondCrossClusterTasksCompletedRequest struct {
+	ShardID       *int32                      `json:"shardID,omitempty"`
+	TargetCluster *string                     `json:"targetCluster,omitempty"`
+	TaskResponses []*CrossClusterTaskResponse `json:"taskResponses,omitempty"`
+	FetchNewTasks *bool                       `json:"fetchNewTasks,omitempty"`
+}
+
+type _List_CrossClusterTaskResponse_ValueList []*CrossClusterTaskResponse
+
+func (v _List_CrossClusterTaskResponse_ValueList) ForEach(f func(wire.Value) error) error {
+	for i, x := range v {
+		if x == nil {
+			return fmt.Errorf("invalid [%v]: value is nil", i)
+		}
+		w, err := x.ToWire()
+		if err != nil {
+			return err
+		}
+		err = f(w)
+		if err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func (v _List_CrossClusterTaskResponse_ValueList) Size() int {
+	return len(v)
+}
+
+func (_List_CrossClusterTaskResponse_ValueList) ValueType() wire.Type {
+	return wire.TStruct
+}
+
+func (_List_CrossClusterTaskResponse_ValueList) Close() {}
+
+// ToWire translates a RespondCrossClusterTasksCompletedRequest struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *RespondCrossClusterTasksCompletedRequest) ToWire() (wire.Value, error) {
+	var (
+		fields [4]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.ShardID != nil {
+		w, err = wire.NewValueI32(*(v.ShardID)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+	if v.TargetCluster != nil {
+		w, err = wire.NewValueString(*(v.TargetCluster)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 20, Value: w}
+		i++
+	}
+	if v.TaskResponses != nil {
+		w, err = wire.NewValueList(_List_CrossClusterTaskResponse_ValueList(v.TaskResponses)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 30, Value: w}
+		i++
+	}
+	if v.FetchNewTasks != nil {
+		w, err = wire.NewValueBool(*(v.FetchNewTasks)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 40, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+func _CrossClusterTaskResponse_Read(w wire.Value) (*CrossClusterTaskResponse, error) {
+	var v CrossClusterTaskResponse
+	err := v.FromWire(w)
+	return &v, err
+}
+
+func _List_CrossClusterTaskResponse_Read(l wire.ValueList) ([]*CrossClusterTaskResponse, error) {
+	if l.ValueType() != wire.TStruct {
+		return nil, nil
+	}
+
+	o := make([]*CrossClusterTaskResponse, 0, l.Size())
+	err := l.ForEach(func(x wire.Value) error {
+		i, err := _CrossClusterTaskResponse_Read(x)
+		if err != nil {
+			return err
+		}
+		o = append(o, i)
+		return nil
+	})
+	l.Close()
+	return o, err
+}
+
+// FromWire deserializes a RespondCrossClusterTasksCompletedRequest struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a RespondCrossClusterTasksCompletedRequest struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v RespondCrossClusterTasksCompletedRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *RespondCrossClusterTasksCompletedRequest) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TI32 {
+				var x int32
+				x, err = field.Value.GetI32(), error(nil)
+				v.ShardID = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 20:
+			if field.Value.Type() == wire.TBinary {
+				var x string
+				x, err = field.Value.GetString(), error(nil)
+				v.TargetCluster = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		case 30:
+			if field.Value.Type() == wire.TList {
+				v.TaskResponses, err = _List_CrossClusterTaskResponse_Read(field.Value.GetList())
+				if err != nil {
+					return err
+				}
+
+			}
+		case 40:
+			if field.Value.Type() == wire.TBool {
+				var x bool
+				x, err = field.Value.GetBool(), error(nil)
+				v.FetchNewTasks = &x
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a RespondCrossClusterTasksCompletedRequest
+// struct.
+func (v *RespondCrossClusterTasksCompletedRequest) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [4]string
+	i := 0
+	if v.ShardID != nil {
+		fields[i] = fmt.Sprintf("ShardID: %v", *(v.ShardID))
+		i++
+	}
+	if v.TargetCluster != nil {
+		fields[i] = fmt.Sprintf("TargetCluster: %v", *(v.TargetCluster))
+		i++
+	}
+	if v.TaskResponses != nil {
+		fields[i] = fmt.Sprintf("TaskResponses: %v", v.TaskResponses)
+		i++
+	}
+	if v.FetchNewTasks != nil {
+		fields[i] = fmt.Sprintf("FetchNewTasks: %v", *(v.FetchNewTasks))
+		i++
+	}
+
+	return fmt.Sprintf("RespondCrossClusterTasksCompletedRequest{%v}", strings.Join(fields[:i], ", "))
+}
+
+func _List_CrossClusterTaskResponse_Equals(lhs, rhs []*CrossClusterTaskResponse) bool {
+	if len(lhs) != len(rhs) {
+		return false
+	}
+
+	for i, lv := range lhs {
+		rv := rhs[i]
+		if !lv.Equals(rv) {
+			return false
+		}
+	}
+
+	return true
+}
+
+// Equals returns true if all the fields of this RespondCrossClusterTasksCompletedRequest match the
+// provided RespondCrossClusterTasksCompletedRequest.
+//
+// This function performs a deep comparison.
+func (v *RespondCrossClusterTasksCompletedRequest) Equals(rhs *RespondCrossClusterTasksCompletedRequest) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !_I32_EqualsPtr(v.ShardID, rhs.ShardID) {
+		return false
+	}
+	if !_String_EqualsPtr(v.TargetCluster, rhs.TargetCluster) {
+		return false
+	}
+	if !((v.TaskResponses == nil && rhs.TaskResponses == nil) || (v.TaskResponses != nil && rhs.TaskResponses != nil && _List_CrossClusterTaskResponse_Equals(v.TaskResponses, rhs.TaskResponses))) {
+		return false
+	}
+	if !_Bool_EqualsPtr(v.FetchNewTasks, rhs.FetchNewTasks) {
+		return false
+	}
+
+	return true
+}
+
+type _List_CrossClusterTaskResponse_Zapper []*CrossClusterTaskResponse
+
+// MarshalLogArray implements zapcore.ArrayMarshaler, enabling
+// fast logging of _List_CrossClusterTaskResponse_Zapper.
+func (l _List_CrossClusterTaskResponse_Zapper) MarshalLogArray(enc zapcore.ArrayEncoder) (err error) {
+	for _, v := range l {
+		err = multierr.Append(err, enc.AppendObject(v))
+	}
+	return err
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of RespondCrossClusterTasksCompletedRequest.
+func (v *RespondCrossClusterTasksCompletedRequest) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.ShardID != nil {
+		enc.AddInt32("shardID", *v.ShardID)
+	}
+	if v.TargetCluster != nil {
+		enc.AddString("targetCluster", *v.TargetCluster)
+	}
+	if v.TaskResponses != nil {
+		err = multierr.Append(err, enc.AddArray("taskResponses", (_List_CrossClusterTaskResponse_Zapper)(v.TaskResponses)))
+	}
+	if v.FetchNewTasks != nil {
+		enc.AddBool("fetchNewTasks", *v.FetchNewTasks)
+	}
+	return err
+}
+
+// GetShardID returns the value of ShardID if it is set or its
+// zero value if it is unset.
+func (v *RespondCrossClusterTasksCompletedRequest) GetShardID() (o int32) {
+	if v != nil && v.ShardID != nil {
+		return *v.ShardID
+	}
+
+	return
+}
+
+// IsSetShardID returns true if ShardID is not nil.
+func (v *RespondCrossClusterTasksCompletedRequest) IsSetShardID() bool {
+	return v != nil && v.ShardID != nil
+}
+
+// GetTargetCluster returns the value of TargetCluster if it is set or its
+// zero value if it is unset.
+func (v *RespondCrossClusterTasksCompletedRequest) GetTargetCluster() (o string) {
+	if v != nil && v.TargetCluster != nil {
+		return *v.TargetCluster
+	}
+
+	return
+}
+
+// IsSetTargetCluster returns true if TargetCluster is not nil.
+func (v *RespondCrossClusterTasksCompletedRequest) IsSetTargetCluster() bool {
+	return v != nil && v.TargetCluster != nil
+}
+
+// GetTaskResponses returns the value of TaskResponses if it is set or its
+// zero value if it is unset.
+func (v *RespondCrossClusterTasksCompletedRequest) GetTaskResponses() (o []*CrossClusterTaskResponse) {
+	if v != nil && v.TaskResponses != nil {
+		return v.TaskResponses
+	}
+
+	return
+}
+
+// IsSetTaskResponses returns true if TaskResponses is not nil.
+func (v *RespondCrossClusterTasksCompletedRequest) IsSetTaskResponses() bool {
+	return v != nil && v.TaskResponses != nil
+}
+
+// GetFetchNewTasks returns the value of FetchNewTasks if it is set or its
+// zero value if it is unset.
+func (v *RespondCrossClusterTasksCompletedRequest) GetFetchNewTasks() (o bool) {
+	if v != nil && v.FetchNewTasks != nil {
+		return *v.FetchNewTasks
+	}
+
+	return
+}
+
+// IsSetFetchNewTasks returns true if FetchNewTasks is not nil.
+func (v *RespondCrossClusterTasksCompletedRequest) IsSetFetchNewTasks() bool {
+	return v != nil && v.FetchNewTasks != nil
+}
+
+type RespondCrossClusterTasksCompletedResponse struct {
+	Tasks []*CrossClusterTaskRequest `json:"tasks,omitempty"`
+}
+
+// ToWire translates a RespondCrossClusterTasksCompletedResponse struct into a Thrift-level intermediate
+// representation. This intermediate representation may be serialized
+// into bytes using a ThriftRW protocol implementation.
+//
+// An error is returned if the struct or any of its fields failed to
+// validate.
+//
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
+//
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
+func (v *RespondCrossClusterTasksCompletedResponse) ToWire() (wire.Value, error) {
+	var (
+		fields [1]wire.Field
+		i      int = 0
+		w      wire.Value
+		err    error
+	)
+
+	if v.Tasks != nil {
+		w, err = wire.NewValueList(_List_CrossClusterTaskRequest_ValueList(v.Tasks)), error(nil)
+		if err != nil {
+			return w, err
+		}
+		fields[i] = wire.Field{ID: 10, Value: w}
+		i++
+	}
+
+	return wire.NewValueStruct(wire.Struct{Fields: fields[:i]}), nil
+}
+
+// FromWire deserializes a RespondCrossClusterTasksCompletedResponse struct from its Thrift-level
+// representation. The Thrift-level representation may be obtained
+// from a ThriftRW protocol implementation.
+//
+// An error is returned if we were unable to build a RespondCrossClusterTasksCompletedResponse struct
+// from the provided intermediate representation.
+//
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
+//
+//	var v RespondCrossClusterTasksCompletedResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
+func (v *RespondCrossClusterTasksCompletedResponse) FromWire(w wire.Value) error {
+	var err error
+
+	for _, field := range w.GetStruct().Fields {
+		switch field.ID {
+		case 10:
+			if field.Value.Type() == wire.TList {
+				v.Tasks, err = _List_CrossClusterTaskRequest_Read(field.Value.GetList())
+				if err != nil {
+					return err
+				}
+
+			}
+		}
+	}
+
+	return nil
+}
+
+// String returns a readable string representation of a RespondCrossClusterTasksCompletedResponse
+// struct.
+func (v *RespondCrossClusterTasksCompletedResponse) String() string {
+	if v == nil {
+		return "<nil>"
+	}
+
+	var fields [1]string
+	i := 0
+	if v.Tasks != nil {
+		fields[i] = fmt.Sprintf("Tasks: %v", v.Tasks)
+		i++
+	}
+
+	return fmt.Sprintf("RespondCrossClusterTasksCompletedResponse{%v}", strings.Join(fields[:i], ", "))
+}
+
+// Equals returns true if all the fields of this RespondCrossClusterTasksCompletedResponse match the
+// provided RespondCrossClusterTasksCompletedResponse.
+//
+// This function performs a deep comparison.
+func (v *RespondCrossClusterTasksCompletedResponse) Equals(rhs *RespondCrossClusterTasksCompletedResponse) bool {
+	if v == nil {
+		return rhs == nil
+	} else if rhs == nil {
+		return false
+	}
+	if !((v.Tasks == nil && rhs.Tasks == nil) || (v.Tasks != nil && rhs.Tasks != nil && _List_CrossClusterTaskRequest_Equals(v.Tasks, rhs.Tasks))) {
+		return false
+	}
+
+	return true
+}
+
+// MarshalLogObject implements zapcore.ObjectMarshaler, enabling
+// fast logging of RespondCrossClusterTasksCompletedResponse.
+func (v *RespondCrossClusterTasksCompletedResponse) MarshalLogObject(enc zapcore.ObjectEncoder) (err error) {
+	if v == nil {
+		return nil
+	}
+	if v.Tasks != nil {
+		err = multierr.Append(err, enc.AddArray("tasks", (_List_CrossClusterTaskRequest_Zapper)(v.Tasks)))
+	}
+	return err
+}
+
+// GetTasks returns the value of Tasks if it is set or its
+// zero value if it is unset.
+func (v *RespondCrossClusterTasksCompletedResponse) GetTasks() (o []*CrossClusterTaskRequest) {
+	if v != nil && v.Tasks != nil {
+		return v.Tasks
+	}
+
+	return
+}
+
+// IsSetTasks returns true if Tasks is not nil.
+func (v *RespondCrossClusterTasksCompletedResponse) IsSetTasks() bool {
+	return v != nil && v.Tasks != nil
+}
+
 type RespondDecisionTaskCompletedRequest struct {
 	TaskToken                  []byte                          `json:"taskToken,omitempty"`
 	Decisions                  []*Decision                     `json:"decisions,omitempty"`
@@ -42028,14 +47203,14 @@ func (_Map_String_WorkflowQueryResult_MapItemList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RespondDecisionTaskCompletedRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [9]wire.Field
@@ -42191,16 +47366,16 @@ func _Map_String_WorkflowQueryResult_Read(m wire.MapItemList) (map[string]*Workf
 // An error is returned if we were unable to build a RespondDecisionTaskCompletedRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RespondDecisionTaskCompletedRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RespondDecisionTaskCompletedRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RespondDecisionTaskCompletedRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -42657,14 +47832,14 @@ func (_Map_String_ActivityLocalDispatchInfo_MapItemList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RespondDecisionTaskCompletedResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -42740,16 +47915,16 @@ func _Map_String_ActivityLocalDispatchInfo_Read(m wire.MapItemList) (map[string]
 // An error is returned if we were unable to build a RespondDecisionTaskCompletedResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RespondDecisionTaskCompletedResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RespondDecisionTaskCompletedResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RespondDecisionTaskCompletedResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -42906,14 +48081,14 @@ type RespondDecisionTaskFailedRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RespondDecisionTaskFailedRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -42973,16 +48148,16 @@ func (v *RespondDecisionTaskFailedRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RespondDecisionTaskFailedRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RespondDecisionTaskFailedRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RespondDecisionTaskFailedRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RespondDecisionTaskFailedRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -43216,14 +48391,14 @@ type RespondQueryTaskCompletedRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RespondQueryTaskCompletedRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -43295,16 +48470,16 @@ func _WorkerVersionInfo_Read(w wire.Value) (*WorkerVersionInfo, error) {
 // An error is returned if we were unable to build a RespondQueryTaskCompletedRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RespondQueryTaskCompletedRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RespondQueryTaskCompletedRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RespondQueryTaskCompletedRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -43547,14 +48722,14 @@ type RetryPolicy struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RetryPolicy) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -43622,16 +48797,16 @@ func (v *RetryPolicy) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RetryPolicy struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RetryPolicy
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RetryPolicy
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RetryPolicy) FromWire(w wire.Value) error {
 	var err error
 
@@ -43905,14 +49080,14 @@ type RetryTaskV2Error struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *RetryTaskV2Error) ToWire() (wire.Value, error) {
 	var (
 		fields [8]wire.Field
@@ -43994,16 +49169,16 @@ func (v *RetryTaskV2Error) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a RetryTaskV2Error struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v RetryTaskV2Error
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v RetryTaskV2Error
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *RetryTaskV2Error) FromWire(w wire.Value) error {
 	var err error
 
@@ -44357,14 +49532,14 @@ type ScheduleActivityTaskDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ScheduleActivityTaskDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [12]wire.Field
@@ -44480,16 +49655,16 @@ func (v *ScheduleActivityTaskDecisionAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ScheduleActivityTaskDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ScheduleActivityTaskDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ScheduleActivityTaskDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ScheduleActivityTaskDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -44958,14 +50133,14 @@ type SearchAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *SearchAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -44993,16 +50168,16 @@ func (v *SearchAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a SearchAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v SearchAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v SearchAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *SearchAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -45094,14 +50269,14 @@ type ServiceBusyError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *ServiceBusyError) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -45127,16 +50302,16 @@ func (v *ServiceBusyError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a ServiceBusyError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v ServiceBusyError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v ServiceBusyError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *ServiceBusyError) FromWire(w wire.Value) error {
 	var err error
 
@@ -45239,14 +50414,14 @@ type SignalExternalWorkflowExecutionDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *SignalExternalWorkflowExecutionDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -45314,16 +50489,16 @@ func (v *SignalExternalWorkflowExecutionDecisionAttributes) ToWire() (wire.Value
 // An error is returned if we were unable to build a SignalExternalWorkflowExecutionDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v SignalExternalWorkflowExecutionDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v SignalExternalWorkflowExecutionDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *SignalExternalWorkflowExecutionDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -45591,8 +50766,8 @@ func SignalExternalWorkflowExecutionFailedCause_Values() []SignalExternalWorkflo
 // UnmarshalText tries to decode SignalExternalWorkflowExecutionFailedCause from a byte slice
 // containing its name.
 //
-//   var v SignalExternalWorkflowExecutionFailedCause
-//   err := v.UnmarshalText([]byte("UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION"))
+//	var v SignalExternalWorkflowExecutionFailedCause
+//	err := v.UnmarshalText([]byte("UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION"))
 func (v *SignalExternalWorkflowExecutionFailedCause) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION":
@@ -45652,16 +50827,16 @@ func (v SignalExternalWorkflowExecutionFailedCause) ToWire() (wire.Value, error)
 // FromWire deserializes SignalExternalWorkflowExecutionFailedCause from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return SignalExternalWorkflowExecutionFailedCause(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return SignalExternalWorkflowExecutionFailedCause(0), err
+//	}
 //
-//   var v SignalExternalWorkflowExecutionFailedCause
-//   if err := v.FromWire(x); err != nil {
-//     return SignalExternalWorkflowExecutionFailedCause(0), err
-//   }
-//   return v, nil
+//	var v SignalExternalWorkflowExecutionFailedCause
+//	if err := v.FromWire(x); err != nil {
+//	  return SignalExternalWorkflowExecutionFailedCause(0), err
+//	}
+//	return v, nil
 func (v *SignalExternalWorkflowExecutionFailedCause) FromWire(w wire.Value) error {
 	*v = (SignalExternalWorkflowExecutionFailedCause)(w.GetI32())
 	return nil
@@ -45749,14 +50924,14 @@ type SignalExternalWorkflowExecutionFailedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *SignalExternalWorkflowExecutionFailedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [6]wire.Field
@@ -45830,16 +51005,16 @@ func _SignalExternalWorkflowExecutionFailedCause_Read(w wire.Value) (SignalExter
 // An error is returned if we were unable to build a SignalExternalWorkflowExecutionFailedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v SignalExternalWorkflowExecutionFailedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v SignalExternalWorkflowExecutionFailedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *SignalExternalWorkflowExecutionFailedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -46120,14 +51295,14 @@ type SignalExternalWorkflowExecutionInitiatedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *SignalExternalWorkflowExecutionInitiatedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [7]wire.Field
@@ -46203,16 +51378,16 @@ func (v *SignalExternalWorkflowExecutionInitiatedEventAttributes) ToWire() (wire
 // An error is returned if we were unable to build a SignalExternalWorkflowExecutionInitiatedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v SignalExternalWorkflowExecutionInitiatedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v SignalExternalWorkflowExecutionInitiatedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *SignalExternalWorkflowExecutionInitiatedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -46528,14 +51703,14 @@ type SignalWithStartWorkflowExecutionRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *SignalWithStartWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [19]wire.Field
@@ -46713,16 +51888,16 @@ func _WorkflowIdReusePolicy_Read(w wire.Value) (WorkflowIdReusePolicy, error) {
 // An error is returned if we were unable to build a SignalWithStartWorkflowExecutionRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v SignalWithStartWorkflowExecutionRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v SignalWithStartWorkflowExecutionRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *SignalWithStartWorkflowExecutionRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -47444,14 +52619,14 @@ type SignalWorkflowExecutionRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *SignalWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [7]wire.Field
@@ -47527,16 +52702,16 @@ func (v *SignalWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a SignalWorkflowExecutionRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v SignalWorkflowExecutionRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v SignalWorkflowExecutionRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *SignalWorkflowExecutionRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -47848,14 +53023,14 @@ type StartChildWorkflowExecutionDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *StartChildWorkflowExecutionDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [15]wire.Field
@@ -47995,16 +53170,16 @@ func (v *StartChildWorkflowExecutionDecisionAttributes) ToWire() (wire.Value, er
 // An error is returned if we were unable to build a StartChildWorkflowExecutionDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v StartChildWorkflowExecutionDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v StartChildWorkflowExecutionDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *StartChildWorkflowExecutionDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -48578,14 +53753,14 @@ type StartChildWorkflowExecutionFailedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *StartChildWorkflowExecutionFailedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [7]wire.Field
@@ -48667,16 +53842,16 @@ func _ChildWorkflowExecutionFailedCause_Read(w wire.Value) (ChildWorkflowExecuti
 // An error is returned if we were unable to build a StartChildWorkflowExecutionFailedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v StartChildWorkflowExecutionFailedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v StartChildWorkflowExecutionFailedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *StartChildWorkflowExecutionFailedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -49002,14 +54177,14 @@ type StartChildWorkflowExecutionInitiatedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *StartChildWorkflowExecutionInitiatedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [17]wire.Field
@@ -49165,16 +54340,16 @@ func (v *StartChildWorkflowExecutionInitiatedEventAttributes) ToWire() (wire.Val
 // An error is returned if we were unable to build a StartChildWorkflowExecutionInitiatedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v StartChildWorkflowExecutionInitiatedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v StartChildWorkflowExecutionInitiatedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *StartChildWorkflowExecutionInitiatedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -49813,14 +54988,14 @@ type StartTimeFilter struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *StartTimeFilter) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -49856,16 +55031,16 @@ func (v *StartTimeFilter) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a StartTimeFilter struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v StartTimeFilter
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v StartTimeFilter
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *StartTimeFilter) FromWire(w wire.Value) error {
 	var err error
 
@@ -49995,14 +55170,14 @@ type StartTimerDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *StartTimerDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -50038,16 +55213,16 @@ func (v *StartTimerDecisionAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a StartTimerDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v StartTimerDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v StartTimerDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *StartTimerDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -50191,14 +55366,14 @@ type StartWorkflowExecutionRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *StartWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [16]wire.Field
@@ -50346,16 +55521,16 @@ func (v *StartWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a StartWorkflowExecutionRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v StartWorkflowExecutionRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v StartWorkflowExecutionRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *StartWorkflowExecutionRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -50960,14 +56135,14 @@ type StartWorkflowExecutionResponse struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *StartWorkflowExecutionResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -50995,16 +56170,16 @@ func (v *StartWorkflowExecutionResponse) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a StartWorkflowExecutionResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v StartWorkflowExecutionResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v StartWorkflowExecutionResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *StartWorkflowExecutionResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -51099,14 +56274,14 @@ type StickyExecutionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *StickyExecutionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -51142,16 +56317,16 @@ func (v *StickyExecutionAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a StickyExecutionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v StickyExecutionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v StickyExecutionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *StickyExecutionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -51279,14 +56454,14 @@ type SupportedClientVersions struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *SupportedClientVersions) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -51322,16 +56497,16 @@ func (v *SupportedClientVersions) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a SupportedClientVersions struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v SupportedClientVersions
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v SupportedClientVersions
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *SupportedClientVersions) FromWire(w wire.Value) error {
 	var err error
 
@@ -51461,14 +56636,14 @@ type TaskIDBlock struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *TaskIDBlock) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -51504,16 +56679,16 @@ func (v *TaskIDBlock) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a TaskIDBlock struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v TaskIDBlock
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v TaskIDBlock
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *TaskIDBlock) FromWire(w wire.Value) error {
 	var err error
 
@@ -51643,14 +56818,14 @@ type TaskList struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *TaskList) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -51692,16 +56867,16 @@ func _TaskListKind_Read(w wire.Value) (TaskListKind, error) {
 // An error is returned if we were unable to build a TaskList struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v TaskList
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v TaskList
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *TaskList) FromWire(w wire.Value) error {
 	var err error
 
@@ -51847,8 +57022,8 @@ func TaskListKind_Values() []TaskListKind {
 // UnmarshalText tries to decode TaskListKind from a byte slice
 // containing its name.
 //
-//   var v TaskListKind
-//   err := v.UnmarshalText([]byte("NORMAL"))
+//	var v TaskListKind
+//	err := v.UnmarshalText([]byte("NORMAL"))
 func (v *TaskListKind) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "NORMAL":
@@ -51915,16 +57090,16 @@ func (v TaskListKind) ToWire() (wire.Value, error) {
 // FromWire deserializes TaskListKind from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return TaskListKind(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return TaskListKind(0), err
+//	}
 //
-//   var v TaskListKind
-//   if err := v.FromWire(x); err != nil {
-//     return TaskListKind(0), err
-//   }
-//   return v, nil
+//	var v TaskListKind
+//	if err := v.FromWire(x); err != nil {
+//	  return TaskListKind(0), err
+//	}
+//	return v, nil
 func (v *TaskListKind) FromWire(w wire.Value) error {
 	*v = (TaskListKind)(w.GetI32())
 	return nil
@@ -52011,14 +57186,14 @@ type TaskListMetadata struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *TaskListMetadata) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -52046,16 +57221,16 @@ func (v *TaskListMetadata) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a TaskListMetadata struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v TaskListMetadata
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v TaskListMetadata
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *TaskListMetadata) FromWire(w wire.Value) error {
 	var err error
 
@@ -52150,14 +57325,14 @@ type TaskListPartitionMetadata struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *TaskListPartitionMetadata) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -52193,16 +57368,16 @@ func (v *TaskListPartitionMetadata) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a TaskListPartitionMetadata struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v TaskListPartitionMetadata
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v TaskListPartitionMetadata
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *TaskListPartitionMetadata) FromWire(w wire.Value) error {
 	var err error
 
@@ -52335,14 +57510,14 @@ type TaskListStatus struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *TaskListStatus) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -52408,16 +57583,16 @@ func _TaskIDBlock_Read(w wire.Value) (*TaskIDBlock, error) {
 // An error is returned if we were unable to build a TaskListStatus struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v TaskListStatus
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v TaskListStatus
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *TaskListStatus) FromWire(w wire.Value) error {
 	var err error
 
@@ -52656,8 +57831,8 @@ func TaskListType_Values() []TaskListType {
 // UnmarshalText tries to decode TaskListType from a byte slice
 // containing its name.
 //
-//   var v TaskListType
-//   err := v.UnmarshalText([]byte("Decision"))
+//	var v TaskListType
+//	err := v.UnmarshalText([]byte("Decision"))
 func (v *TaskListType) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "Decision":
@@ -52724,16 +57899,16 @@ func (v TaskListType) ToWire() (wire.Value, error) {
 // FromWire deserializes TaskListType from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return TaskListType(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return TaskListType(0), err
+//	}
 //
-//   var v TaskListType
-//   if err := v.FromWire(x); err != nil {
-//     return TaskListType(0), err
-//   }
-//   return v, nil
+//	var v TaskListType
+//	if err := v.FromWire(x); err != nil {
+//	  return TaskListType(0), err
+//	}
+//	return v, nil
 func (v *TaskListType) FromWire(w wire.Value) error {
 	*v = (TaskListType)(w.GetI32())
 	return nil
@@ -52824,14 +57999,14 @@ type TerminateWorkflowExecutionRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *TerminateWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -52891,16 +58066,16 @@ func (v *TerminateWorkflowExecutionRequest) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a TerminateWorkflowExecutionRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v TerminateWorkflowExecutionRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v TerminateWorkflowExecutionRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *TerminateWorkflowExecutionRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -53141,8 +58316,8 @@ func TimeoutType_Values() []TimeoutType {
 // UnmarshalText tries to decode TimeoutType from a byte slice
 // containing its name.
 //
-//   var v TimeoutType
-//   err := v.UnmarshalText([]byte("START_TO_CLOSE"))
+//	var v TimeoutType
+//	err := v.UnmarshalText([]byte("START_TO_CLOSE"))
 func (v *TimeoutType) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "START_TO_CLOSE":
@@ -53223,16 +58398,16 @@ func (v TimeoutType) ToWire() (wire.Value, error) {
 // FromWire deserializes TimeoutType from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return TimeoutType(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return TimeoutType(0), err
+//	}
 //
-//   var v TimeoutType
-//   if err := v.FromWire(x); err != nil {
-//     return TimeoutType(0), err
-//   }
-//   return v, nil
+//	var v TimeoutType
+//	if err := v.FromWire(x); err != nil {
+//	  return TimeoutType(0), err
+//	}
+//	return v, nil
 func (v *TimeoutType) FromWire(w wire.Value) error {
 	*v = (TimeoutType)(w.GetI32())
 	return nil
@@ -53330,14 +58505,14 @@ type TimerCanceledEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *TimerCanceledEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -53389,16 +58564,16 @@ func (v *TimerCanceledEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a TimerCanceledEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v TimerCanceledEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v TimerCanceledEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *TimerCanceledEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -53598,14 +58773,14 @@ type TimerFiredEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *TimerFiredEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -53641,16 +58816,16 @@ func (v *TimerFiredEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a TimerFiredEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v TimerFiredEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v TimerFiredEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *TimerFiredEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -53781,14 +58956,14 @@ type TimerStartedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *TimerStartedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -53832,16 +59007,16 @@ func (v *TimerStartedEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a TimerStartedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v TimerStartedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v TimerStartedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *TimerStartedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -54006,14 +59181,14 @@ type TransientDecisionInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *TransientDecisionInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -54049,16 +59224,16 @@ func (v *TransientDecisionInfo) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a TransientDecisionInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v TransientDecisionInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v TransientDecisionInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *TransientDecisionInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -54185,14 +59360,14 @@ type UpdateDomainInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *UpdateDomainInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -54236,16 +59411,16 @@ func (v *UpdateDomainInfo) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a UpdateDomainInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v UpdateDomainInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v UpdateDomainInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *UpdateDomainInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -54413,14 +59588,14 @@ type UpdateDomainRequest struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *UpdateDomainRequest) ToWire() (wire.Value, error) {
 	var (
 		fields [7]wire.Field
@@ -54502,16 +59677,16 @@ func _UpdateDomainInfo_Read(w wire.Value) (*UpdateDomainInfo, error) {
 // An error is returned if we were unable to build a UpdateDomainRequest struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v UpdateDomainRequest
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v UpdateDomainRequest
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *UpdateDomainRequest) FromWire(w wire.Value) error {
 	var err error
 
@@ -54813,14 +59988,14 @@ type UpdateDomainResponse struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *UpdateDomainResponse) ToWire() (wire.Value, error) {
 	var (
 		fields [5]wire.Field
@@ -54880,16 +60055,16 @@ func (v *UpdateDomainResponse) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a UpdateDomainResponse struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v UpdateDomainResponse
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v UpdateDomainResponse
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *UpdateDomainResponse) FromWire(w wire.Value) error {
 	var err error
 
@@ -55117,14 +60292,14 @@ type UpsertWorkflowSearchAttributesDecisionAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *UpsertWorkflowSearchAttributesDecisionAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -55152,16 +60327,16 @@ func (v *UpsertWorkflowSearchAttributesDecisionAttributes) ToWire() (wire.Value,
 // An error is returned if we were unable to build a UpsertWorkflowSearchAttributesDecisionAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v UpsertWorkflowSearchAttributesDecisionAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v UpsertWorkflowSearchAttributesDecisionAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *UpsertWorkflowSearchAttributesDecisionAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -55254,14 +60429,14 @@ type UpsertWorkflowSearchAttributesEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *UpsertWorkflowSearchAttributesEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -55297,16 +60472,16 @@ func (v *UpsertWorkflowSearchAttributesEventAttributes) ToWire() (wire.Value, er
 // An error is returned if we were unable to build a UpsertWorkflowSearchAttributesEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v UpsertWorkflowSearchAttributesEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v UpsertWorkflowSearchAttributesEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *UpsertWorkflowSearchAttributesEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -55463,14 +60638,14 @@ func (_List_VersionHistory_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *VersionHistories) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -55530,16 +60705,16 @@ func _List_VersionHistory_Read(l wire.ValueList) ([]*VersionHistory, error) {
 // An error is returned if we were unable to build a VersionHistories struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v VersionHistories
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v VersionHistories
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *VersionHistories) FromWire(w wire.Value) error {
 	var err error
 
@@ -55722,14 +60897,14 @@ func (_List_VersionHistoryItem_ValueList) Close() {}
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *VersionHistory) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -55789,16 +60964,16 @@ func _List_VersionHistoryItem_Read(l wire.ValueList) ([]*VersionHistoryItem, err
 // An error is returned if we were unable to build a VersionHistory struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v VersionHistory
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v VersionHistory
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *VersionHistory) FromWire(w wire.Value) error {
 	var err error
 
@@ -55950,14 +61125,14 @@ type VersionHistoryItem struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *VersionHistoryItem) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -55993,16 +61168,16 @@ func (v *VersionHistoryItem) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a VersionHistoryItem struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v VersionHistoryItem
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v VersionHistoryItem
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *VersionHistoryItem) FromWire(w wire.Value) error {
 	var err error
 
@@ -56132,14 +61307,14 @@ type WorkerVersionInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkerVersionInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -56175,16 +61350,16 @@ func (v *WorkerVersionInfo) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a WorkerVersionInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkerVersionInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkerVersionInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkerVersionInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -56314,14 +61489,14 @@ type WorkflowExecution struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecution) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -56357,16 +61532,16 @@ func (v *WorkflowExecution) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a WorkflowExecution struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecution
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecution
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecution) FromWire(w wire.Value) error {
 	var err error
 
@@ -56495,14 +61670,14 @@ type WorkflowExecutionAlreadyCompletedError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionAlreadyCompletedError) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -56528,16 +61703,16 @@ func (v *WorkflowExecutionAlreadyCompletedError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a WorkflowExecutionAlreadyCompletedError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionAlreadyCompletedError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionAlreadyCompletedError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionAlreadyCompletedError) FromWire(w wire.Value) error {
 	var err error
 
@@ -56637,14 +61812,14 @@ type WorkflowExecutionAlreadyStartedError struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionAlreadyStartedError) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -56688,16 +61863,16 @@ func (v *WorkflowExecutionAlreadyStartedError) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a WorkflowExecutionAlreadyStartedError struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionAlreadyStartedError
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionAlreadyStartedError
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionAlreadyStartedError) FromWire(w wire.Value) error {
 	var err error
 
@@ -56874,14 +62049,14 @@ type WorkflowExecutionCancelRequestedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionCancelRequestedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [4]wire.Field
@@ -56933,16 +62108,16 @@ func (v *WorkflowExecutionCancelRequestedEventAttributes) ToWire() (wire.Value, 
 // An error is returned if we were unable to build a WorkflowExecutionCancelRequestedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionCancelRequestedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionCancelRequestedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionCancelRequestedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -57140,14 +62315,14 @@ type WorkflowExecutionCanceledEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionCanceledEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -57183,16 +62358,16 @@ func (v *WorkflowExecutionCanceledEventAttributes) ToWire() (wire.Value, error) 
 // An error is returned if we were unable to build a WorkflowExecutionCanceledEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionCanceledEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionCanceledEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionCanceledEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -57334,8 +62509,8 @@ func WorkflowExecutionCloseStatus_Values() []WorkflowExecutionCloseStatus {
 // UnmarshalText tries to decode WorkflowExecutionCloseStatus from a byte slice
 // containing its name.
 //
-//   var v WorkflowExecutionCloseStatus
-//   err := v.UnmarshalText([]byte("COMPLETED"))
+//	var v WorkflowExecutionCloseStatus
+//	err := v.UnmarshalText([]byte("COMPLETED"))
 func (v *WorkflowExecutionCloseStatus) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "COMPLETED":
@@ -57430,16 +62605,16 @@ func (v WorkflowExecutionCloseStatus) ToWire() (wire.Value, error) {
 // FromWire deserializes WorkflowExecutionCloseStatus from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return WorkflowExecutionCloseStatus(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return WorkflowExecutionCloseStatus(0), err
+//	}
 //
-//   var v WorkflowExecutionCloseStatus
-//   if err := v.FromWire(x); err != nil {
-//     return WorkflowExecutionCloseStatus(0), err
-//   }
-//   return v, nil
+//	var v WorkflowExecutionCloseStatus
+//	if err := v.FromWire(x); err != nil {
+//	  return WorkflowExecutionCloseStatus(0), err
+//	}
+//	return v, nil
 func (v *WorkflowExecutionCloseStatus) FromWire(w wire.Value) error {
 	*v = (WorkflowExecutionCloseStatus)(w.GetI32())
 	return nil
@@ -57543,14 +62718,14 @@ type WorkflowExecutionCompletedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionCompletedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -57586,16 +62761,16 @@ func (v *WorkflowExecutionCompletedEventAttributes) ToWire() (wire.Value, error)
 // An error is returned if we were unable to build a WorkflowExecutionCompletedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionCompletedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionCompletedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionCompletedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -57724,14 +62899,14 @@ type WorkflowExecutionConfiguration struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionConfiguration) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -57775,16 +62950,16 @@ func (v *WorkflowExecutionConfiguration) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a WorkflowExecutionConfiguration struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionConfiguration
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionConfiguration
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionConfiguration) FromWire(w wire.Value) error {
 	var err error
 
@@ -57960,14 +63135,14 @@ type WorkflowExecutionContinuedAsNewEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionContinuedAsNewEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [15]wire.Field
@@ -58107,16 +63282,16 @@ func (v *WorkflowExecutionContinuedAsNewEventAttributes) ToWire() (wire.Value, e
 // An error is returned if we were unable to build a WorkflowExecutionContinuedAsNewEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionContinuedAsNewEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionContinuedAsNewEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionContinuedAsNewEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -58686,14 +63861,14 @@ type WorkflowExecutionFailedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionFailedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -58737,16 +63912,16 @@ func (v *WorkflowExecutionFailedEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a WorkflowExecutionFailedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionFailedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionFailedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionFailedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -58909,14 +64084,14 @@ type WorkflowExecutionFilter struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionFilter) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -58952,16 +64127,16 @@ func (v *WorkflowExecutionFilter) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a WorkflowExecutionFilter struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionFilter
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionFilter
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionFilter) FromWire(w wire.Value) error {
 	var err error
 
@@ -59103,14 +64278,14 @@ type WorkflowExecutionInfo struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionInfo) ToWire() (wire.Value, error) {
 	var (
 		fields [14]wire.Field
@@ -59248,16 +64423,16 @@ func _ResetPoints_Read(w wire.Value) (*ResetPoints, error) {
 // An error is returned if we were unable to build a WorkflowExecutionInfo struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionInfo
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionInfo
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionInfo) FromWire(w wire.Value) error {
 	var err error
 
@@ -59796,14 +64971,14 @@ type WorkflowExecutionSignaledEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionSignaledEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -59847,16 +65022,16 @@ func (v *WorkflowExecutionSignaledEventAttributes) ToWire() (wire.Value, error) 
 // An error is returned if we were unable to build a WorkflowExecutionSignaledEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionSignaledEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionSignaledEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionSignaledEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -60042,14 +65217,14 @@ type WorkflowExecutionStartedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionStartedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [25]wire.Field
@@ -60269,16 +65444,16 @@ func (v *WorkflowExecutionStartedEventAttributes) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a WorkflowExecutionStartedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionStartedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionStartedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionStartedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -61192,14 +66367,14 @@ type WorkflowExecutionTerminatedEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionTerminatedEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -61243,16 +66418,16 @@ func (v *WorkflowExecutionTerminatedEventAttributes) ToWire() (wire.Value, error
 // An error is returned if we were unable to build a WorkflowExecutionTerminatedEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionTerminatedEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionTerminatedEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionTerminatedEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -61414,14 +66589,14 @@ type WorkflowExecutionTimedOutEventAttributes struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowExecutionTimedOutEventAttributes) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -61449,16 +66624,16 @@ func (v *WorkflowExecutionTimedOutEventAttributes) ToWire() (wire.Value, error) 
 // An error is returned if we were unable to build a WorkflowExecutionTimedOutEventAttributes struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowExecutionTimedOutEventAttributes
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowExecutionTimedOutEventAttributes
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowExecutionTimedOutEventAttributes) FromWire(w wire.Value) error {
 	var err error
 
@@ -61563,8 +66738,8 @@ func WorkflowIdReusePolicy_Values() []WorkflowIdReusePolicy {
 // UnmarshalText tries to decode WorkflowIdReusePolicy from a byte slice
 // containing its name.
 //
-//   var v WorkflowIdReusePolicy
-//   err := v.UnmarshalText([]byte("AllowDuplicateFailedOnly"))
+//	var v WorkflowIdReusePolicy
+//	err := v.UnmarshalText([]byte("AllowDuplicateFailedOnly"))
 func (v *WorkflowIdReusePolicy) UnmarshalText(value []byte) error {
 	switch s := string(value); s {
 	case "AllowDuplicateFailedOnly":
@@ -61645,16 +66820,16 @@ func (v WorkflowIdReusePolicy) ToWire() (wire.Value, error) {
 // FromWire deserializes WorkflowIdReusePolicy from its Thrift-level
 // representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TI32)
-//   if err != nil {
-//     return WorkflowIdReusePolicy(0), err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TI32)
+//	if err != nil {
+//	  return WorkflowIdReusePolicy(0), err
+//	}
 //
-//   var v WorkflowIdReusePolicy
-//   if err := v.FromWire(x); err != nil {
-//     return WorkflowIdReusePolicy(0), err
-//   }
-//   return v, nil
+//	var v WorkflowIdReusePolicy
+//	if err := v.FromWire(x); err != nil {
+//	  return WorkflowIdReusePolicy(0), err
+//	}
+//	return v, nil
 func (v *WorkflowIdReusePolicy) FromWire(w wire.Value) error {
 	*v = (WorkflowIdReusePolicy)(w.GetI32())
 	return nil
@@ -61750,14 +66925,14 @@ type WorkflowQuery struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowQuery) ToWire() (wire.Value, error) {
 	var (
 		fields [2]wire.Field
@@ -61793,16 +66968,16 @@ func (v *WorkflowQuery) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a WorkflowQuery struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowQuery
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowQuery
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowQuery) FromWire(w wire.Value) error {
 	var err error
 
@@ -61931,14 +67106,14 @@ type WorkflowQueryResult struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowQueryResult) ToWire() (wire.Value, error) {
 	var (
 		fields [3]wire.Field
@@ -61988,16 +67163,16 @@ func _QueryResultType_Read(w wire.Value) (QueryResultType, error) {
 // An error is returned if we were unable to build a WorkflowQueryResult struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowQueryResult
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowQueryResult
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowQueryResult) FromWire(w wire.Value) error {
 	var err error
 
@@ -62169,14 +67344,14 @@ type WorkflowType struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowType) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -62204,16 +67379,16 @@ func (v *WorkflowType) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a WorkflowType struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowType
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowType
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowType) FromWire(w wire.Value) error {
 	var err error
 
@@ -62307,14 +67482,14 @@ type WorkflowTypeFilter struct {
 // An error is returned if the struct or any of its fields failed to
 // validate.
 //
-//   x, err := v.ToWire()
-//   if err != nil {
-//     return err
-//   }
+//	x, err := v.ToWire()
+//	if err != nil {
+//	  return err
+//	}
 //
-//   if err := binaryProtocol.Encode(x, writer); err != nil {
-//     return err
-//   }
+//	if err := binaryProtocol.Encode(x, writer); err != nil {
+//	  return err
+//	}
 func (v *WorkflowTypeFilter) ToWire() (wire.Value, error) {
 	var (
 		fields [1]wire.Field
@@ -62342,16 +67517,16 @@ func (v *WorkflowTypeFilter) ToWire() (wire.Value, error) {
 // An error is returned if we were unable to build a WorkflowTypeFilter struct
 // from the provided intermediate representation.
 //
-//   x, err := binaryProtocol.Decode(reader, wire.TStruct)
-//   if err != nil {
-//     return nil, err
-//   }
+//	x, err := binaryProtocol.Decode(reader, wire.TStruct)
+//	if err != nil {
+//	  return nil, err
+//	}
 //
-//   var v WorkflowTypeFilter
-//   if err := v.FromWire(x); err != nil {
-//     return nil, err
-//   }
-//   return &v, nil
+//	var v WorkflowTypeFilter
+//	if err := v.FromWire(x); err != nil {
+//	  return nil, err
+//	}
+//	return &v, nil
 func (v *WorkflowTypeFilter) FromWire(w wire.Value) error {
 	var err error
 
@@ -62439,8 +67614,8 @@ var ThriftModule = &thriftreflect.ThriftModule{
 	Name:     "shared",
 	Package:  "go.uber.org/cadence/.gen/go/shared",
 	FilePath: "shared.thrift",
-	SHA1:     "6b019835f7998d0d56e81eb10f15a199aaffc308",
+	SHA1:     "b61f2fda74cbd47a027440c5a0a61ade3b5ac12e",
 	Raw:      rawIDL,
 }
 
-const rawIDL = "// Copyright (c) 2017 Uber Technologies, Inc.\n//\n// Permission is hereby granted, free of charge, to any person obtaining a copy\n// of this software and associated documentation files (the \"Software\"), to deal\n// in the Software without restriction, including without limitation the rights\n// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n// copies of the Software, and to permit persons to whom the Software is\n// furnished to do so, subject to the following conditions:\n//\n// The above copyright notice and this permission notice shall be included in\n// all copies or substantial portions of the Software.\n//\n// THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n// THE SOFTWARE.\n\nnamespace java com.uber.cadence\n\nexception BadRequestError {\n  1: required string message\n}\n\nexception InternalServiceError {\n  1: required string message\n}\n\nexception InternalDataInconsistencyError {\n  1: required string message\n}\n\nexception DomainAlreadyExistsError {\n  1: required string message\n}\n\nexception WorkflowExecutionAlreadyStartedError {\n  10: optional string message\n  20: optional string startRequestId\n  30: optional string runId\n}\n\nexception WorkflowExecutionAlreadyCompletedError {\n  1: required string message\n}\n\nexception EntityNotExistsError {\n  1: required string message\n  2: optional string currentCluster\n  3: optional string activeCluster\n}\n\nexception ServiceBusyError {\n  1: required string message\n}\n\nexception CancellationAlreadyRequestedError {\n  1: required string message\n}\n\nexception QueryFailedError {\n  1: required string message\n}\n\nexception DomainNotActiveError {\n  1: required string message\n  2: required string domainName\n  3: required string currentCluster\n  4: required string activeCluster\n}\n\nexception LimitExceededError {\n  1: required string message\n}\n\nexception AccessDeniedError {\n  1: required string message\n}\n\nexception RetryTaskV2Error {\n  1: required string message\n  2: optional string domainId\n  3: optional string workflowId\n  4: optional string runId\n  5: optional i64 (js.type = \"Long\") startEventId\n  6: optional i64 (js.type = \"Long\") startEventVersion\n  7: optional i64 (js.type = \"Long\") endEventId\n  8: optional i64 (js.type = \"Long\") endEventVersion\n}\n\nexception ClientVersionNotSupportedError {\n  1: required string featureVersion\n  2: required string clientImpl\n  3: required string supportedVersions\n}\n\nexception FeatureNotEnabledError {\n  1: required string featureFlag\n}\n\nexception CurrentBranchChangedError {\n  10: required string message\n  20: required binary currentBranchToken\n}\n\nexception RemoteSyncMatchedError {\n  10: required string message\n}\n\nenum WorkflowIdReusePolicy {\n  /*\n   * allow start a workflow execution using the same workflow ID,\n   * when workflow not running, and the last execution close state is in\n   * [terminated, cancelled, timeouted, failed].\n   */\n  AllowDuplicateFailedOnly,\n  /*\n   * allow start a workflow execution using the same workflow ID,\n   * when workflow not running.\n   */\n  AllowDuplicate,\n  /*\n   * do not allow start a workflow execution using the same workflow ID at all\n   */\n  RejectDuplicate,\n  /*\n   * if a workflow is running using the same workflow ID, terminate it and start a new one\n   */\n  TerminateIfRunning,\n}\n\nenum DomainStatus {\n  REGISTERED,\n  DEPRECATED,\n  DELETED,\n}\n\nenum TimeoutType {\n  START_TO_CLOSE,\n  SCHEDULE_TO_START,\n  SCHEDULE_TO_CLOSE,\n  HEARTBEAT,\n}\n\nenum ParentClosePolicy {\n\tABANDON,\n\tREQUEST_CANCEL,\n\tTERMINATE,\n}\n\n\n// whenever this list of decision is changed\n// do change the mutableStateBuilder.go\n// function shouldBufferEvent\n// to make sure wo do the correct event ordering\nenum DecisionType {\n  ScheduleActivityTask,\n  RequestCancelActivityTask,\n  StartTimer,\n  CompleteWorkflowExecution,\n  FailWorkflowExecution,\n  CancelTimer,\n  CancelWorkflowExecution,\n  RequestCancelExternalWorkflowExecution,\n  RecordMarker,\n  ContinueAsNewWorkflowExecution,\n  StartChildWorkflowExecution,\n  SignalExternalWorkflowExecution,\n  UpsertWorkflowSearchAttributes,\n}\n\nenum EventType {\n  WorkflowExecutionStarted,\n  WorkflowExecutionCompleted,\n  WorkflowExecutionFailed,\n  WorkflowExecutionTimedOut,\n  DecisionTaskScheduled,\n  DecisionTaskStarted,\n  DecisionTaskCompleted,\n  DecisionTaskTimedOut\n  DecisionTaskFailed,\n  ActivityTaskScheduled,\n  ActivityTaskStarted,\n  ActivityTaskCompleted,\n  ActivityTaskFailed,\n  ActivityTaskTimedOut,\n  ActivityTaskCancelRequested,\n  RequestCancelActivityTaskFailed,\n  ActivityTaskCanceled,\n  TimerStarted,\n  TimerFired,\n  CancelTimerFailed,\n  TimerCanceled,\n  WorkflowExecutionCancelRequested,\n  WorkflowExecutionCanceled,\n  RequestCancelExternalWorkflowExecutionInitiated,\n  RequestCancelExternalWorkflowExecutionFailed,\n  ExternalWorkflowExecutionCancelRequested,\n  MarkerRecorded,\n  WorkflowExecutionSignaled,\n  WorkflowExecutionTerminated,\n  WorkflowExecutionContinuedAsNew,\n  StartChildWorkflowExecutionInitiated,\n  StartChildWorkflowExecutionFailed,\n  ChildWorkflowExecutionStarted,\n  ChildWorkflowExecutionCompleted,\n  ChildWorkflowExecutionFailed,\n  ChildWorkflowExecutionCanceled,\n  ChildWorkflowExecutionTimedOut,\n  ChildWorkflowExecutionTerminated,\n  SignalExternalWorkflowExecutionInitiated,\n  SignalExternalWorkflowExecutionFailed,\n  ExternalWorkflowExecutionSignaled,\n  UpsertWorkflowSearchAttributes,\n}\n\nenum DecisionTaskFailedCause {\n  UNHANDLED_DECISION,\n  BAD_SCHEDULE_ACTIVITY_ATTRIBUTES,\n  BAD_REQUEST_CANCEL_ACTIVITY_ATTRIBUTES,\n  BAD_START_TIMER_ATTRIBUTES,\n  BAD_CANCEL_TIMER_ATTRIBUTES,\n  BAD_RECORD_MARKER_ATTRIBUTES,\n  BAD_COMPLETE_WORKFLOW_EXECUTION_ATTRIBUTES,\n  BAD_FAIL_WORKFLOW_EXECUTION_ATTRIBUTES,\n  BAD_CANCEL_WORKFLOW_EXECUTION_ATTRIBUTES,\n  BAD_REQUEST_CANCEL_EXTERNAL_WORKFLOW_EXECUTION_ATTRIBUTES,\n  BAD_CONTINUE_AS_NEW_ATTRIBUTES,\n  START_TIMER_DUPLICATE_ID,\n  RESET_STICKY_TASKLIST,\n  WORKFLOW_WORKER_UNHANDLED_FAILURE,\n  BAD_SIGNAL_WORKFLOW_EXECUTION_ATTRIBUTES,\n  BAD_START_CHILD_EXECUTION_ATTRIBUTES,\n  FORCE_CLOSE_DECISION,\n  FAILOVER_CLOSE_DECISION,\n  BAD_SIGNAL_INPUT_SIZE,\n  RESET_WORKFLOW,\n  BAD_BINARY,\n  SCHEDULE_ACTIVITY_DUPLICATE_ID,\n  BAD_SEARCH_ATTRIBUTES,\n}\n\nenum DecisionTaskTimedOutCause {\n  TIMEOUT,\n  RESET,\n}\n\nenum CancelExternalWorkflowExecutionFailedCause {\n  UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION,\n}\n\nenum SignalExternalWorkflowExecutionFailedCause {\n  UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION,\n}\n\nenum ChildWorkflowExecutionFailedCause {\n  WORKFLOW_ALREADY_RUNNING,\n}\n\n// TODO: when migrating to gRPC, add a running / none status,\n//  currently, customer is using null / nil as an indication\n//  that workflow is still running\nenum WorkflowExecutionCloseStatus {\n  COMPLETED,\n  FAILED,\n  CANCELED,\n  TERMINATED,\n  CONTINUED_AS_NEW,\n  TIMED_OUT,\n}\n\nenum QueryTaskCompletedType {\n  COMPLETED,\n  FAILED,\n}\n\nenum QueryResultType {\n  ANSWERED,\n  FAILED,\n}\n\nenum PendingActivityState {\n  SCHEDULED,\n  STARTED,\n  CANCEL_REQUESTED,\n}\n\nenum PendingDecisionState {\n  SCHEDULED,\n  STARTED,\n}\n\nenum HistoryEventFilterType {\n  ALL_EVENT,\n  CLOSE_EVENT,\n}\n\nenum TaskListKind {\n  NORMAL,\n  STICKY,\n}\n\nenum ArchivalStatus {\n  DISABLED,\n  ENABLED,\n}\n\nenum IndexedValueType {\n  STRING,\n  KEYWORD,\n  INT,\n  DOUBLE,\n  BOOL,\n  DATETIME,\n}\n\nstruct Header {\n    10: optional map<string, binary> fields\n}\n\nstruct WorkflowType {\n  10: optional string name\n}\n\nstruct ActivityType {\n  10: optional string name\n}\n\nstruct TaskList {\n  10: optional string name\n  20: optional TaskListKind kind\n}\n\nenum EncodingType {\n  ThriftRW,\n  JSON,\n}\n\nenum QueryRejectCondition {\n  // NOT_OPEN indicates that query should be rejected if workflow is not open\n  NOT_OPEN\n  // NOT_COMPLETED_CLEANLY indicates that query should be rejected if workflow did not complete cleanly\n  NOT_COMPLETED_CLEANLY\n}\n\nenum QueryConsistencyLevel {\n  // EVENTUAL indicates that query should be eventually consistent\n  EVENTUAL\n  // STRONG indicates that any events that came before query should be reflected in workflow state before running query\n  STRONG\n}\n\nstruct DataBlob {\n  10: optional EncodingType EncodingType\n  20: optional binary Data\n}\n\nstruct TaskListMetadata {\n  10: optional double maxTasksPerSecond\n}\n\nstruct WorkflowExecution {\n  10: optional string workflowId\n  20: optional string runId\n}\n\nstruct Memo {\n  10: optional map<string,binary> fields\n}\n\nstruct SearchAttributes {\n  10: optional map<string,binary> indexedFields\n}\n\nstruct WorkerVersionInfo {\n  10: optional string impl\n  20: optional string featureVersion\n}\n\nstruct WorkflowExecutionInfo {\n  10: optional WorkflowExecution execution\n  20: optional WorkflowType type\n  30: optional i64 (js.type = \"Long\") startTime\n  40: optional i64 (js.type = \"Long\") closeTime\n  50: optional WorkflowExecutionCloseStatus closeStatus\n  60: optional i64 (js.type = \"Long\") historyLength\n  70: optional string parentDomainId\n  80: optional WorkflowExecution parentExecution\n  90: optional i64 (js.type = \"Long\") executionTime\n  100: optional Memo memo\n  101: optional SearchAttributes searchAttributes\n  110: optional ResetPoints autoResetPoints\n  120: optional string taskList\n  130: optional bool isCron\n}\n\nstruct WorkflowExecutionConfiguration {\n  10: optional TaskList taskList\n  20: optional i32 executionStartToCloseTimeoutSeconds\n  30: optional i32 taskStartToCloseTimeoutSeconds\n//  40: optional ChildPolicy childPolicy -- Removed but reserve the IDL order number\n}\n\nstruct TransientDecisionInfo {\n  10: optional HistoryEvent scheduledEvent\n  20: optional HistoryEvent startedEvent\n}\n\nstruct ScheduleActivityTaskDecisionAttributes {\n  10: optional string activityId\n  20: optional ActivityType activityType\n  25: optional string domain\n  30: optional TaskList taskList\n  40: optional binary input\n  45: optional i32 scheduleToCloseTimeoutSeconds\n  50: optional i32 scheduleToStartTimeoutSeconds\n  55: optional i32 startToCloseTimeoutSeconds\n  60: optional i32 heartbeatTimeoutSeconds\n  70: optional RetryPolicy retryPolicy\n  80: optional Header header\n  90: optional bool requestLocalDispatch\n}\n\nstruct ActivityLocalDispatchInfo{\n  10: optional string activityId\n  20: optional i64 (js.type = \"Long\") scheduledTimestamp\n  30: optional i64 (js.type = \"Long\") startedTimestamp\n  40: optional i64 (js.type = \"Long\") scheduledTimestampOfThisAttempt\n  50: optional binary taskToken\n}\n\nstruct RequestCancelActivityTaskDecisionAttributes {\n  10: optional string activityId\n}\n\nstruct StartTimerDecisionAttributes {\n  10: optional string timerId\n  20: optional i64 (js.type = \"Long\") startToFireTimeoutSeconds\n}\n\nstruct CompleteWorkflowExecutionDecisionAttributes {\n  10: optional binary result\n}\n\nstruct FailWorkflowExecutionDecisionAttributes {\n  10: optional string reason\n  20: optional binary details\n}\n\nstruct CancelTimerDecisionAttributes {\n  10: optional string timerId\n}\n\nstruct CancelWorkflowExecutionDecisionAttributes {\n  10: optional binary details\n}\n\nstruct RequestCancelExternalWorkflowExecutionDecisionAttributes {\n  10: optional string domain\n  20: optional string workflowId\n  30: optional string runId\n  40: optional binary control\n  50: optional bool childWorkflowOnly\n}\n\nstruct SignalExternalWorkflowExecutionDecisionAttributes {\n  10: optional string domain\n  20: optional WorkflowExecution execution\n  30: optional string signalName\n  40: optional binary input\n  50: optional binary control\n  60: optional bool childWorkflowOnly\n}\n\nstruct UpsertWorkflowSearchAttributesDecisionAttributes {\n  10: optional SearchAttributes searchAttributes\n}\n\nstruct RecordMarkerDecisionAttributes {\n  10: optional string markerName\n  20: optional binary details\n  30: optional Header header\n}\n\nstruct ContinueAsNewWorkflowExecutionDecisionAttributes {\n  10: optional WorkflowType workflowType\n  20: optional TaskList taskList\n  30: optional binary input\n  40: optional i32 executionStartToCloseTimeoutSeconds\n  50: optional i32 taskStartToCloseTimeoutSeconds\n  60: optional i32 backoffStartIntervalInSeconds\n  70: optional RetryPolicy retryPolicy\n  80: optional ContinueAsNewInitiator initiator\n  90: optional string failureReason\n  100: optional binary failureDetails\n  110: optional binary lastCompletionResult\n  120: optional string cronSchedule\n  130: optional Header header\n  140: optional Memo memo\n  150: optional SearchAttributes searchAttributes\n}\n\nstruct StartChildWorkflowExecutionDecisionAttributes {\n  10: optional string domain\n  20: optional string workflowId\n  30: optional WorkflowType workflowType\n  40: optional TaskList taskList\n  50: optional binary input\n  60: optional i32 executionStartToCloseTimeoutSeconds\n  70: optional i32 taskStartToCloseTimeoutSeconds\n//  80: optional ChildPolicy childPolicy -- Removed but reserve the IDL order number\n  81: optional ParentClosePolicy parentClosePolicy\n  90: optional binary control\n  100: optional WorkflowIdReusePolicy workflowIdReusePolicy\n  110: optional RetryPolicy retryPolicy\n  120: optional string cronSchedule\n  130: optional Header header\n  140: optional Memo memo\n  150: optional SearchAttributes searchAttributes\n}\n\nstruct Decision {\n  10:  optional DecisionType decisionType\n  20:  optional ScheduleActivityTaskDecisionAttributes scheduleActivityTaskDecisionAttributes\n  25:  optional StartTimerDecisionAttributes startTimerDecisionAttributes\n  30:  optional CompleteWorkflowExecutionDecisionAttributes completeWorkflowExecutionDecisionAttributes\n  35:  optional FailWorkflowExecutionDecisionAttributes failWorkflowExecutionDecisionAttributes\n  40:  optional RequestCancelActivityTaskDecisionAttributes requestCancelActivityTaskDecisionAttributes\n  50:  optional CancelTimerDecisionAttributes cancelTimerDecisionAttributes\n  60:  optional CancelWorkflowExecutionDecisionAttributes cancelWorkflowExecutionDecisionAttributes\n  70:  optional RequestCancelExternalWorkflowExecutionDecisionAttributes requestCancelExternalWorkflowExecutionDecisionAttributes\n  80:  optional RecordMarkerDecisionAttributes recordMarkerDecisionAttributes\n  90:  optional ContinueAsNewWorkflowExecutionDecisionAttributes continueAsNewWorkflowExecutionDecisionAttributes\n  100: optional StartChildWorkflowExecutionDecisionAttributes startChildWorkflowExecutionDecisionAttributes\n  110: optional SignalExternalWorkflowExecutionDecisionAttributes signalExternalWorkflowExecutionDecisionAttributes\n  120: optional UpsertWorkflowSearchAttributesDecisionAttributes upsertWorkflowSearchAttributesDecisionAttributes\n}\n\nstruct WorkflowExecutionStartedEventAttributes {\n  10: optional WorkflowType workflowType\n  12: optional string parentWorkflowDomain\n  14: optional WorkflowExecution parentWorkflowExecution\n  16: optional i64 (js.type = \"Long\") parentInitiatedEventId\n  20: optional TaskList taskList\n  30: optional binary input\n  40: optional i32 executionStartToCloseTimeoutSeconds\n  50: optional i32 taskStartToCloseTimeoutSeconds\n//  52: optional ChildPolicy childPolicy -- Removed but reserve the IDL order number\n  54: optional string continuedExecutionRunId\n  55: optional ContinueAsNewInitiator initiator\n  56: optional string continuedFailureReason\n  57: optional binary continuedFailureDetails\n  58: optional binary lastCompletionResult\n  59: optional string originalExecutionRunId // This is the runID when the WorkflowExecutionStarted event is written\n  60: optional string identity\n  61: optional string firstExecutionRunId // This is the very first runID along the chain of ContinueAsNew and Reset.\n  70: optional RetryPolicy retryPolicy\n  80: optional i32 attempt\n  90: optional i64 (js.type = \"Long\") expirationTimestamp\n  100: optional string cronSchedule\n  110: optional i32 firstDecisionTaskBackoffSeconds\n  120: optional Memo memo\n  121: optional SearchAttributes searchAttributes\n  130: optional ResetPoints prevAutoResetPoints\n  140: optional Header header\n}\n\nstruct ResetPoints{\n  10: optional list<ResetPointInfo> points\n}\n\n struct ResetPointInfo{\n  10: optional string binaryChecksum\n  20: optional string runId\n  30: optional i64 firstDecisionCompletedId\n  40: optional i64 (js.type = \"Long\") createdTimeNano\n  50: optional i64 (js.type = \"Long\") expiringTimeNano //the time that the run is deleted due to retention\n  60: optional bool resettable                         // false if the resset point has pending childWFs/reqCancels/signalExternals.\n}\n\nstruct WorkflowExecutionCompletedEventAttributes {\n  10: optional binary result\n  20: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n}\n\nstruct WorkflowExecutionFailedEventAttributes {\n  10: optional string reason\n  20: optional binary details\n  30: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n}\n\nstruct WorkflowExecutionTimedOutEventAttributes {\n  10: optional TimeoutType timeoutType\n}\n\nenum ContinueAsNewInitiator {\n  Decider,\n  RetryPolicy,\n  CronSchedule,\n}\n\nstruct WorkflowExecutionContinuedAsNewEventAttributes {\n  10: optional string newExecutionRunId\n  20: optional WorkflowType workflowType\n  30: optional TaskList taskList\n  40: optional binary input\n  50: optional i32 executionStartToCloseTimeoutSeconds\n  60: optional i32 taskStartToCloseTimeoutSeconds\n  70: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  80: optional i32 backoffStartIntervalInSeconds\n  90: optional ContinueAsNewInitiator initiator\n  100: optional string failureReason\n  110: optional binary failureDetails\n  120: optional binary lastCompletionResult\n  130: optional Header header\n  140: optional Memo memo\n  150: optional SearchAttributes searchAttributes\n}\n\nstruct DecisionTaskScheduledEventAttributes {\n  10: optional TaskList taskList\n  20: optional i32 startToCloseTimeoutSeconds\n  30: optional i64 (js.type = \"Long\") attempt\n}\n\nstruct DecisionTaskStartedEventAttributes {\n  10: optional i64 (js.type = \"Long\") scheduledEventId\n  20: optional string identity\n  30: optional string requestId\n}\n\nstruct DecisionTaskCompletedEventAttributes {\n  10: optional binary executionContext\n  20: optional i64 (js.type = \"Long\") scheduledEventId\n  30: optional i64 (js.type = \"Long\") startedEventId\n  40: optional string identity\n  50: optional string binaryChecksum\n}\n\nstruct DecisionTaskTimedOutEventAttributes {\n  10: optional i64 (js.type = \"Long\") scheduledEventId\n  20: optional i64 (js.type = \"Long\") startedEventId\n  30: optional TimeoutType timeoutType\n  // for reset workflow\n  40: optional string baseRunId\n  50: optional string newRunId\n  60: optional i64 (js.type = \"Long\") forkEventVersion\n  70: optional string reason\n  80: optional DecisionTaskTimedOutCause cause\n}\n\nstruct DecisionTaskFailedEventAttributes {\n  10: optional i64 (js.type = \"Long\") scheduledEventId\n  20: optional i64 (js.type = \"Long\") startedEventId\n  30: optional DecisionTaskFailedCause cause\n  35: optional binary details\n  40: optional string identity\n  50: optional string reason\n  // for reset workflow\n  60: optional string baseRunId\n  70: optional string newRunId\n  80: optional i64 (js.type = \"Long\") forkEventVersion\n  90: optional string binaryChecksum\n}\n\nstruct ActivityTaskScheduledEventAttributes {\n  10: optional string activityId\n  20: optional ActivityType activityType\n  25: optional string domain\n  30: optional TaskList taskList\n  40: optional binary input\n  45: optional i32 scheduleToCloseTimeoutSeconds\n  50: optional i32 scheduleToStartTimeoutSeconds\n  55: optional i32 startToCloseTimeoutSeconds\n  60: optional i32 heartbeatTimeoutSeconds\n  90: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  110: optional RetryPolicy retryPolicy\n  120: optional Header header\n}\n\nstruct ActivityTaskStartedEventAttributes {\n  10: optional i64 (js.type = \"Long\") scheduledEventId\n  20: optional string identity\n  30: optional string requestId\n  40: optional i32 attempt\n  50: optional string lastFailureReason\n  60: optional binary lastFailureDetails\n}\n\nstruct ActivityTaskCompletedEventAttributes {\n  10: optional binary result\n  20: optional i64 (js.type = \"Long\") scheduledEventId\n  30: optional i64 (js.type = \"Long\") startedEventId\n  40: optional string identity\n}\n\nstruct ActivityTaskFailedEventAttributes {\n  10: optional string reason\n  20: optional binary details\n  30: optional i64 (js.type = \"Long\") scheduledEventId\n  40: optional i64 (js.type = \"Long\") startedEventId\n  50: optional string identity\n}\n\nstruct ActivityTaskTimedOutEventAttributes {\n  05: optional binary details\n  10: optional i64 (js.type = \"Long\") scheduledEventId\n  20: optional i64 (js.type = \"Long\") startedEventId\n  30: optional TimeoutType timeoutType\n  // For retry activity, it may have a failure before timeout. It's important to keep those information for debug.\n  // Client can also provide the info for making next decision\n  40: optional string lastFailureReason\n  50: optional binary lastFailureDetails\n}\n\nstruct ActivityTaskCancelRequestedEventAttributes {\n  10: optional string activityId\n  20: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n}\n\nstruct RequestCancelActivityTaskFailedEventAttributes{\n  10: optional string activityId\n  20: optional string cause\n  30: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n}\n\nstruct ActivityTaskCanceledEventAttributes {\n  10: optional binary details\n  20: optional i64 (js.type = \"Long\") latestCancelRequestedEventId\n  30: optional i64 (js.type = \"Long\") scheduledEventId\n  40: optional i64 (js.type = \"Long\") startedEventId\n  50: optional string identity\n}\n\nstruct TimerStartedEventAttributes {\n  10: optional string timerId\n  20: optional i64 (js.type = \"Long\") startToFireTimeoutSeconds\n  30: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n}\n\nstruct TimerFiredEventAttributes {\n  10: optional string timerId\n  20: optional i64 (js.type = \"Long\") startedEventId\n}\n\nstruct TimerCanceledEventAttributes {\n  10: optional string timerId\n  20: optional i64 (js.type = \"Long\") startedEventId\n  30: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  40: optional string identity\n}\n\nstruct CancelTimerFailedEventAttributes {\n  10: optional string timerId\n  20: optional string cause\n  30: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  40: optional string identity\n}\n\nstruct WorkflowExecutionCancelRequestedEventAttributes {\n  10: optional string cause\n  20: optional i64 (js.type = \"Long\") externalInitiatedEventId\n  30: optional WorkflowExecution externalWorkflowExecution\n  40: optional string identity\n}\n\nstruct WorkflowExecutionCanceledEventAttributes {\n  10: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  20: optional binary details\n}\n\nstruct MarkerRecordedEventAttributes {\n  10: optional string markerName\n  20: optional binary details\n  30: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  40: optional Header header\n}\n\nstruct WorkflowExecutionSignaledEventAttributes {\n  10: optional string signalName\n  20: optional binary input\n  30: optional string identity\n}\n\nstruct WorkflowExecutionTerminatedEventAttributes {\n  10: optional string reason\n  20: optional binary details\n  30: optional string identity\n}\n\nstruct RequestCancelExternalWorkflowExecutionInitiatedEventAttributes {\n  10: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n  40: optional binary control\n  50: optional bool childWorkflowOnly\n}\n\nstruct RequestCancelExternalWorkflowExecutionFailedEventAttributes {\n  10: optional CancelExternalWorkflowExecutionFailedCause cause\n  20: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  30: optional string domain\n  40: optional WorkflowExecution workflowExecution\n  50: optional i64 (js.type = \"Long\") initiatedEventId\n  60: optional binary control\n}\n\nstruct ExternalWorkflowExecutionCancelRequestedEventAttributes {\n  10: optional i64 (js.type = \"Long\") initiatedEventId\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n}\n\nstruct SignalExternalWorkflowExecutionInitiatedEventAttributes {\n  10: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n  40: optional string signalName\n  50: optional binary input\n  60: optional binary control\n  70: optional bool childWorkflowOnly\n}\n\nstruct SignalExternalWorkflowExecutionFailedEventAttributes {\n  10: optional SignalExternalWorkflowExecutionFailedCause cause\n  20: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  30: optional string domain\n  40: optional WorkflowExecution workflowExecution\n  50: optional i64 (js.type = \"Long\") initiatedEventId\n  60: optional binary control\n}\n\nstruct ExternalWorkflowExecutionSignaledEventAttributes {\n  10: optional i64 (js.type = \"Long\") initiatedEventId\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n  40: optional binary control\n}\n\nstruct UpsertWorkflowSearchAttributesEventAttributes {\n  10: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  20: optional SearchAttributes searchAttributes\n}\n\nstruct StartChildWorkflowExecutionInitiatedEventAttributes {\n  10:  optional string domain\n  20:  optional string workflowId\n  30:  optional WorkflowType workflowType\n  40:  optional TaskList taskList\n  50:  optional binary input\n  60:  optional i32 executionStartToCloseTimeoutSeconds\n  70:  optional i32 taskStartToCloseTimeoutSeconds\n//  80:  optional ChildPolicy childPolicy -- Removed but reserve the IDL order number\n  81:  optional ParentClosePolicy parentClosePolicy\n  90:  optional binary control\n  100: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  110: optional WorkflowIdReusePolicy workflowIdReusePolicy\n  120: optional RetryPolicy retryPolicy\n  130: optional string cronSchedule\n  140: optional Header header\n  150: optional Memo memo\n  160: optional SearchAttributes searchAttributes\n  170: optional i32 delayStartSeconds\n}\n\nstruct StartChildWorkflowExecutionFailedEventAttributes {\n  10: optional string domain\n  20: optional string workflowId\n  30: optional WorkflowType workflowType\n  40: optional ChildWorkflowExecutionFailedCause cause\n  50: optional binary control\n  60: optional i64 (js.type = \"Long\") initiatedEventId\n  70: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n}\n\nstruct ChildWorkflowExecutionStartedEventAttributes {\n  10: optional string domain\n  20: optional i64 (js.type = \"Long\") initiatedEventId\n  30: optional WorkflowExecution workflowExecution\n  40: optional WorkflowType workflowType\n  50: optional Header header\n}\n\nstruct ChildWorkflowExecutionCompletedEventAttributes {\n  10: optional binary result\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n  40: optional WorkflowType workflowType\n  50: optional i64 (js.type = \"Long\") initiatedEventId\n  60: optional i64 (js.type = \"Long\") startedEventId\n}\n\nstruct ChildWorkflowExecutionFailedEventAttributes {\n  10: optional string reason\n  20: optional binary details\n  30: optional string domain\n  40: optional WorkflowExecution workflowExecution\n  50: optional WorkflowType workflowType\n  60: optional i64 (js.type = \"Long\") initiatedEventId\n  70: optional i64 (js.type = \"Long\") startedEventId\n}\n\nstruct ChildWorkflowExecutionCanceledEventAttributes {\n  10: optional binary details\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n  40: optional WorkflowType workflowType\n  50: optional i64 (js.type = \"Long\") initiatedEventId\n  60: optional i64 (js.type = \"Long\") startedEventId\n}\n\nstruct ChildWorkflowExecutionTimedOutEventAttributes {\n  10: optional TimeoutType timeoutType\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n  40: optional WorkflowType workflowType\n  50: optional i64 (js.type = \"Long\") initiatedEventId\n  60: optional i64 (js.type = \"Long\") startedEventId\n}\n\nstruct ChildWorkflowExecutionTerminatedEventAttributes {\n  10: optional string domain\n  20: optional WorkflowExecution workflowExecution\n  30: optional WorkflowType workflowType\n  40: optional i64 (js.type = \"Long\") initiatedEventId\n  50: optional i64 (js.type = \"Long\") startedEventId\n}\n\nstruct HistoryEvent {\n  10:  optional i64 (js.type = \"Long\") eventId\n  20:  optional i64 (js.type = \"Long\") timestamp\n  30:  optional EventType eventType\n  35:  optional i64 (js.type = \"Long\") version\n  36:  optional i64 (js.type = \"Long\") taskId\n  40:  optional WorkflowExecutionStartedEventAttributes workflowExecutionStartedEventAttributes\n  50:  optional WorkflowExecutionCompletedEventAttributes workflowExecutionCompletedEventAttributes\n  60:  optional WorkflowExecutionFailedEventAttributes workflowExecutionFailedEventAttributes\n  70:  optional WorkflowExecutionTimedOutEventAttributes workflowExecutionTimedOutEventAttributes\n  80:  optional DecisionTaskScheduledEventAttributes decisionTaskScheduledEventAttributes\n  90:  optional DecisionTaskStartedEventAttributes decisionTaskStartedEventAttributes\n  100: optional DecisionTaskCompletedEventAttributes decisionTaskCompletedEventAttributes\n  110: optional DecisionTaskTimedOutEventAttributes decisionTaskTimedOutEventAttributes\n  120: optional DecisionTaskFailedEventAttributes decisionTaskFailedEventAttributes\n  130: optional ActivityTaskScheduledEventAttributes activityTaskScheduledEventAttributes\n  140: optional ActivityTaskStartedEventAttributes activityTaskStartedEventAttributes\n  150: optional ActivityTaskCompletedEventAttributes activityTaskCompletedEventAttributes\n  160: optional ActivityTaskFailedEventAttributes activityTaskFailedEventAttributes\n  170: optional ActivityTaskTimedOutEventAttributes activityTaskTimedOutEventAttributes\n  180: optional TimerStartedEventAttributes timerStartedEventAttributes\n  190: optional TimerFiredEventAttributes timerFiredEventAttributes\n  200: optional ActivityTaskCancelRequestedEventAttributes activityTaskCancelRequestedEventAttributes\n  210: optional RequestCancelActivityTaskFailedEventAttributes requestCancelActivityTaskFailedEventAttributes\n  220: optional ActivityTaskCanceledEventAttributes activityTaskCanceledEventAttributes\n  230: optional TimerCanceledEventAttributes timerCanceledEventAttributes\n  240: optional CancelTimerFailedEventAttributes cancelTimerFailedEventAttributes\n  250: optional MarkerRecordedEventAttributes markerRecordedEventAttributes\n  260: optional WorkflowExecutionSignaledEventAttributes workflowExecutionSignaledEventAttributes\n  270: optional WorkflowExecutionTerminatedEventAttributes workflowExecutionTerminatedEventAttributes\n  280: optional WorkflowExecutionCancelRequestedEventAttributes workflowExecutionCancelRequestedEventAttributes\n  290: optional WorkflowExecutionCanceledEventAttributes workflowExecutionCanceledEventAttributes\n  300: optional RequestCancelExternalWorkflowExecutionInitiatedEventAttributes requestCancelExternalWorkflowExecutionInitiatedEventAttributes\n  310: optional RequestCancelExternalWorkflowExecutionFailedEventAttributes requestCancelExternalWorkflowExecutionFailedEventAttributes\n  320: optional ExternalWorkflowExecutionCancelRequestedEventAttributes externalWorkflowExecutionCancelRequestedEventAttributes\n  330: optional WorkflowExecutionContinuedAsNewEventAttributes workflowExecutionContinuedAsNewEventAttributes\n  340: optional StartChildWorkflowExecutionInitiatedEventAttributes startChildWorkflowExecutionInitiatedEventAttributes\n  350: optional StartChildWorkflowExecutionFailedEventAttributes startChildWorkflowExecutionFailedEventAttributes\n  360: optional ChildWorkflowExecutionStartedEventAttributes childWorkflowExecutionStartedEventAttributes\n  370: optional ChildWorkflowExecutionCompletedEventAttributes childWorkflowExecutionCompletedEventAttributes\n  380: optional ChildWorkflowExecutionFailedEventAttributes childWorkflowExecutionFailedEventAttributes\n  390: optional ChildWorkflowExecutionCanceledEventAttributes childWorkflowExecutionCanceledEventAttributes\n  400: optional ChildWorkflowExecutionTimedOutEventAttributes childWorkflowExecutionTimedOutEventAttributes\n  410: optional ChildWorkflowExecutionTerminatedEventAttributes childWorkflowExecutionTerminatedEventAttributes\n  420: optional SignalExternalWorkflowExecutionInitiatedEventAttributes signalExternalWorkflowExecutionInitiatedEventAttributes\n  430: optional SignalExternalWorkflowExecutionFailedEventAttributes signalExternalWorkflowExecutionFailedEventAttributes\n  440: optional ExternalWorkflowExecutionSignaledEventAttributes externalWorkflowExecutionSignaledEventAttributes\n  450: optional UpsertWorkflowSearchAttributesEventAttributes upsertWorkflowSearchAttributesEventAttributes\n}\n\nstruct History {\n  10: optional list<HistoryEvent> events\n}\n\nstruct WorkflowExecutionFilter {\n  10: optional string workflowId\n  20: optional string runId\n}\n\nstruct WorkflowTypeFilter {\n  10: optional string name\n}\n\nstruct StartTimeFilter {\n  10: optional i64 (js.type = \"Long\") earliestTime\n  20: optional i64 (js.type = \"Long\") latestTime\n}\n\nstruct DomainInfo {\n  10: optional string name\n  20: optional DomainStatus status\n  30: optional string description\n  40: optional string ownerEmail\n  // A key-value map for any customized purpose\n  50: optional map<string,string> data\n  60: optional string uuid\n}\n\nstruct DomainConfiguration {\n  10: optional i32 workflowExecutionRetentionPeriodInDays\n  20: optional bool emitMetric\n  70: optional BadBinaries badBinaries\n  80: optional ArchivalStatus historyArchivalStatus\n  90: optional string historyArchivalURI\n  100: optional ArchivalStatus visibilityArchivalStatus\n  110: optional string visibilityArchivalURI\n}\n\nstruct BadBinaries{\n  10: optional map<string, BadBinaryInfo> binaries\n}\n\nstruct BadBinaryInfo{\n  10: optional string reason\n  20: optional string operator\n  30: optional i64 (js.type = \"Long\") createdTimeNano\n}\n\nstruct UpdateDomainInfo {\n  10: optional string description\n  20: optional string ownerEmail\n  // A key-value map for any customized purpose\n  30: optional map<string,string> data\n}\n\nstruct ClusterReplicationConfiguration {\n 10: optional string clusterName\n}\n\nstruct DomainReplicationConfiguration {\n 10: optional string activeClusterName\n 20: optional list<ClusterReplicationConfiguration> clusters\n}\n\nstruct RegisterDomainRequest {\n  10: optional string name\n  20: optional string description\n  30: optional string ownerEmail\n  40: optional i32 workflowExecutionRetentionPeriodInDays\n  50: optional bool emitMetric = true\n  60: optional list<ClusterReplicationConfiguration> clusters\n  70: optional string activeClusterName\n  // A key-value map for any customized purpose\n  80: optional map<string,string> data\n  90: optional string securityToken\n  120: optional bool isGlobalDomain\n  130: optional ArchivalStatus historyArchivalStatus\n  140: optional string historyArchivalURI\n  150: optional ArchivalStatus visibilityArchivalStatus\n  160: optional string visibilityArchivalURI\n}\n\nstruct ListDomainsRequest {\n  10: optional i32 pageSize\n  20: optional binary nextPageToken\n}\n\nstruct ListDomainsResponse {\n  10: optional list<DescribeDomainResponse> domains\n  20: optional binary nextPageToken\n}\n\nstruct DescribeDomainRequest {\n  10: optional string name\n  20: optional string uuid\n}\n\nstruct DescribeDomainResponse {\n  10: optional DomainInfo domainInfo\n  20: optional DomainConfiguration configuration\n  30: optional DomainReplicationConfiguration replicationConfiguration\n  40: optional i64 (js.type = \"Long\") failoverVersion\n  50: optional bool isGlobalDomain\n}\n\nstruct UpdateDomainRequest {\n 10: optional string name\n 20: optional UpdateDomainInfo updatedInfo\n 30: optional DomainConfiguration configuration\n 40: optional DomainReplicationConfiguration replicationConfiguration\n 50: optional string securityToken\n 60: optional string deleteBadBinary\n 70: optional i32 failoverTimeoutInSeconds\n}\n\nstruct UpdateDomainResponse {\n  10: optional DomainInfo domainInfo\n  20: optional DomainConfiguration configuration\n  30: optional DomainReplicationConfiguration replicationConfiguration\n  40: optional i64 (js.type = \"Long\") failoverVersion\n  50: optional bool isGlobalDomain\n}\n\nstruct DeprecateDomainRequest {\n 10: optional string name\n 20: optional string securityToken\n}\n\nstruct StartWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional string workflowId\n  30: optional WorkflowType workflowType\n  40: optional TaskList taskList\n  50: optional binary input\n  60: optional i32 executionStartToCloseTimeoutSeconds\n  70: optional i32 taskStartToCloseTimeoutSeconds\n  80: optional string identity\n  90: optional string requestId\n  100: optional WorkflowIdReusePolicy workflowIdReusePolicy\n//  110: optional ChildPolicy childPolicy -- Removed but reserve the IDL order number\n  120: optional RetryPolicy retryPolicy\n  130: optional string cronSchedule\n  140: optional Memo memo\n  141: optional SearchAttributes searchAttributes\n  150: optional Header header\n  160: optional i32 delayStartSeconds\n}\n\nstruct StartWorkflowExecutionResponse {\n  10: optional string runId\n}\n\nstruct PollForDecisionTaskRequest {\n  10: optional string domain\n  20: optional TaskList taskList\n  30: optional string identity\n  40: optional string binaryChecksum\n}\n\nstruct PollForDecisionTaskResponse {\n  10: optional binary taskToken\n  20: optional WorkflowExecution workflowExecution\n  30: optional WorkflowType workflowType\n  40: optional i64 (js.type = \"Long\") previousStartedEventId\n  50: optional i64 (js.type = \"Long\") startedEventId\n  51: optional i64 (js.type = 'Long') attempt\n  54: optional i64 (js.type = \"Long\") backlogCountHint\n  60: optional History history\n  70: optional binary nextPageToken\n  80: optional WorkflowQuery query\n  90: optional TaskList WorkflowExecutionTaskList\n  100: optional i64 (js.type = \"Long\") scheduledTimestamp\n  110: optional i64 (js.type = \"Long\") startedTimestamp\n  120: optional map<string, WorkflowQuery> queries\n  130: optional i64 (js.type = 'Long') nextEventId\n}\n\nstruct StickyExecutionAttributes {\n  10: optional TaskList workerTaskList\n  20: optional i32 scheduleToStartTimeoutSeconds\n}\n\nstruct RespondDecisionTaskCompletedRequest {\n  10: optional binary taskToken\n  20: optional list<Decision> decisions\n  30: optional binary executionContext\n  40: optional string identity\n  50: optional StickyExecutionAttributes stickyAttributes\n  60: optional bool returnNewDecisionTask\n  70: optional bool forceCreateNewDecisionTask\n  80: optional string binaryChecksum\n  90: optional map<string, WorkflowQueryResult> queryResults\n}\n\nstruct RespondDecisionTaskCompletedResponse {\n  10: optional PollForDecisionTaskResponse decisionTask\n  20: optional map<string,ActivityLocalDispatchInfo> activitiesToDispatchLocally\n}\n\nstruct RespondDecisionTaskFailedRequest {\n  10: optional binary taskToken\n  20: optional DecisionTaskFailedCause cause\n  30: optional binary details\n  40: optional string identity\n  50: optional string binaryChecksum\n}\n\nstruct PollForActivityTaskRequest {\n  10: optional string domain\n  20: optional TaskList taskList\n  30: optional string identity\n  40: optional TaskListMetadata taskListMetadata\n}\n\nstruct PollForActivityTaskResponse {\n  10:  optional binary taskToken\n  20:  optional WorkflowExecution workflowExecution\n  30:  optional string activityId\n  40:  optional ActivityType activityType\n  50:  optional binary input\n  70:  optional i64 (js.type = \"Long\") scheduledTimestamp\n  80:  optional i32 scheduleToCloseTimeoutSeconds\n  90:  optional i64 (js.type = \"Long\") startedTimestamp\n  100: optional i32 startToCloseTimeoutSeconds\n  110: optional i32 heartbeatTimeoutSeconds\n  120: optional i32 attempt\n  130: optional i64 (js.type = \"Long\") scheduledTimestampOfThisAttempt\n  140: optional binary heartbeatDetails\n  150: optional WorkflowType workflowType\n  160: optional string workflowDomain\n  170: optional Header header\n}\n\nstruct RecordActivityTaskHeartbeatRequest {\n  10: optional binary taskToken\n  20: optional binary details\n  30: optional string identity\n}\n\nstruct RecordActivityTaskHeartbeatByIDRequest {\n  10: optional string domain\n  20: optional string workflowID\n  30: optional string runID\n  40: optional string activityID\n  50: optional binary details\n  60: optional string identity\n}\n\nstruct RecordActivityTaskHeartbeatResponse {\n  10: optional bool cancelRequested\n}\n\nstruct RespondActivityTaskCompletedRequest {\n  10: optional binary taskToken\n  20: optional binary result\n  30: optional string identity\n}\n\nstruct RespondActivityTaskFailedRequest {\n  10: optional binary taskToken\n  20: optional string reason\n  30: optional binary details\n  40: optional string identity\n}\n\nstruct RespondActivityTaskCanceledRequest {\n  10: optional binary taskToken\n  20: optional binary details\n  30: optional string identity\n}\n\nstruct RespondActivityTaskCompletedByIDRequest {\n  10: optional string domain\n  20: optional string workflowID\n  30: optional string runID\n  40: optional string activityID\n  50: optional binary result\n  60: optional string identity\n}\n\nstruct RespondActivityTaskFailedByIDRequest {\n  10: optional string domain\n  20: optional string workflowID\n  30: optional string runID\n  40: optional string activityID\n  50: optional string reason\n  60: optional binary details\n  70: optional string identity\n}\n\nstruct RespondActivityTaskCanceledByIDRequest {\n  10: optional string domain\n  20: optional string workflowID\n  30: optional string runID\n  40: optional string activityID\n  50: optional binary details\n  60: optional string identity\n}\n\nstruct RequestCancelWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional WorkflowExecution workflowExecution\n  30: optional string identity\n  40: optional string requestId\n}\n\nstruct GetWorkflowExecutionHistoryRequest {\n  10: optional string domain\n  20: optional WorkflowExecution execution\n  30: optional i32 maximumPageSize\n  40: optional binary nextPageToken\n  50: optional bool waitForNewEvent\n  60: optional HistoryEventFilterType HistoryEventFilterType\n  70: optional bool skipArchival\n}\n\nstruct GetWorkflowExecutionHistoryResponse {\n  10: optional History history\n  11: optional list<DataBlob> rawHistory\n  20: optional binary nextPageToken\n  30: optional bool archived\n}\n\nstruct SignalWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional WorkflowExecution workflowExecution\n  30: optional string signalName\n  40: optional binary input\n  50: optional string identity\n  60: optional string requestId\n  70: optional binary control\n}\n\nstruct SignalWithStartWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional string workflowId\n  30: optional WorkflowType workflowType\n  40: optional TaskList taskList\n  50: optional binary input\n  60: optional i32 executionStartToCloseTimeoutSeconds\n  70: optional i32 taskStartToCloseTimeoutSeconds\n  80: optional string identity\n  90: optional string requestId\n  100: optional WorkflowIdReusePolicy workflowIdReusePolicy\n  110: optional string signalName\n  120: optional binary signalInput\n  130: optional binary control\n  140: optional RetryPolicy retryPolicy\n  150: optional string cronSchedule\n  160: optional Memo memo\n  161: optional SearchAttributes searchAttributes\n  170: optional Header header\n  180: optional i32 delayStartSeconds\n}\n\nstruct TerminateWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional WorkflowExecution workflowExecution\n  30: optional string reason\n  40: optional binary details\n  50: optional string identity\n}\n\nstruct ResetWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional WorkflowExecution workflowExecution\n  30: optional string reason\n  40: optional i64 (js.type = \"Long\") decisionFinishEventId\n  50: optional string requestId\n  60: optional bool skipSignalReapply\n}\n\nstruct ResetWorkflowExecutionResponse {\n  10: optional string runId\n}\n\nstruct ListOpenWorkflowExecutionsRequest {\n  10: optional string domain\n  20: optional i32 maximumPageSize\n  30: optional binary nextPageToken\n  40: optional StartTimeFilter StartTimeFilter\n  50: optional WorkflowExecutionFilter executionFilter\n  60: optional WorkflowTypeFilter typeFilter\n}\n\nstruct ListOpenWorkflowExecutionsResponse {\n  10: optional list<WorkflowExecutionInfo> executions\n  20: optional binary nextPageToken\n}\n\nstruct ListClosedWorkflowExecutionsRequest {\n  10: optional string domain\n  20: optional i32 maximumPageSize\n  30: optional binary nextPageToken\n  40: optional StartTimeFilter StartTimeFilter\n  50: optional WorkflowExecutionFilter executionFilter\n  60: optional WorkflowTypeFilter typeFilter\n  70: optional WorkflowExecutionCloseStatus statusFilter\n}\n\nstruct ListClosedWorkflowExecutionsResponse {\n  10: optional list<WorkflowExecutionInfo> executions\n  20: optional binary nextPageToken\n}\n\nstruct ListWorkflowExecutionsRequest {\n  10: optional string domain\n  20: optional i32 pageSize\n  30: optional binary nextPageToken\n  40: optional string query\n}\n\nstruct ListWorkflowExecutionsResponse {\n  10: optional list<WorkflowExecutionInfo> executions\n  20: optional binary nextPageToken\n}\n\nstruct ListArchivedWorkflowExecutionsRequest {\n  10: optional string domain\n  20: optional i32 pageSize\n  30: optional binary nextPageToken\n  40: optional string query\n}\n\nstruct ListArchivedWorkflowExecutionsResponse {\n  10: optional list<WorkflowExecutionInfo> executions\n  20: optional binary nextPageToken\n}\n\nstruct CountWorkflowExecutionsRequest {\n  10: optional string domain\n  20: optional string query\n}\n\nstruct CountWorkflowExecutionsResponse {\n  10: optional i64 count\n}\n\nstruct GetSearchAttributesResponse {\n  10: optional map<string, IndexedValueType> keys\n}\n\nstruct QueryWorkflowRequest {\n  10: optional string domain\n  20: optional WorkflowExecution execution\n  30: optional WorkflowQuery query\n  // QueryRejectCondition can used to reject the query if workflow state does not satisify condition\n  40: optional QueryRejectCondition queryRejectCondition\n  50: optional QueryConsistencyLevel queryConsistencyLevel\n}\n\nstruct QueryRejected {\n  10: optional WorkflowExecutionCloseStatus closeStatus\n}\n\nstruct QueryWorkflowResponse {\n  10: optional binary queryResult\n  20: optional QueryRejected queryRejected\n}\n\nstruct WorkflowQuery {\n  10: optional string queryType\n  20: optional binary queryArgs\n}\n\nstruct ResetStickyTaskListRequest {\n  10: optional string domain\n  20: optional WorkflowExecution execution\n}\n\nstruct ResetStickyTaskListResponse {\n    // The reason to keep this response is to allow returning\n    // information in the future.\n}\n\nstruct RespondQueryTaskCompletedRequest {\n  10: optional binary taskToken\n  20: optional QueryTaskCompletedType completedType\n  30: optional binary queryResult\n  40: optional string errorMessage\n  50: optional WorkerVersionInfo workerVersionInfo\n}\n\nstruct WorkflowQueryResult {\n  10: optional QueryResultType resultType\n  20: optional binary answer\n  30: optional string errorMessage\n}\n\nstruct DescribeWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional WorkflowExecution execution\n}\n\nstruct PendingActivityInfo {\n  10: optional string activityID\n  20: optional ActivityType activityType\n  30: optional PendingActivityState state\n  40: optional binary heartbeatDetails\n  50: optional i64 (js.type = \"Long\") lastHeartbeatTimestamp\n  60: optional i64 (js.type = \"Long\") lastStartedTimestamp\n  70: optional i32 attempt\n  80: optional i32 maximumAttempts\n  90: optional i64 (js.type = \"Long\") scheduledTimestamp\n  100: optional i64 (js.type = \"Long\") expirationTimestamp\n  110: optional string lastFailureReason\n  120: optional string lastWorkerIdentity\n  130: optional binary lastFailureDetails\n}\n\nstruct PendingDecisionInfo {\n  10: optional PendingDecisionState state\n  20: optional i64 (js.type = \"Long\") scheduledTimestamp\n  30: optional i64 (js.type = \"Long\") startedTimestamp\n  40: optional i64 attempt\n  50: optional i64 (js.type = \"Long\") originalScheduledTimestamp\n}\n\nstruct PendingChildExecutionInfo {\n  10: optional string workflowID\n  20: optional string runID\n  30: optional string workflowTypName\n  40: optional i64 (js.type = \"Long\") initiatedID\n  50: optional ParentClosePolicy parentClosePolicy\n}\n\nstruct DescribeWorkflowExecutionResponse {\n  10: optional WorkflowExecutionConfiguration executionConfiguration\n  20: optional WorkflowExecutionInfo workflowExecutionInfo\n  30: optional list<PendingActivityInfo> pendingActivities\n  40: optional list<PendingChildExecutionInfo> pendingChildren\n  50: optional PendingDecisionInfo pendingDecision\n}\n\nstruct DescribeTaskListRequest {\n  10: optional string domain\n  20: optional TaskList taskList\n  30: optional TaskListType taskListType\n  40: optional bool includeTaskListStatus\n}\n\nstruct DescribeTaskListResponse {\n  10: optional list<PollerInfo> pollers\n  20: optional TaskListStatus taskListStatus\n}\n\nstruct ListTaskListPartitionsRequest {\n  10: optional string domain\n  20: optional TaskList taskList\n}\n\nstruct TaskListPartitionMetadata {\n  10: optional string key\n  20: optional string ownerHostName\n}\n\nstruct ListTaskListPartitionsResponse {\n  10: optional list<TaskListPartitionMetadata> activityTaskListPartitions\n  20: optional list<TaskListPartitionMetadata> decisionTaskListPartitions\n}\n\nstruct TaskListStatus {\n  10: optional i64 (js.type = \"Long\") backlogCountHint\n  20: optional i64 (js.type = \"Long\") readLevel\n  30: optional i64 (js.type = \"Long\") ackLevel\n  35: optional double ratePerSecond\n  40: optional TaskIDBlock taskIDBlock\n}\n\nstruct TaskIDBlock {\n  10: optional i64 (js.type = \"Long\")  startID\n  20: optional i64 (js.type = \"Long\")  endID\n}\n\n//At least one of the parameters needs to be provided\nstruct DescribeHistoryHostRequest {\n  10: optional string               hostAddress //ip:port\n  20: optional i32                  shardIdForHost\n  30: optional WorkflowExecution    executionForHost\n}\n\nstruct RemoveTaskRequest {\n  10: optional i32                      shardID\n  20: optional i32                      type\n  30: optional i64 (js.type = \"Long\")   taskID\n  40: optional i64 (js.type = \"Long\")   visibilityTimestamp\n}\n\nstruct CloseShardRequest {\n  10: optional i32               shardID\n}\n\nstruct ResetQueueRequest {\n  10: optional i32    shardID\n  20: optional string clusterName\n  30: optional i32    type\n}\n\nstruct DescribeQueueRequest {\n  10: optional i32    shardID\n  20: optional string clusterName\n  30: optional i32    type\n}\n\nstruct DescribeQueueResponse {\n  10: optional list<string> processingQueueStates\n}\n\nstruct DescribeShardDistributionRequest {\n  10: optional i32 pageSize\n  20: optional i32 pageID\n}\n\nstruct DescribeShardDistributionResponse {\n  10: optional i32              numberOfShards\n\n  // ShardID to Address (ip:port) map\n  20: optional map<i32, string> shards\n}\n\nstruct DescribeHistoryHostResponse{\n  10: optional i32                  numberOfShards\n  20: optional list<i32>            shardIDs\n  30: optional DomainCacheInfo      domainCache\n  40: optional string               shardControllerStatus\n  50: optional string               address\n}\n\nstruct DomainCacheInfo{\n  10: optional i64 numOfItemsInCacheByID\n  20: optional i64 numOfItemsInCacheByName\n}\n\nenum TaskListType {\n  /*\n   * Decision type of tasklist\n   */\n  Decision,\n  /*\n   * Activity type of tasklist\n   */\n  Activity,\n}\n\nstruct PollerInfo {\n  // Unix Nano\n  10: optional i64 (js.type = \"Long\")  lastAccessTime\n  20: optional string identity\n  30: optional double ratePerSecond\n}\n\nstruct RetryPolicy {\n  // Interval of the first retry. If coefficient is 1.0 then it is used for all retries.\n  10: optional i32 initialIntervalInSeconds\n\n  // Coefficient used to calculate the next retry interval.\n  // The next retry interval is previous interval multiplied by the coefficient.\n  // Must be 1 or larger.\n  20: optional double backoffCoefficient\n\n  // Maximum interval between retries. Exponential backoff leads to interval increase.\n  // This value is the cap of the increase. Default is 100x of initial interval.\n  30: optional i32 maximumIntervalInSeconds\n\n  // Maximum number of attempts. When exceeded the retries stop even if not expired yet.\n  // Must be 1 or bigger. Default is unlimited.\n  40: optional i32 maximumAttempts\n\n  // Non-Retriable errors. Will stop retrying if error matches this list.\n  50: optional list<string> nonRetriableErrorReasons\n\n  // Expiration time for the whole retry process.\n  60: optional i32 expirationIntervalInSeconds\n}\n\n// HistoryBranchRange represents a piece of range for a branch.\nstruct HistoryBranchRange{\n  // branchID of original branch forked from\n  10: optional string branchID\n  // beinning node for the range, inclusive\n  20: optional i64 beginNodeID\n  // ending node for the range, exclusive\n  30: optional i64 endNodeID\n}\n\n// For history persistence to serialize/deserialize branch details\nstruct HistoryBranch{\n  10: optional string treeID\n  20: optional string branchID\n  30: optional list<HistoryBranchRange> ancestors\n}\n\n// VersionHistoryItem contains signal eventID and the corresponding version\nstruct VersionHistoryItem{\n  10: optional i64 (js.type = \"Long\") eventID\n  20: optional i64 (js.type = \"Long\") version\n}\n\n// VersionHistory contains the version history of a branch\nstruct VersionHistory{\n  10: optional binary branchToken\n  20: optional list<VersionHistoryItem> items\n}\n\n// VersionHistories contains all version histories from all branches\nstruct VersionHistories{\n  10: optional i32 currentVersionHistoryIndex\n  20: optional list<VersionHistory> histories\n}\n\n// ReapplyEventsRequest is the request for reapply events API\nstruct ReapplyEventsRequest{\n  10: optional string domainName\n  20: optional WorkflowExecution workflowExecution\n  30: optional DataBlob events\n}\n\n// SupportedClientVersions contains the support versions for client library\nstruct SupportedClientVersions{\n  10: optional string goSdk\n  20: optional string javaSdk\n}\n\n// ClusterInfo contains information about cadence cluster\nstruct ClusterInfo{\n  10: optional SupportedClientVersions supportedClientVersions\n}\n\nstruct RefreshWorkflowTasksRequest {\n  10: optional string domain\n  20: optional WorkflowExecution execution\n}\n\nstruct FeatureFlags {\n\t10: optional bool WorkflowExecutionAlreadyCompletedErrorEnabled\n}"
+const rawIDL = "// Copyright (c) 2017 Uber Technologies, Inc.\n//\n// Permission is hereby granted, free of charge, to any person obtaining a copy\n// of this software and associated documentation files (the \"Software\"), to deal\n// in the Software without restriction, including without limitation the rights\n// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n// copies of the Software, and to permit persons to whom the Software is\n// furnished to do so, subject to the following conditions:\n//\n// The above copyright notice and this permission notice shall be included in\n// all copies or substantial portions of the Software.\n//\n// THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n// THE SOFTWARE.\n\nnamespace java com.uber.cadence\n\nexception BadRequestError {\n  1: required string message\n}\n\nexception InternalServiceError {\n  1: required string message\n}\n\nexception InternalDataInconsistencyError {\n  1: required string message\n}\n\nexception DomainAlreadyExistsError {\n  1: required string message\n}\n\nexception WorkflowExecutionAlreadyStartedError {\n  10: optional string message\n  20: optional string startRequestId\n  30: optional string runId\n}\n\nexception WorkflowExecutionAlreadyCompletedError {\n  1: required string message\n}\n\nexception EntityNotExistsError {\n  1: required string message\n  2: optional string currentCluster\n  3: optional string activeCluster\n}\n\nexception ServiceBusyError {\n  1: required string message\n}\n\nexception CancellationAlreadyRequestedError {\n  1: required string message\n}\n\nexception QueryFailedError {\n  1: required string message\n}\n\nexception DomainNotActiveError {\n  1: required string message\n  2: required string domainName\n  3: required string currentCluster\n  4: required string activeCluster\n}\n\nexception LimitExceededError {\n  1: required string message\n}\n\nexception AccessDeniedError {\n  1: required string message\n}\n\nexception RetryTaskV2Error {\n  1: required string message\n  2: optional string domainId\n  3: optional string workflowId\n  4: optional string runId\n  5: optional i64 (js.type = \"Long\") startEventId\n  6: optional i64 (js.type = \"Long\") startEventVersion\n  7: optional i64 (js.type = \"Long\") endEventId\n  8: optional i64 (js.type = \"Long\") endEventVersion\n}\n\nexception ClientVersionNotSupportedError {\n  1: required string featureVersion\n  2: required string clientImpl\n  3: required string supportedVersions\n}\n\nexception FeatureNotEnabledError {\n  1: required string featureFlag\n}\n\nexception CurrentBranchChangedError {\n  10: required string message\n  20: required binary currentBranchToken\n}\n\nexception RemoteSyncMatchedError {\n  10: required string message\n}\n\nenum WorkflowIdReusePolicy {\n  /*\n   * allow start a workflow execution using the same workflow ID,\n   * when workflow not running, and the last execution close state is in\n   * [terminated, cancelled, timeouted, failed].\n   */\n  AllowDuplicateFailedOnly,\n  /*\n   * allow start a workflow execution using the same workflow ID,\n   * when workflow not running.\n   */\n  AllowDuplicate,\n  /*\n   * do not allow start a workflow execution using the same workflow ID at all\n   */\n  RejectDuplicate,\n  /*\n   * if a workflow is running using the same workflow ID, terminate it and start a new one\n   */\n  TerminateIfRunning,\n}\n\nenum DomainStatus {\n  REGISTERED,\n  DEPRECATED,\n  DELETED,\n}\n\nenum TimeoutType {\n  START_TO_CLOSE,\n  SCHEDULE_TO_START,\n  SCHEDULE_TO_CLOSE,\n  HEARTBEAT,\n}\n\nenum ParentClosePolicy {\n\tABANDON,\n\tREQUEST_CANCEL,\n\tTERMINATE,\n}\n\n\n// whenever this list of decision is changed\n// do change the mutableStateBuilder.go\n// function shouldBufferEvent\n// to make sure wo do the correct event ordering\nenum DecisionType {\n  ScheduleActivityTask,\n  RequestCancelActivityTask,\n  StartTimer,\n  CompleteWorkflowExecution,\n  FailWorkflowExecution,\n  CancelTimer,\n  CancelWorkflowExecution,\n  RequestCancelExternalWorkflowExecution,\n  RecordMarker,\n  ContinueAsNewWorkflowExecution,\n  StartChildWorkflowExecution,\n  SignalExternalWorkflowExecution,\n  UpsertWorkflowSearchAttributes,\n}\n\nenum EventType {\n  WorkflowExecutionStarted,\n  WorkflowExecutionCompleted,\n  WorkflowExecutionFailed,\n  WorkflowExecutionTimedOut,\n  DecisionTaskScheduled,\n  DecisionTaskStarted,\n  DecisionTaskCompleted,\n  DecisionTaskTimedOut\n  DecisionTaskFailed,\n  ActivityTaskScheduled,\n  ActivityTaskStarted,\n  ActivityTaskCompleted,\n  ActivityTaskFailed,\n  ActivityTaskTimedOut,\n  ActivityTaskCancelRequested,\n  RequestCancelActivityTaskFailed,\n  ActivityTaskCanceled,\n  TimerStarted,\n  TimerFired,\n  CancelTimerFailed,\n  TimerCanceled,\n  WorkflowExecutionCancelRequested,\n  WorkflowExecutionCanceled,\n  RequestCancelExternalWorkflowExecutionInitiated,\n  RequestCancelExternalWorkflowExecutionFailed,\n  ExternalWorkflowExecutionCancelRequested,\n  MarkerRecorded,\n  WorkflowExecutionSignaled,\n  WorkflowExecutionTerminated,\n  WorkflowExecutionContinuedAsNew,\n  StartChildWorkflowExecutionInitiated,\n  StartChildWorkflowExecutionFailed,\n  ChildWorkflowExecutionStarted,\n  ChildWorkflowExecutionCompleted,\n  ChildWorkflowExecutionFailed,\n  ChildWorkflowExecutionCanceled,\n  ChildWorkflowExecutionTimedOut,\n  ChildWorkflowExecutionTerminated,\n  SignalExternalWorkflowExecutionInitiated,\n  SignalExternalWorkflowExecutionFailed,\n  ExternalWorkflowExecutionSignaled,\n  UpsertWorkflowSearchAttributes,\n}\n\nenum DecisionTaskFailedCause {\n  UNHANDLED_DECISION,\n  BAD_SCHEDULE_ACTIVITY_ATTRIBUTES,\n  BAD_REQUEST_CANCEL_ACTIVITY_ATTRIBUTES,\n  BAD_START_TIMER_ATTRIBUTES,\n  BAD_CANCEL_TIMER_ATTRIBUTES,\n  BAD_RECORD_MARKER_ATTRIBUTES,\n  BAD_COMPLETE_WORKFLOW_EXECUTION_ATTRIBUTES,\n  BAD_FAIL_WORKFLOW_EXECUTION_ATTRIBUTES,\n  BAD_CANCEL_WORKFLOW_EXECUTION_ATTRIBUTES,\n  BAD_REQUEST_CANCEL_EXTERNAL_WORKFLOW_EXECUTION_ATTRIBUTES,\n  BAD_CONTINUE_AS_NEW_ATTRIBUTES,\n  START_TIMER_DUPLICATE_ID,\n  RESET_STICKY_TASKLIST,\n  WORKFLOW_WORKER_UNHANDLED_FAILURE,\n  BAD_SIGNAL_WORKFLOW_EXECUTION_ATTRIBUTES,\n  BAD_START_CHILD_EXECUTION_ATTRIBUTES,\n  FORCE_CLOSE_DECISION,\n  FAILOVER_CLOSE_DECISION,\n  BAD_SIGNAL_INPUT_SIZE,\n  RESET_WORKFLOW,\n  BAD_BINARY,\n  SCHEDULE_ACTIVITY_DUPLICATE_ID,\n  BAD_SEARCH_ATTRIBUTES,\n}\n\nenum DecisionTaskTimedOutCause {\n  TIMEOUT,\n  RESET,\n}\n\nenum CancelExternalWorkflowExecutionFailedCause {\n  UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION,\n}\n\nenum SignalExternalWorkflowExecutionFailedCause {\n  UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION,\n}\n\nenum ChildWorkflowExecutionFailedCause {\n  WORKFLOW_ALREADY_RUNNING,\n}\n\n// TODO: when migrating to gRPC, add a running / none status,\n//  currently, customer is using null / nil as an indication\n//  that workflow is still running\nenum WorkflowExecutionCloseStatus {\n  COMPLETED,\n  FAILED,\n  CANCELED,\n  TERMINATED,\n  CONTINUED_AS_NEW,\n  TIMED_OUT,\n}\n\nenum QueryTaskCompletedType {\n  COMPLETED,\n  FAILED,\n}\n\nenum QueryResultType {\n  ANSWERED,\n  FAILED,\n}\n\nenum PendingActivityState {\n  SCHEDULED,\n  STARTED,\n  CANCEL_REQUESTED,\n}\n\nenum PendingDecisionState {\n  SCHEDULED,\n  STARTED,\n}\n\nenum HistoryEventFilterType {\n  ALL_EVENT,\n  CLOSE_EVENT,\n}\n\nenum TaskListKind {\n  NORMAL,\n  STICKY,\n}\n\nenum ArchivalStatus {\n  DISABLED,\n  ENABLED,\n}\n\nenum IndexedValueType {\n  STRING,\n  KEYWORD,\n  INT,\n  DOUBLE,\n  BOOL,\n  DATETIME,\n}\n\nstruct Header {\n    10: optional map<string, binary> fields\n}\n\nstruct WorkflowType {\n  10: optional string name\n}\n\nstruct ActivityType {\n  10: optional string name\n}\n\nstruct TaskList {\n  10: optional string name\n  20: optional TaskListKind kind\n}\n\nenum EncodingType {\n  ThriftRW,\n  JSON,\n}\n\nenum QueryRejectCondition {\n  // NOT_OPEN indicates that query should be rejected if workflow is not open\n  NOT_OPEN\n  // NOT_COMPLETED_CLEANLY indicates that query should be rejected if workflow did not complete cleanly\n  NOT_COMPLETED_CLEANLY\n}\n\nenum QueryConsistencyLevel {\n  // EVENTUAL indicates that query should be eventually consistent\n  EVENTUAL\n  // STRONG indicates that any events that came before query should be reflected in workflow state before running query\n  STRONG\n}\n\nstruct DataBlob {\n  10: optional EncodingType EncodingType\n  20: optional binary Data\n}\n\nstruct TaskListMetadata {\n  10: optional double maxTasksPerSecond\n}\n\nstruct WorkflowExecution {\n  10: optional string workflowId\n  20: optional string runId\n}\n\nstruct Memo {\n  10: optional map<string,binary> fields\n}\n\nstruct SearchAttributes {\n  10: optional map<string,binary> indexedFields\n}\n\nstruct WorkerVersionInfo {\n  10: optional string impl\n  20: optional string featureVersion\n}\n\nstruct WorkflowExecutionInfo {\n  10: optional WorkflowExecution execution\n  20: optional WorkflowType type\n  30: optional i64 (js.type = \"Long\") startTime\n  40: optional i64 (js.type = \"Long\") closeTime\n  50: optional WorkflowExecutionCloseStatus closeStatus\n  60: optional i64 (js.type = \"Long\") historyLength\n  70: optional string parentDomainId\n  80: optional WorkflowExecution parentExecution\n  90: optional i64 (js.type = \"Long\") executionTime\n  100: optional Memo memo\n  101: optional SearchAttributes searchAttributes\n  110: optional ResetPoints autoResetPoints\n  120: optional string taskList\n  130: optional bool isCron\n}\n\nstruct WorkflowExecutionConfiguration {\n  10: optional TaskList taskList\n  20: optional i32 executionStartToCloseTimeoutSeconds\n  30: optional i32 taskStartToCloseTimeoutSeconds\n//  40: optional ChildPolicy childPolicy -- Removed but reserve the IDL order number\n}\n\nstruct TransientDecisionInfo {\n  10: optional HistoryEvent scheduledEvent\n  20: optional HistoryEvent startedEvent\n}\n\nstruct ScheduleActivityTaskDecisionAttributes {\n  10: optional string activityId\n  20: optional ActivityType activityType\n  25: optional string domain\n  30: optional TaskList taskList\n  40: optional binary input\n  45: optional i32 scheduleToCloseTimeoutSeconds\n  50: optional i32 scheduleToStartTimeoutSeconds\n  55: optional i32 startToCloseTimeoutSeconds\n  60: optional i32 heartbeatTimeoutSeconds\n  70: optional RetryPolicy retryPolicy\n  80: optional Header header\n  90: optional bool requestLocalDispatch\n}\n\nstruct ActivityLocalDispatchInfo{\n  10: optional string activityId\n  20: optional i64 (js.type = \"Long\") scheduledTimestamp\n  30: optional i64 (js.type = \"Long\") startedTimestamp\n  40: optional i64 (js.type = \"Long\") scheduledTimestampOfThisAttempt\n  50: optional binary taskToken\n}\n\nstruct RequestCancelActivityTaskDecisionAttributes {\n  10: optional string activityId\n}\n\nstruct StartTimerDecisionAttributes {\n  10: optional string timerId\n  20: optional i64 (js.type = \"Long\") startToFireTimeoutSeconds\n}\n\nstruct CompleteWorkflowExecutionDecisionAttributes {\n  10: optional binary result\n}\n\nstruct FailWorkflowExecutionDecisionAttributes {\n  10: optional string reason\n  20: optional binary details\n}\n\nstruct CancelTimerDecisionAttributes {\n  10: optional string timerId\n}\n\nstruct CancelWorkflowExecutionDecisionAttributes {\n  10: optional binary details\n}\n\nstruct RequestCancelExternalWorkflowExecutionDecisionAttributes {\n  10: optional string domain\n  20: optional string workflowId\n  30: optional string runId\n  40: optional binary control\n  50: optional bool childWorkflowOnly\n}\n\nstruct SignalExternalWorkflowExecutionDecisionAttributes {\n  10: optional string domain\n  20: optional WorkflowExecution execution\n  30: optional string signalName\n  40: optional binary input\n  50: optional binary control\n  60: optional bool childWorkflowOnly\n}\n\nstruct UpsertWorkflowSearchAttributesDecisionAttributes {\n  10: optional SearchAttributes searchAttributes\n}\n\nstruct RecordMarkerDecisionAttributes {\n  10: optional string markerName\n  20: optional binary details\n  30: optional Header header\n}\n\nstruct ContinueAsNewWorkflowExecutionDecisionAttributes {\n  10: optional WorkflowType workflowType\n  20: optional TaskList taskList\n  30: optional binary input\n  40: optional i32 executionStartToCloseTimeoutSeconds\n  50: optional i32 taskStartToCloseTimeoutSeconds\n  60: optional i32 backoffStartIntervalInSeconds\n  70: optional RetryPolicy retryPolicy\n  80: optional ContinueAsNewInitiator initiator\n  90: optional string failureReason\n  100: optional binary failureDetails\n  110: optional binary lastCompletionResult\n  120: optional string cronSchedule\n  130: optional Header header\n  140: optional Memo memo\n  150: optional SearchAttributes searchAttributes\n}\n\nstruct StartChildWorkflowExecutionDecisionAttributes {\n  10: optional string domain\n  20: optional string workflowId\n  30: optional WorkflowType workflowType\n  40: optional TaskList taskList\n  50: optional binary input\n  60: optional i32 executionStartToCloseTimeoutSeconds\n  70: optional i32 taskStartToCloseTimeoutSeconds\n//  80: optional ChildPolicy childPolicy -- Removed but reserve the IDL order number\n  81: optional ParentClosePolicy parentClosePolicy\n  90: optional binary control\n  100: optional WorkflowIdReusePolicy workflowIdReusePolicy\n  110: optional RetryPolicy retryPolicy\n  120: optional string cronSchedule\n  130: optional Header header\n  140: optional Memo memo\n  150: optional SearchAttributes searchAttributes\n}\n\nstruct Decision {\n  10:  optional DecisionType decisionType\n  20:  optional ScheduleActivityTaskDecisionAttributes scheduleActivityTaskDecisionAttributes\n  25:  optional StartTimerDecisionAttributes startTimerDecisionAttributes\n  30:  optional CompleteWorkflowExecutionDecisionAttributes completeWorkflowExecutionDecisionAttributes\n  35:  optional FailWorkflowExecutionDecisionAttributes failWorkflowExecutionDecisionAttributes\n  40:  optional RequestCancelActivityTaskDecisionAttributes requestCancelActivityTaskDecisionAttributes\n  50:  optional CancelTimerDecisionAttributes cancelTimerDecisionAttributes\n  60:  optional CancelWorkflowExecutionDecisionAttributes cancelWorkflowExecutionDecisionAttributes\n  70:  optional RequestCancelExternalWorkflowExecutionDecisionAttributes requestCancelExternalWorkflowExecutionDecisionAttributes\n  80:  optional RecordMarkerDecisionAttributes recordMarkerDecisionAttributes\n  90:  optional ContinueAsNewWorkflowExecutionDecisionAttributes continueAsNewWorkflowExecutionDecisionAttributes\n  100: optional StartChildWorkflowExecutionDecisionAttributes startChildWorkflowExecutionDecisionAttributes\n  110: optional SignalExternalWorkflowExecutionDecisionAttributes signalExternalWorkflowExecutionDecisionAttributes\n  120: optional UpsertWorkflowSearchAttributesDecisionAttributes upsertWorkflowSearchAttributesDecisionAttributes\n}\n\nstruct WorkflowExecutionStartedEventAttributes {\n  10: optional WorkflowType workflowType\n  12: optional string parentWorkflowDomain\n  14: optional WorkflowExecution parentWorkflowExecution\n  16: optional i64 (js.type = \"Long\") parentInitiatedEventId\n  20: optional TaskList taskList\n  30: optional binary input\n  40: optional i32 executionStartToCloseTimeoutSeconds\n  50: optional i32 taskStartToCloseTimeoutSeconds\n//  52: optional ChildPolicy childPolicy -- Removed but reserve the IDL order number\n  54: optional string continuedExecutionRunId\n  55: optional ContinueAsNewInitiator initiator\n  56: optional string continuedFailureReason\n  57: optional binary continuedFailureDetails\n  58: optional binary lastCompletionResult\n  59: optional string originalExecutionRunId // This is the runID when the WorkflowExecutionStarted event is written\n  60: optional string identity\n  61: optional string firstExecutionRunId // This is the very first runID along the chain of ContinueAsNew and Reset.\n  70: optional RetryPolicy retryPolicy\n  80: optional i32 attempt\n  90: optional i64 (js.type = \"Long\") expirationTimestamp\n  100: optional string cronSchedule\n  110: optional i32 firstDecisionTaskBackoffSeconds\n  120: optional Memo memo\n  121: optional SearchAttributes searchAttributes\n  130: optional ResetPoints prevAutoResetPoints\n  140: optional Header header\n}\n\nstruct ResetPoints{\n  10: optional list<ResetPointInfo> points\n}\n\n struct ResetPointInfo{\n  10: optional string binaryChecksum\n  20: optional string runId\n  30: optional i64 firstDecisionCompletedId\n  40: optional i64 (js.type = \"Long\") createdTimeNano\n  50: optional i64 (js.type = \"Long\") expiringTimeNano //the time that the run is deleted due to retention\n  60: optional bool resettable                         // false if the resset point has pending childWFs/reqCancels/signalExternals.\n}\n\nstruct WorkflowExecutionCompletedEventAttributes {\n  10: optional binary result\n  20: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n}\n\nstruct WorkflowExecutionFailedEventAttributes {\n  10: optional string reason\n  20: optional binary details\n  30: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n}\n\nstruct WorkflowExecutionTimedOutEventAttributes {\n  10: optional TimeoutType timeoutType\n}\n\nenum ContinueAsNewInitiator {\n  Decider,\n  RetryPolicy,\n  CronSchedule,\n}\n\nstruct WorkflowExecutionContinuedAsNewEventAttributes {\n  10: optional string newExecutionRunId\n  20: optional WorkflowType workflowType\n  30: optional TaskList taskList\n  40: optional binary input\n  50: optional i32 executionStartToCloseTimeoutSeconds\n  60: optional i32 taskStartToCloseTimeoutSeconds\n  70: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  80: optional i32 backoffStartIntervalInSeconds\n  90: optional ContinueAsNewInitiator initiator\n  100: optional string failureReason\n  110: optional binary failureDetails\n  120: optional binary lastCompletionResult\n  130: optional Header header\n  140: optional Memo memo\n  150: optional SearchAttributes searchAttributes\n}\n\nstruct DecisionTaskScheduledEventAttributes {\n  10: optional TaskList taskList\n  20: optional i32 startToCloseTimeoutSeconds\n  30: optional i64 (js.type = \"Long\") attempt\n}\n\nstruct DecisionTaskStartedEventAttributes {\n  10: optional i64 (js.type = \"Long\") scheduledEventId\n  20: optional string identity\n  30: optional string requestId\n}\n\nstruct DecisionTaskCompletedEventAttributes {\n  10: optional binary executionContext\n  20: optional i64 (js.type = \"Long\") scheduledEventId\n  30: optional i64 (js.type = \"Long\") startedEventId\n  40: optional string identity\n  50: optional string binaryChecksum\n}\n\nstruct DecisionTaskTimedOutEventAttributes {\n  10: optional i64 (js.type = \"Long\") scheduledEventId\n  20: optional i64 (js.type = \"Long\") startedEventId\n  30: optional TimeoutType timeoutType\n  // for reset workflow\n  40: optional string baseRunId\n  50: optional string newRunId\n  60: optional i64 (js.type = \"Long\") forkEventVersion\n  70: optional string reason\n  80: optional DecisionTaskTimedOutCause cause\n}\n\nstruct DecisionTaskFailedEventAttributes {\n  10: optional i64 (js.type = \"Long\") scheduledEventId\n  20: optional i64 (js.type = \"Long\") startedEventId\n  30: optional DecisionTaskFailedCause cause\n  35: optional binary details\n  40: optional string identity\n  50: optional string reason\n  // for reset workflow\n  60: optional string baseRunId\n  70: optional string newRunId\n  80: optional i64 (js.type = \"Long\") forkEventVersion\n  90: optional string binaryChecksum\n}\n\nstruct ActivityTaskScheduledEventAttributes {\n  10: optional string activityId\n  20: optional ActivityType activityType\n  25: optional string domain\n  30: optional TaskList taskList\n  40: optional binary input\n  45: optional i32 scheduleToCloseTimeoutSeconds\n  50: optional i32 scheduleToStartTimeoutSeconds\n  55: optional i32 startToCloseTimeoutSeconds\n  60: optional i32 heartbeatTimeoutSeconds\n  90: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  110: optional RetryPolicy retryPolicy\n  120: optional Header header\n}\n\nstruct ActivityTaskStartedEventAttributes {\n  10: optional i64 (js.type = \"Long\") scheduledEventId\n  20: optional string identity\n  30: optional string requestId\n  40: optional i32 attempt\n  50: optional string lastFailureReason\n  60: optional binary lastFailureDetails\n}\n\nstruct ActivityTaskCompletedEventAttributes {\n  10: optional binary result\n  20: optional i64 (js.type = \"Long\") scheduledEventId\n  30: optional i64 (js.type = \"Long\") startedEventId\n  40: optional string identity\n}\n\nstruct ActivityTaskFailedEventAttributes {\n  10: optional string reason\n  20: optional binary details\n  30: optional i64 (js.type = \"Long\") scheduledEventId\n  40: optional i64 (js.type = \"Long\") startedEventId\n  50: optional string identity\n}\n\nstruct ActivityTaskTimedOutEventAttributes {\n  05: optional binary details\n  10: optional i64 (js.type = \"Long\") scheduledEventId\n  20: optional i64 (js.type = \"Long\") startedEventId\n  30: optional TimeoutType timeoutType\n  // For retry activity, it may have a failure before timeout. It's important to keep those information for debug.\n  // Client can also provide the info for making next decision\n  40: optional string lastFailureReason\n  50: optional binary lastFailureDetails\n}\n\nstruct ActivityTaskCancelRequestedEventAttributes {\n  10: optional string activityId\n  20: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n}\n\nstruct RequestCancelActivityTaskFailedEventAttributes{\n  10: optional string activityId\n  20: optional string cause\n  30: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n}\n\nstruct ActivityTaskCanceledEventAttributes {\n  10: optional binary details\n  20: optional i64 (js.type = \"Long\") latestCancelRequestedEventId\n  30: optional i64 (js.type = \"Long\") scheduledEventId\n  40: optional i64 (js.type = \"Long\") startedEventId\n  50: optional string identity\n}\n\nstruct TimerStartedEventAttributes {\n  10: optional string timerId\n  20: optional i64 (js.type = \"Long\") startToFireTimeoutSeconds\n  30: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n}\n\nstruct TimerFiredEventAttributes {\n  10: optional string timerId\n  20: optional i64 (js.type = \"Long\") startedEventId\n}\n\nstruct TimerCanceledEventAttributes {\n  10: optional string timerId\n  20: optional i64 (js.type = \"Long\") startedEventId\n  30: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  40: optional string identity\n}\n\nstruct CancelTimerFailedEventAttributes {\n  10: optional string timerId\n  20: optional string cause\n  30: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  40: optional string identity\n}\n\nstruct WorkflowExecutionCancelRequestedEventAttributes {\n  10: optional string cause\n  20: optional i64 (js.type = \"Long\") externalInitiatedEventId\n  30: optional WorkflowExecution externalWorkflowExecution\n  40: optional string identity\n}\n\nstruct WorkflowExecutionCanceledEventAttributes {\n  10: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  20: optional binary details\n}\n\nstruct MarkerRecordedEventAttributes {\n  10: optional string markerName\n  20: optional binary details\n  30: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  40: optional Header header\n}\n\nstruct WorkflowExecutionSignaledEventAttributes {\n  10: optional string signalName\n  20: optional binary input\n  30: optional string identity\n}\n\nstruct WorkflowExecutionTerminatedEventAttributes {\n  10: optional string reason\n  20: optional binary details\n  30: optional string identity\n}\n\nstruct RequestCancelExternalWorkflowExecutionInitiatedEventAttributes {\n  10: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n  40: optional binary control\n  50: optional bool childWorkflowOnly\n}\n\nstruct RequestCancelExternalWorkflowExecutionFailedEventAttributes {\n  10: optional CancelExternalWorkflowExecutionFailedCause cause\n  20: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  30: optional string domain\n  40: optional WorkflowExecution workflowExecution\n  50: optional i64 (js.type = \"Long\") initiatedEventId\n  60: optional binary control\n}\n\nstruct ExternalWorkflowExecutionCancelRequestedEventAttributes {\n  10: optional i64 (js.type = \"Long\") initiatedEventId\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n}\n\nstruct SignalExternalWorkflowExecutionInitiatedEventAttributes {\n  10: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n  40: optional string signalName\n  50: optional binary input\n  60: optional binary control\n  70: optional bool childWorkflowOnly\n}\n\nstruct SignalExternalWorkflowExecutionFailedEventAttributes {\n  10: optional SignalExternalWorkflowExecutionFailedCause cause\n  20: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  30: optional string domain\n  40: optional WorkflowExecution workflowExecution\n  50: optional i64 (js.type = \"Long\") initiatedEventId\n  60: optional binary control\n}\n\nstruct ExternalWorkflowExecutionSignaledEventAttributes {\n  10: optional i64 (js.type = \"Long\") initiatedEventId\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n  40: optional binary control\n}\n\nstruct UpsertWorkflowSearchAttributesEventAttributes {\n  10: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  20: optional SearchAttributes searchAttributes\n}\n\nstruct StartChildWorkflowExecutionInitiatedEventAttributes {\n  10:  optional string domain\n  20:  optional string workflowId\n  30:  optional WorkflowType workflowType\n  40:  optional TaskList taskList\n  50:  optional binary input\n  60:  optional i32 executionStartToCloseTimeoutSeconds\n  70:  optional i32 taskStartToCloseTimeoutSeconds\n//  80:  optional ChildPolicy childPolicy -- Removed but reserve the IDL order number\n  81:  optional ParentClosePolicy parentClosePolicy\n  90:  optional binary control\n  100: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n  110: optional WorkflowIdReusePolicy workflowIdReusePolicy\n  120: optional RetryPolicy retryPolicy\n  130: optional string cronSchedule\n  140: optional Header header\n  150: optional Memo memo\n  160: optional SearchAttributes searchAttributes\n  170: optional i32 delayStartSeconds\n}\n\nstruct StartChildWorkflowExecutionFailedEventAttributes {\n  10: optional string domain\n  20: optional string workflowId\n  30: optional WorkflowType workflowType\n  40: optional ChildWorkflowExecutionFailedCause cause\n  50: optional binary control\n  60: optional i64 (js.type = \"Long\") initiatedEventId\n  70: optional i64 (js.type = \"Long\") decisionTaskCompletedEventId\n}\n\nstruct ChildWorkflowExecutionStartedEventAttributes {\n  10: optional string domain\n  20: optional i64 (js.type = \"Long\") initiatedEventId\n  30: optional WorkflowExecution workflowExecution\n  40: optional WorkflowType workflowType\n  50: optional Header header\n}\n\nstruct ChildWorkflowExecutionCompletedEventAttributes {\n  10: optional binary result\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n  40: optional WorkflowType workflowType\n  50: optional i64 (js.type = \"Long\") initiatedEventId\n  60: optional i64 (js.type = \"Long\") startedEventId\n}\n\nstruct ChildWorkflowExecutionFailedEventAttributes {\n  10: optional string reason\n  20: optional binary details\n  30: optional string domain\n  40: optional WorkflowExecution workflowExecution\n  50: optional WorkflowType workflowType\n  60: optional i64 (js.type = \"Long\") initiatedEventId\n  70: optional i64 (js.type = \"Long\") startedEventId\n}\n\nstruct ChildWorkflowExecutionCanceledEventAttributes {\n  10: optional binary details\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n  40: optional WorkflowType workflowType\n  50: optional i64 (js.type = \"Long\") initiatedEventId\n  60: optional i64 (js.type = \"Long\") startedEventId\n}\n\nstruct ChildWorkflowExecutionTimedOutEventAttributes {\n  10: optional TimeoutType timeoutType\n  20: optional string domain\n  30: optional WorkflowExecution workflowExecution\n  40: optional WorkflowType workflowType\n  50: optional i64 (js.type = \"Long\") initiatedEventId\n  60: optional i64 (js.type = \"Long\") startedEventId\n}\n\nstruct ChildWorkflowExecutionTerminatedEventAttributes {\n  10: optional string domain\n  20: optional WorkflowExecution workflowExecution\n  30: optional WorkflowType workflowType\n  40: optional i64 (js.type = \"Long\") initiatedEventId\n  50: optional i64 (js.type = \"Long\") startedEventId\n}\n\nstruct HistoryEvent {\n  10:  optional i64 (js.type = \"Long\") eventId\n  20:  optional i64 (js.type = \"Long\") timestamp\n  30:  optional EventType eventType\n  35:  optional i64 (js.type = \"Long\") version\n  36:  optional i64 (js.type = \"Long\") taskId\n  40:  optional WorkflowExecutionStartedEventAttributes workflowExecutionStartedEventAttributes\n  50:  optional WorkflowExecutionCompletedEventAttributes workflowExecutionCompletedEventAttributes\n  60:  optional WorkflowExecutionFailedEventAttributes workflowExecutionFailedEventAttributes\n  70:  optional WorkflowExecutionTimedOutEventAttributes workflowExecutionTimedOutEventAttributes\n  80:  optional DecisionTaskScheduledEventAttributes decisionTaskScheduledEventAttributes\n  90:  optional DecisionTaskStartedEventAttributes decisionTaskStartedEventAttributes\n  100: optional DecisionTaskCompletedEventAttributes decisionTaskCompletedEventAttributes\n  110: optional DecisionTaskTimedOutEventAttributes decisionTaskTimedOutEventAttributes\n  120: optional DecisionTaskFailedEventAttributes decisionTaskFailedEventAttributes\n  130: optional ActivityTaskScheduledEventAttributes activityTaskScheduledEventAttributes\n  140: optional ActivityTaskStartedEventAttributes activityTaskStartedEventAttributes\n  150: optional ActivityTaskCompletedEventAttributes activityTaskCompletedEventAttributes\n  160: optional ActivityTaskFailedEventAttributes activityTaskFailedEventAttributes\n  170: optional ActivityTaskTimedOutEventAttributes activityTaskTimedOutEventAttributes\n  180: optional TimerStartedEventAttributes timerStartedEventAttributes\n  190: optional TimerFiredEventAttributes timerFiredEventAttributes\n  200: optional ActivityTaskCancelRequestedEventAttributes activityTaskCancelRequestedEventAttributes\n  210: optional RequestCancelActivityTaskFailedEventAttributes requestCancelActivityTaskFailedEventAttributes\n  220: optional ActivityTaskCanceledEventAttributes activityTaskCanceledEventAttributes\n  230: optional TimerCanceledEventAttributes timerCanceledEventAttributes\n  240: optional CancelTimerFailedEventAttributes cancelTimerFailedEventAttributes\n  250: optional MarkerRecordedEventAttributes markerRecordedEventAttributes\n  260: optional WorkflowExecutionSignaledEventAttributes workflowExecutionSignaledEventAttributes\n  270: optional WorkflowExecutionTerminatedEventAttributes workflowExecutionTerminatedEventAttributes\n  280: optional WorkflowExecutionCancelRequestedEventAttributes workflowExecutionCancelRequestedEventAttributes\n  290: optional WorkflowExecutionCanceledEventAttributes workflowExecutionCanceledEventAttributes\n  300: optional RequestCancelExternalWorkflowExecutionInitiatedEventAttributes requestCancelExternalWorkflowExecutionInitiatedEventAttributes\n  310: optional RequestCancelExternalWorkflowExecutionFailedEventAttributes requestCancelExternalWorkflowExecutionFailedEventAttributes\n  320: optional ExternalWorkflowExecutionCancelRequestedEventAttributes externalWorkflowExecutionCancelRequestedEventAttributes\n  330: optional WorkflowExecutionContinuedAsNewEventAttributes workflowExecutionContinuedAsNewEventAttributes\n  340: optional StartChildWorkflowExecutionInitiatedEventAttributes startChildWorkflowExecutionInitiatedEventAttributes\n  350: optional StartChildWorkflowExecutionFailedEventAttributes startChildWorkflowExecutionFailedEventAttributes\n  360: optional ChildWorkflowExecutionStartedEventAttributes childWorkflowExecutionStartedEventAttributes\n  370: optional ChildWorkflowExecutionCompletedEventAttributes childWorkflowExecutionCompletedEventAttributes\n  380: optional ChildWorkflowExecutionFailedEventAttributes childWorkflowExecutionFailedEventAttributes\n  390: optional ChildWorkflowExecutionCanceledEventAttributes childWorkflowExecutionCanceledEventAttributes\n  400: optional ChildWorkflowExecutionTimedOutEventAttributes childWorkflowExecutionTimedOutEventAttributes\n  410: optional ChildWorkflowExecutionTerminatedEventAttributes childWorkflowExecutionTerminatedEventAttributes\n  420: optional SignalExternalWorkflowExecutionInitiatedEventAttributes signalExternalWorkflowExecutionInitiatedEventAttributes\n  430: optional SignalExternalWorkflowExecutionFailedEventAttributes signalExternalWorkflowExecutionFailedEventAttributes\n  440: optional ExternalWorkflowExecutionSignaledEventAttributes externalWorkflowExecutionSignaledEventAttributes\n  450: optional UpsertWorkflowSearchAttributesEventAttributes upsertWorkflowSearchAttributesEventAttributes\n}\n\nstruct History {\n  10: optional list<HistoryEvent> events\n}\n\nstruct WorkflowExecutionFilter {\n  10: optional string workflowId\n  20: optional string runId\n}\n\nstruct WorkflowTypeFilter {\n  10: optional string name\n}\n\nstruct StartTimeFilter {\n  10: optional i64 (js.type = \"Long\") earliestTime\n  20: optional i64 (js.type = \"Long\") latestTime\n}\n\nstruct DomainInfo {\n  10: optional string name\n  20: optional DomainStatus status\n  30: optional string description\n  40: optional string ownerEmail\n  // A key-value map for any customized purpose\n  50: optional map<string,string> data\n  60: optional string uuid\n}\n\nstruct DomainConfiguration {\n  10: optional i32 workflowExecutionRetentionPeriodInDays\n  20: optional bool emitMetric\n  70: optional BadBinaries badBinaries\n  80: optional ArchivalStatus historyArchivalStatus\n  90: optional string historyArchivalURI\n  100: optional ArchivalStatus visibilityArchivalStatus\n  110: optional string visibilityArchivalURI\n}\n\nstruct BadBinaries{\n  10: optional map<string, BadBinaryInfo> binaries\n}\n\nstruct BadBinaryInfo{\n  10: optional string reason\n  20: optional string operator\n  30: optional i64 (js.type = \"Long\") createdTimeNano\n}\n\nstruct UpdateDomainInfo {\n  10: optional string description\n  20: optional string ownerEmail\n  // A key-value map for any customized purpose\n  30: optional map<string,string> data\n}\n\nstruct ClusterReplicationConfiguration {\n 10: optional string clusterName\n}\n\nstruct DomainReplicationConfiguration {\n 10: optional string activeClusterName\n 20: optional list<ClusterReplicationConfiguration> clusters\n}\n\nstruct RegisterDomainRequest {\n  10: optional string name\n  20: optional string description\n  30: optional string ownerEmail\n  40: optional i32 workflowExecutionRetentionPeriodInDays\n  50: optional bool emitMetric = true\n  60: optional list<ClusterReplicationConfiguration> clusters\n  70: optional string activeClusterName\n  // A key-value map for any customized purpose\n  80: optional map<string,string> data\n  90: optional string securityToken\n  120: optional bool isGlobalDomain\n  130: optional ArchivalStatus historyArchivalStatus\n  140: optional string historyArchivalURI\n  150: optional ArchivalStatus visibilityArchivalStatus\n  160: optional string visibilityArchivalURI\n  // A large number for later cadence compatibility\n  500: optional string id\n}\n\nstruct ListDomainsRequest {\n  10: optional i32 pageSize\n  20: optional binary nextPageToken\n}\n\nstruct ListDomainsResponse {\n  10: optional list<DescribeDomainResponse> domains\n  20: optional binary nextPageToken\n}\n\nstruct DescribeDomainRequest {\n  10: optional string name\n  20: optional string uuid\n}\n\nstruct DescribeDomainResponse {\n  10: optional DomainInfo domainInfo\n  20: optional DomainConfiguration configuration\n  30: optional DomainReplicationConfiguration replicationConfiguration\n  40: optional i64 (js.type = \"Long\") failoverVersion\n  50: optional bool isGlobalDomain\n}\n\nstruct UpdateDomainRequest {\n 10: optional string name\n 20: optional UpdateDomainInfo updatedInfo\n 30: optional DomainConfiguration configuration\n 40: optional DomainReplicationConfiguration replicationConfiguration\n 50: optional string securityToken\n 60: optional string deleteBadBinary\n 70: optional i32 failoverTimeoutInSeconds\n}\n\nstruct UpdateDomainResponse {\n  10: optional DomainInfo domainInfo\n  20: optional DomainConfiguration configuration\n  30: optional DomainReplicationConfiguration replicationConfiguration\n  40: optional i64 (js.type = \"Long\") failoverVersion\n  50: optional bool isGlobalDomain\n}\n\nstruct DeprecateDomainRequest {\n 10: optional string name\n 20: optional string securityToken\n}\n\nstruct StartWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional string workflowId\n  30: optional WorkflowType workflowType\n  40: optional TaskList taskList\n  50: optional binary input\n  60: optional i32 executionStartToCloseTimeoutSeconds\n  70: optional i32 taskStartToCloseTimeoutSeconds\n  80: optional string identity\n  90: optional string requestId\n  100: optional WorkflowIdReusePolicy workflowIdReusePolicy\n//  110: optional ChildPolicy childPolicy -- Removed but reserve the IDL order number\n  120: optional RetryPolicy retryPolicy\n  130: optional string cronSchedule\n  140: optional Memo memo\n  141: optional SearchAttributes searchAttributes\n  150: optional Header header\n  160: optional i32 delayStartSeconds\n}\n\nstruct StartWorkflowExecutionResponse {\n  10: optional string runId\n}\n\nstruct PollForDecisionTaskRequest {\n  10: optional string domain\n  20: optional TaskList taskList\n  30: optional string identity\n  40: optional string binaryChecksum\n}\n\nstruct PollForDecisionTaskResponse {\n  10: optional binary taskToken\n  20: optional WorkflowExecution workflowExecution\n  30: optional WorkflowType workflowType\n  40: optional i64 (js.type = \"Long\") previousStartedEventId\n  50: optional i64 (js.type = \"Long\") startedEventId\n  51: optional i64 (js.type = 'Long') attempt\n  54: optional i64 (js.type = \"Long\") backlogCountHint\n  60: optional History history\n  70: optional binary nextPageToken\n  80: optional WorkflowQuery query\n  90: optional TaskList WorkflowExecutionTaskList\n  100: optional i64 (js.type = \"Long\") scheduledTimestamp\n  110: optional i64 (js.type = \"Long\") startedTimestamp\n  120: optional map<string, WorkflowQuery> queries\n  130: optional i64 (js.type = 'Long') nextEventId\n}\n\nstruct StickyExecutionAttributes {\n  10: optional TaskList workerTaskList\n  20: optional i32 scheduleToStartTimeoutSeconds\n}\n\nstruct RespondDecisionTaskCompletedRequest {\n  10: optional binary taskToken\n  20: optional list<Decision> decisions\n  30: optional binary executionContext\n  40: optional string identity\n  50: optional StickyExecutionAttributes stickyAttributes\n  60: optional bool returnNewDecisionTask\n  70: optional bool forceCreateNewDecisionTask\n  80: optional string binaryChecksum\n  90: optional map<string, WorkflowQueryResult> queryResults\n}\n\nstruct RespondDecisionTaskCompletedResponse {\n  10: optional PollForDecisionTaskResponse decisionTask\n  20: optional map<string,ActivityLocalDispatchInfo> activitiesToDispatchLocally\n}\n\nstruct RespondDecisionTaskFailedRequest {\n  10: optional binary taskToken\n  20: optional DecisionTaskFailedCause cause\n  30: optional binary details\n  40: optional string identity\n  50: optional string binaryChecksum\n}\n\nstruct PollForActivityTaskRequest {\n  10: optional string domain\n  20: optional TaskList taskList\n  30: optional string identity\n  40: optional TaskListMetadata taskListMetadata\n}\n\nstruct PollForActivityTaskResponse {\n  10:  optional binary taskToken\n  20:  optional WorkflowExecution workflowExecution\n  30:  optional string activityId\n  40:  optional ActivityType activityType\n  50:  optional binary input\n  70:  optional i64 (js.type = \"Long\") scheduledTimestamp\n  80:  optional i32 scheduleToCloseTimeoutSeconds\n  90:  optional i64 (js.type = \"Long\") startedTimestamp\n  100: optional i32 startToCloseTimeoutSeconds\n  110: optional i32 heartbeatTimeoutSeconds\n  120: optional i32 attempt\n  130: optional i64 (js.type = \"Long\") scheduledTimestampOfThisAttempt\n  140: optional binary heartbeatDetails\n  150: optional WorkflowType workflowType\n  160: optional string workflowDomain\n  170: optional Header header\n}\n\nstruct RecordActivityTaskHeartbeatRequest {\n  10: optional binary taskToken\n  20: optional binary details\n  30: optional string identity\n}\n\nstruct RecordActivityTaskHeartbeatByIDRequest {\n  10: optional string domain\n  20: optional string workflowID\n  30: optional string runID\n  40: optional string activityID\n  50: optional binary details\n  60: optional string identity\n}\n\nstruct RecordActivityTaskHeartbeatResponse {\n  10: optional bool cancelRequested\n}\n\nstruct RespondActivityTaskCompletedRequest {\n  10: optional binary taskToken\n  20: optional binary result\n  30: optional string identity\n}\n\nstruct RespondActivityTaskFailedRequest {\n  10: optional binary taskToken\n  20: optional string reason\n  30: optional binary details\n  40: optional string identity\n}\n\nstruct RespondActivityTaskCanceledRequest {\n  10: optional binary taskToken\n  20: optional binary details\n  30: optional string identity\n}\n\nstruct RespondActivityTaskCompletedByIDRequest {\n  10: optional string domain\n  20: optional string workflowID\n  30: optional string runID\n  40: optional string activityID\n  50: optional binary result\n  60: optional string identity\n}\n\nstruct RespondActivityTaskFailedByIDRequest {\n  10: optional string domain\n  20: optional string workflowID\n  30: optional string runID\n  40: optional string activityID\n  50: optional string reason\n  60: optional binary details\n  70: optional string identity\n}\n\nstruct RespondActivityTaskCanceledByIDRequest {\n  10: optional string domain\n  20: optional string workflowID\n  30: optional string runID\n  40: optional string activityID\n  50: optional binary details\n  60: optional string identity\n}\n\nstruct RequestCancelWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional WorkflowExecution workflowExecution\n  30: optional string identity\n  40: optional string requestId\n}\n\nstruct GetWorkflowExecutionHistoryRequest {\n  10: optional string domain\n  20: optional WorkflowExecution execution\n  30: optional i32 maximumPageSize\n  40: optional binary nextPageToken\n  50: optional bool waitForNewEvent\n  60: optional HistoryEventFilterType HistoryEventFilterType\n  70: optional bool skipArchival\n}\n\nstruct GetWorkflowExecutionHistoryResponse {\n  10: optional History history\n  11: optional list<DataBlob> rawHistory\n  20: optional binary nextPageToken\n  30: optional bool archived\n}\n\nstruct SignalWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional WorkflowExecution workflowExecution\n  30: optional string signalName\n  40: optional binary input\n  50: optional string identity\n  60: optional string requestId\n  70: optional binary control\n}\n\nstruct SignalWithStartWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional string workflowId\n  30: optional WorkflowType workflowType\n  40: optional TaskList taskList\n  50: optional binary input\n  60: optional i32 executionStartToCloseTimeoutSeconds\n  70: optional i32 taskStartToCloseTimeoutSeconds\n  80: optional string identity\n  90: optional string requestId\n  100: optional WorkflowIdReusePolicy workflowIdReusePolicy\n  110: optional string signalName\n  120: optional binary signalInput\n  130: optional binary control\n  140: optional RetryPolicy retryPolicy\n  150: optional string cronSchedule\n  160: optional Memo memo\n  161: optional SearchAttributes searchAttributes\n  170: optional Header header\n  180: optional i32 delayStartSeconds\n}\n\nstruct TerminateWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional WorkflowExecution workflowExecution\n  30: optional string reason\n  40: optional binary details\n  50: optional string identity\n}\n\nstruct ResetWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional WorkflowExecution workflowExecution\n  30: optional string reason\n  40: optional i64 (js.type = \"Long\") decisionFinishEventId\n  50: optional string requestId\n  60: optional bool skipSignalReapply\n}\n\nstruct ResetWorkflowExecutionResponse {\n  10: optional string runId\n}\n\nstruct ListOpenWorkflowExecutionsRequest {\n  10: optional string domain\n  20: optional i32 maximumPageSize\n  30: optional binary nextPageToken\n  40: optional StartTimeFilter StartTimeFilter\n  50: optional WorkflowExecutionFilter executionFilter\n  60: optional WorkflowTypeFilter typeFilter\n}\n\nstruct ListOpenWorkflowExecutionsResponse {\n  10: optional list<WorkflowExecutionInfo> executions\n  20: optional binary nextPageToken\n}\n\nstruct ListClosedWorkflowExecutionsRequest {\n  10: optional string domain\n  20: optional i32 maximumPageSize\n  30: optional binary nextPageToken\n  40: optional StartTimeFilter StartTimeFilter\n  50: optional WorkflowExecutionFilter executionFilter\n  60: optional WorkflowTypeFilter typeFilter\n  70: optional WorkflowExecutionCloseStatus statusFilter\n}\n\nstruct ListClosedWorkflowExecutionsResponse {\n  10: optional list<WorkflowExecutionInfo> executions\n  20: optional binary nextPageToken\n}\n\nstruct ListWorkflowExecutionsRequest {\n  10: optional string domain\n  20: optional i32 pageSize\n  30: optional binary nextPageToken\n  40: optional string query\n}\n\nstruct ListWorkflowExecutionsResponse {\n  10: optional list<WorkflowExecutionInfo> executions\n  20: optional binary nextPageToken\n}\n\nstruct ListArchivedWorkflowExecutionsRequest {\n  10: optional string domain\n  20: optional i32 pageSize\n  30: optional binary nextPageToken\n  40: optional string query\n}\n\nstruct ListArchivedWorkflowExecutionsResponse {\n  10: optional list<WorkflowExecutionInfo> executions\n  20: optional binary nextPageToken\n}\n\nstruct CountWorkflowExecutionsRequest {\n  10: optional string domain\n  20: optional string query\n}\n\nstruct CountWorkflowExecutionsResponse {\n  10: optional i64 count\n}\n\nstruct GetSearchAttributesResponse {\n  10: optional map<string, IndexedValueType> keys\n}\n\nstruct QueryWorkflowRequest {\n  10: optional string domain\n  20: optional WorkflowExecution execution\n  30: optional WorkflowQuery query\n  // QueryRejectCondition can used to reject the query if workflow state does not satisify condition\n  40: optional QueryRejectCondition queryRejectCondition\n  50: optional QueryConsistencyLevel queryConsistencyLevel\n}\n\nstruct QueryRejected {\n  10: optional WorkflowExecutionCloseStatus closeStatus\n}\n\nstruct QueryWorkflowResponse {\n  10: optional binary queryResult\n  20: optional QueryRejected queryRejected\n}\n\nstruct WorkflowQuery {\n  10: optional string queryType\n  20: optional binary queryArgs\n}\n\nstruct ResetStickyTaskListRequest {\n  10: optional string domain\n  20: optional WorkflowExecution execution\n}\n\nstruct ResetStickyTaskListResponse {\n    // The reason to keep this response is to allow returning\n    // information in the future.\n}\n\nstruct RespondQueryTaskCompletedRequest {\n  10: optional binary taskToken\n  20: optional QueryTaskCompletedType completedType\n  30: optional binary queryResult\n  40: optional string errorMessage\n  50: optional WorkerVersionInfo workerVersionInfo\n}\n\nstruct WorkflowQueryResult {\n  10: optional QueryResultType resultType\n  20: optional binary answer\n  30: optional string errorMessage\n}\n\nstruct DescribeWorkflowExecutionRequest {\n  10: optional string domain\n  20: optional WorkflowExecution execution\n}\n\nstruct PendingActivityInfo {\n  10: optional string activityID\n  20: optional ActivityType activityType\n  30: optional PendingActivityState state\n  40: optional binary heartbeatDetails\n  50: optional i64 (js.type = \"Long\") lastHeartbeatTimestamp\n  60: optional i64 (js.type = \"Long\") lastStartedTimestamp\n  70: optional i32 attempt\n  80: optional i32 maximumAttempts\n  90: optional i64 (js.type = \"Long\") scheduledTimestamp\n  100: optional i64 (js.type = \"Long\") expirationTimestamp\n  110: optional string lastFailureReason\n  120: optional string lastWorkerIdentity\n  130: optional binary lastFailureDetails\n}\n\nstruct PendingDecisionInfo {\n  10: optional PendingDecisionState state\n  20: optional i64 (js.type = \"Long\") scheduledTimestamp\n  30: optional i64 (js.type = \"Long\") startedTimestamp\n  40: optional i64 attempt\n  50: optional i64 (js.type = \"Long\") originalScheduledTimestamp\n}\n\nstruct PendingChildExecutionInfo {\n  10: optional string workflowID\n  20: optional string runID\n  30: optional string workflowTypName\n  40: optional i64 (js.type = \"Long\") initiatedID\n  50: optional ParentClosePolicy parentClosePolicy\n}\n\nstruct DescribeWorkflowExecutionResponse {\n  10: optional WorkflowExecutionConfiguration executionConfiguration\n  20: optional WorkflowExecutionInfo workflowExecutionInfo\n  30: optional list<PendingActivityInfo> pendingActivities\n  40: optional list<PendingChildExecutionInfo> pendingChildren\n  50: optional PendingDecisionInfo pendingDecision\n}\n\nstruct DescribeTaskListRequest {\n  10: optional string domain\n  20: optional TaskList taskList\n  30: optional TaskListType taskListType\n  40: optional bool includeTaskListStatus\n}\n\nstruct DescribeTaskListResponse {\n  10: optional list<PollerInfo> pollers\n  20: optional TaskListStatus taskListStatus\n}\n\nstruct GetTaskListsByDomainRequest {\n  10: optional string domainName\n}\n\nstruct GetTaskListsByDomainResponse {\n  10: optional list<string> taskListNames\n}\n\nstruct ListTaskListPartitionsRequest {\n  10: optional string domain\n  20: optional TaskList taskList\n}\n\nstruct TaskListPartitionMetadata {\n  10: optional string key\n  20: optional string ownerHostName\n}\n\nstruct ListTaskListPartitionsResponse {\n  10: optional list<TaskListPartitionMetadata> activityTaskListPartitions\n  20: optional list<TaskListPartitionMetadata> decisionTaskListPartitions\n}\n\nstruct TaskListStatus {\n  10: optional i64 (js.type = \"Long\") backlogCountHint\n  20: optional i64 (js.type = \"Long\") readLevel\n  30: optional i64 (js.type = \"Long\") ackLevel\n  35: optional double ratePerSecond\n  40: optional TaskIDBlock taskIDBlock\n}\n\nstruct TaskIDBlock {\n  10: optional i64 (js.type = \"Long\")  startID\n  20: optional i64 (js.type = \"Long\")  endID\n}\n\n//At least one of the parameters needs to be provided\nstruct DescribeHistoryHostRequest {\n  10: optional string               hostAddress //ip:port\n  20: optional i32                  shardIdForHost\n  30: optional WorkflowExecution    executionForHost\n}\n\nstruct RemoveTaskRequest {\n  10: optional i32                      shardID\n  20: optional i32                      type\n  30: optional i64 (js.type = \"Long\")   taskID\n  40: optional i64 (js.type = \"Long\")   visibilityTimestamp\n  50: optional string                   clusterName\n}\n\nstruct CloseShardRequest {\n  10: optional i32               shardID\n}\n\nstruct ResetQueueRequest {\n  10: optional i32    shardID\n  20: optional string clusterName\n  30: optional i32    type\n}\n\nstruct DescribeQueueRequest {\n  10: optional i32    shardID\n  20: optional string clusterName\n  30: optional i32    type\n}\n\nstruct DescribeQueueResponse {\n  10: optional list<string> processingQueueStates\n}\n\nstruct DescribeShardDistributionRequest {\n  10: optional i32 pageSize\n  20: optional i32 pageID\n}\n\nstruct DescribeShardDistributionResponse {\n  10: optional i32              numberOfShards\n\n  // ShardID to Address (ip:port) map\n  20: optional map<i32, string> shards\n}\n\nstruct DescribeHistoryHostResponse{\n  10: optional i32                  numberOfShards\n  20: optional list<i32>            shardIDs\n  30: optional DomainCacheInfo      domainCache\n  40: optional string               shardControllerStatus\n  50: optional string               address\n}\n\nstruct DomainCacheInfo{\n  10: optional i64 numOfItemsInCacheByID\n  20: optional i64 numOfItemsInCacheByName\n}\n\nenum TaskListType {\n  /*\n   * Decision type of tasklist\n   */\n  Decision,\n  /*\n   * Activity type of tasklist\n   */\n  Activity,\n}\n\nstruct PollerInfo {\n  // Unix Nano\n  10: optional i64 (js.type = \"Long\")  lastAccessTime\n  20: optional string identity\n  30: optional double ratePerSecond\n}\n\nstruct RetryPolicy {\n  // Interval of the first retry. If coefficient is 1.0 then it is used for all retries.\n  10: optional i32 initialIntervalInSeconds\n\n  // Coefficient used to calculate the next retry interval.\n  // The next retry interval is previous interval multiplied by the coefficient.\n  // Must be 1 or larger.\n  20: optional double backoffCoefficient\n\n  // Maximum interval between retries. Exponential backoff leads to interval increase.\n  // This value is the cap of the increase. Default is 100x of initial interval.\n  30: optional i32 maximumIntervalInSeconds\n\n  // Maximum number of attempts. When exceeded the retries stop even if not expired yet.\n  // Must be 1 or bigger. Default is unlimited.\n  40: optional i32 maximumAttempts\n\n  // Non-Retriable errors. Will stop retrying if error matches this list.\n  50: optional list<string> nonRetriableErrorReasons\n\n  // Expiration time for the whole retry process.\n  60: optional i32 expirationIntervalInSeconds\n}\n\n// HistoryBranchRange represents a piece of range for a branch.\nstruct HistoryBranchRange{\n  // branchID of original branch forked from\n  10: optional string branchID\n  // beinning node for the range, inclusive\n  20: optional i64 beginNodeID\n  // ending node for the range, exclusive\n  30: optional i64 endNodeID\n}\n\n// For history persistence to serialize/deserialize branch details\nstruct HistoryBranch{\n  10: optional string treeID\n  20: optional string branchID\n  30: optional list<HistoryBranchRange> ancestors\n}\n\n// VersionHistoryItem contains signal eventID and the corresponding version\nstruct VersionHistoryItem{\n  10: optional i64 (js.type = \"Long\") eventID\n  20: optional i64 (js.type = \"Long\") version\n}\n\n// VersionHistory contains the version history of a branch\nstruct VersionHistory{\n  10: optional binary branchToken\n  20: optional list<VersionHistoryItem> items\n}\n\n// VersionHistories contains all version histories from all branches\nstruct VersionHistories{\n  10: optional i32 currentVersionHistoryIndex\n  20: optional list<VersionHistory> histories\n}\n\n// ReapplyEventsRequest is the request for reapply events API\nstruct ReapplyEventsRequest{\n  10: optional string domainName\n  20: optional WorkflowExecution workflowExecution\n  30: optional DataBlob events\n}\n\n// SupportedClientVersions contains the support versions for client library\nstruct SupportedClientVersions{\n  10: optional string goSdk\n  20: optional string javaSdk\n}\n\n// ClusterInfo contains information about cadence cluster\nstruct ClusterInfo{\n  10: optional SupportedClientVersions supportedClientVersions\n}\n\nstruct RefreshWorkflowTasksRequest {\n  10: optional string domain\n  20: optional WorkflowExecution execution\n}\n\nstruct FeatureFlags {\n\t10: optional bool WorkflowExecutionAlreadyCompletedErrorEnabled\n}\n\nenum CrossClusterTaskType {\n  StartChildExecution\n  CancelExecution\n  SignalExecution\n}\n\nenum CrossClusterTaskFailedCause {\n  DOMAIN_NOT_ACTIVE\n  DOMAIN_NOT_EXISTS\n  WORKFLOW_ALREADY_RUNNING\n  WORKFLOW_NOT_EXISTS\n  WORKFLOW_ALREADY_COMPLETED\n  UNCATEGORIZED\n}\n\nenum GetTaskFailedCause {\n  SERVICE_BUSY\n  TIMEOUT\n  SHARD_OWNERSHIP_LOST\n  UNCATEGORIZED\n}\n\nstruct CrossClusterTaskInfo {\n  10: optional string domainID\n  20: optional string workflowID\n  30: optional string runID\n  40: optional CrossClusterTaskType taskType\n  50: optional i16 taskState\n  60: optional i64 (js.type = \"Long\") taskID\n  70: optional i64 (js.type = \"Long\") visibilityTimestamp\n}\n\nstruct CrossClusterStartChildExecutionRequestAttributes {\n  10: optional string targetDomainID\n  20: optional string requestID\n  30: optional i64 (js.type = \"Long\") initiatedEventID\n  40: optional StartChildWorkflowExecutionInitiatedEventAttributes initiatedEventAttributes\n  // targetRunID is for scheduling first decision task\n  // targetWorkflowID is available in initiatedEventAttributes\n  50: optional string targetRunID\n}\n\nstruct CrossClusterStartChildExecutionResponseAttributes {\n  10: optional string runID\n}\n\nstruct CrossClusterCancelExecutionRequestAttributes {\n  10: optional string targetDomainID\n  20: optional string targetWorkflowID\n  30: optional string targetRunID\n  40: optional string requestID\n  50: optional i64 (js.type = \"Long\") initiatedEventID\n  60: optional bool childWorkflowOnly\n}\n\nstruct CrossClusterCancelExecutionResponseAttributes {\n}\n\nstruct CrossClusterSignalExecutionRequestAttributes {\n  10: optional string targetDomainID\n  20: optional string targetWorkflowID\n  30: optional string targetRunID\n  40: optional string requestID\n  50: optional i64 (js.type = \"Long\") initiatedEventID\n  60: optional bool childWorkflowOnly\n  70: optional string signalName\n  80: optional binary signalInput\n  90: optional binary control\n}\n\nstruct CrossClusterSignalExecutionResponseAttributes {\n}\n\nstruct CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes {\n  10: optional string targetDomainID\n  20: optional string targetWorkflowID\n  30: optional string targetRunID\n  40: optional i64 (js.type = \"Long\") initiatedEventID\n  50: optional HistoryEvent completionEvent\n}\n\nstruct CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes {\n}\n\nstruct CrossClusterTaskRequest {\n  10: optional CrossClusterTaskInfo taskInfo\n  20: optional CrossClusterStartChildExecutionRequestAttributes startChildExecutionAttributes\n  30: optional CrossClusterCancelExecutionRequestAttributes cancelExecutionAttributes\n  40: optional CrossClusterSignalExecutionRequestAttributes signalExecutionAttributes\n  50: optional CrossClusterRecordChildWorkflowExecutionCompleteRequestAttributes recordChildWorkflowExecutionCompleteAttributes\n}\n\nstruct CrossClusterTaskResponse {\n  10: optional i64 (js.type = \"Long\") taskID\n  20: optional CrossClusterTaskType taskType\n  30: optional CrossClusterTaskFailedCause failedCause\n  40: optional CrossClusterStartChildExecutionResponseAttributes startChildExecutionAttributes\n  50: optional CrossClusterCancelExecutionResponseAttributes cancelExecutionAttributes\n  60: optional CrossClusterSignalExecutionResponseAttributes signalExecutionAttributes\n  70: optional CrossClusterRecordChildWorkflowExecutionCompleteResponseAttributes recordChildWorkflowExecutionCompleteAttributes\n}\n\nstruct GetCrossClusterTasksRequest {\n  10: optional list<i32> shardIDs\n  20: optional string targetCluster\n}\n\nstruct GetCrossClusterTasksResponse {\n  10: optional map<i32, list<CrossClusterTaskRequest>> tasksByShard\n  20: optional map<i32, GetTaskFailedCause> failedCauseByShard\n}\n\nstruct RespondCrossClusterTasksCompletedRequest {\n  10: optional i32 shardID\n  20: optional string targetCluster\n  30: optional list<CrossClusterTaskResponse> taskResponses\n  40: optional bool fetchNewTasks\n}\n\nstruct RespondCrossClusterTasksCompletedResponse {\n  10: optional list<CrossClusterTaskRequest> tasks\n}\n"
