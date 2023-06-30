@@ -102,6 +102,12 @@ type (
 		// Default value is 2
 		MaxConcurrentDecisionTaskPollers int
 
+		// optional: Sets the initial number of goroutines that will concurrently poll the
+		// cadence-server to retrieve decision tasks. Changing this value will affect the
+		// rate at which the worker is able to consume tasks from a task list.
+		// Default value is MaxConcurrentDecisionTaskPollers
+		InitConcurrentDecisionTaskPollers int
+
 		// optional: Sets the minimum number of goroutines that will concurrently poll the
 		// cadence-server to retrieve decision tasks. If FeatureFlags.PollerAutoScalerEnabled is set to true,
 		// changing this value will NOT affect the rate at which the worker is able to consume tasks from a task list.

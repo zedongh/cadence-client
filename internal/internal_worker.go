@@ -177,6 +177,10 @@ func ensureRequiredParams(params *workerExecutionParameters) {
 	if params.UserContext == nil {
 		params.UserContext = context.Background()
 	}
+	if params.FeatureFlags.PollerAutoScalerEnabled && params.InitConcurrentDecisionTaskPollers == 0 {
+		params.InitConcurrentDecisionTaskPollers = params.MaxConcurrentDecisionTaskPollers
+		params.Logger.Info("decisionTask poller autoScaler enabled but no initial count configured. Use maximum count.")
+	}
 }
 
 // verifyDomainExist does a DescribeDomain operation on the specified domain with backoff/retry
@@ -257,7 +261,7 @@ func newWorkflowTaskWorkerInternal(
 	worker := newBaseWorker(baseWorkerOptions{
 		pollerAutoScaler: pollerAutoScalerOptions{
 			Enabled:           params.FeatureFlags.PollerAutoScalerEnabled,
-			InitCount:         params.MaxConcurrentDecisionTaskPollers,
+			InitCount:         params.InitConcurrentDecisionTaskPollers,
 			MinCount:          params.MinConcurrentDecisionTaskPollers,
 			MaxCount:          params.MaxConcurrentDecisionTaskPollers,
 			Cooldown:          params.PollerAutoScalerCooldown,
