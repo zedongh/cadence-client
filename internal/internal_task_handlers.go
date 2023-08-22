@@ -125,7 +125,7 @@ type (
 		dataConverter                  DataConverter
 		contextPropagators             []ContextPropagator
 		tracer                         opentracing.Tracer
-		workflowInterceptors           []WorkflowInterceptorFactory
+		workflowInterceptorFactories   []WorkflowInterceptorFactory
 	}
 
 	activityProvider func(name string) activity
@@ -396,7 +396,7 @@ func newWorkflowTaskHandler(
 		dataConverter:                  params.DataConverter,
 		contextPropagators:             params.ContextPropagators,
 		tracer:                         params.Tracer,
-		workflowInterceptors:           params.WorkflowInterceptors,
+		workflowInterceptorFactories:   params.WorkflowInterceptorChainFactories,
 	}
 }
 
@@ -591,7 +591,7 @@ func (w *workflowExecutionContextImpl) createEventHandler() {
 		w.wth.dataConverter,
 		w.wth.contextPropagators,
 		w.wth.tracer,
-		w.wth.workflowInterceptors,
+		w.wth.workflowInterceptorFactories,
 	)
 	w.eventHandler.Store(eventHandler)
 }
@@ -628,7 +628,9 @@ func (wth *workflowTaskHandlerImpl) createWorkflowContext(task *s.PollForDecisio
 			RunID: attributes.ParentWorkflowExecution.GetRunId(),
 		}
 	}
+	wfStartTime := time.Unix(0, h.Events[0].GetTimestamp())
 	workflowInfo := &WorkflowInfo{
+		WorkflowStartTime: wfStartTime,
 		WorkflowExecution: WorkflowExecution{
 			ID:    workflowID,
 			RunID: runID,
@@ -650,7 +652,6 @@ func (wth *workflowTaskHandlerImpl) createWorkflowContext(task *s.PollForDecisio
 		RetryPolicy:                         attributes.RetryPolicy,
 	}
 
-	wfStartTime := time.Unix(0, h.Events[0].GetTimestamp())
 	return newWorkflowExecutionContext(wfStartTime, workflowInfo, wth), nil
 }
 
@@ -1463,9 +1464,10 @@ func isSearchAttributesMatched(attrFromEvent, attrFromDecision *s.SearchAttribut
 }
 
 // return true if the check fails:
-//    domain is not empty in decision
-//    and domain is not replayDomain
-//    and domains unmatch in decision and events
+//
+//	domain is not empty in decision
+//	and domain is not replayDomain
+//	and domains unmatch in decision and events
 func checkDomainsInDecisionAndEvent(eventDomainName, decisionDomainName string) bool {
 	if decisionDomainName == "" || IsReplayDomain(decisionDomainName) {
 		return false
